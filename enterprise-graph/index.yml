@@ -20,7 +20,6 @@ abstract:
 
 Everything after this point is from the original page template.
 
-sections:
 - title: 5-Minute Quickstarts
   items:
   - type: paragraph
