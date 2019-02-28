@@ -18,73 +18,27 @@ metadata:
 abstract:
   description: Enterprise Graph is a platform that makes it easy to define a custom ontology for your graph, set up a data pipeline, create your graph, and then query it through natural language or a graph query language like SPARQL. Learn basic graph conceots and how to use Enterprise Graph from a basic tutorial up to your own production implementations.
 
-Everything after this point is from the original page template.
-
 sections:
 - title: 5-Minute Quickstarts
   items:
   - type: paragraph
-    text: 'Learn how to deploy your first Service Fabric application to the cloud:'
+    text: 'Create a Front Door for a highly available global web application.'
   - type: list
     style: icon48
     items: 
     - image: 
-        src: https://docs.microsoft.com/media/logos/logo_net.svg
-      text: .NET
-      href: service-fabric-quickstart-dotnet
-    - image: 
-        src: https://docs.microsoft.com/media/logos/logo_Java.svg
-      text: Java (Reliable Services)
-      href: service-fabric-quickstart-java-reliable-services     
-    - image: 
-        src: https://docs.microsoft.com/media/logos/logo_Java.svg
-      text: Java (Spring Boot)
-      href: service-fabric-quickstart-java-spring-boot 
-    - image: 
-        src: https://docs.microsoft.com/media/logos/logo_linux.svg
-      text: Linux containers
-      href: service-fabric-quickstart-containers-linux
-    - image: 
-        src: https://docs.microsoft.com/media/logos/logo_Windows.svg
-      text: Windows containers
-      href: service-fabric-quickstart-containers
+        src: https://docs.microsoft.com/media/common/i_portal.svg
+      text: Azure Portal
+      href: quickstart-create-front-door.md
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
-    text: Learn how to deploy, manage, and monitor secure web applications on Azure
+    text: Learn how to configure Azure Front Door Service for your needs.
   - type: list
     style: unordered
     items:
-    - html: <a href="service-fabric-tutorial-create-dotnet-app">Deploy a .NET application</a>
-    - html: <a href="service-fabric-tutorial-create-java-app">Deploy a Java application</a>
-    - html: <a href="service-fabric-host-app-in-a-container">Containerize an existing .NET application</a>
-    - html: <a href="service-fabric-tutorial-create-container-images">Create a Linux container application</a>
-    - html: Create and manage a <a href="service-fabric-tutorial-create-vnet-and-windows-cluster">Windows</a> or <a href="service-fabric-tutorial-create-vnet-and-linux-cluster">Linux</a> cluster
-- title: Concepts
-  items:
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="service-fabric-overview-microservices">Understand microservices</a>
-    - html: <a href="service-fabric-content-roadmap">The big picture</a>
-    - html: <a href="service-fabric-application-scenarios">Application scenarios</a>
-    - html: <a href="service-fabric-technical-overview">Terminology</a>
-    - html: <a href="service-fabric-choose-framework">Building applications overview</a>
-    - html: <a href="service-fabric-deploy-anywhere">Clusters overview</a>
-- title: Samples
-  items:
-  - type: paragraph
-    text: 'Find scripts for common management tasks:'
-  - type: list
-    style: cards
-    className: cardsD
-    items:
-    - title: Samples
-      html: <p><a href="service-fabric-powershell-samples">Azure PowerShell</a></p><p><a href="samples-cli">Service Fabric CLI</a></p>
-    - title: .NET
-      html: <p><a href="https://azure.microsoft.com/resources/samples/service-fabric-dotnet-getting-started/">Getting started</a></p><p><a href="https://github.com/Azure-Samples/service-fabric-dotnet-quickstart">Voting</a></p><p><a href="https://azure.microsoft.com/resources/samples/service-fabric-dotnet-web-reference-app/">Web reference</a></p><p><a href="https://azure.microsoft.com/resources/samples/service-fabric-dotnet-iot/">IoT</a></p><p><a href="https://azure.microsoft.com/resources/samples/service-fabric-watchdog-service/">Watchdog</a></p>
-    - title: Java
-      html: <p><a href="https://azure.microsoft.com/resources/samples/service-fabric-java-getting-started/">Getting started</a></p>
+    - html: <a href="front-door-custom-domain.md">Add a custom domain to your Front Door</a>
+    - html: <a href="front-door-custom-domain-https.md">Enable HTTPS for a custom doman</a>
 - title: Reference
   items:
   - type: list
@@ -92,8 +46,6 @@ sections:
     className: cardsD
     items:
     - title: Command-Line
-      html: <p><a href="/cli/azure/sf">Azure CLI</a></p><p><a href="https://docs.microsoft.com/azure/service-fabric/service-fabric-sfctl">Service Fabric CLI</a></p><p><a href="/powershell/module/azurerm.servicefabric">Azure PowerShell</a></p><p><a href="/powershell/module/servicefabric/?view=azureservicefabricps">PowerShell</a></p>
-    - title: Languages
-      html: <p><a href="/java/api/overview/azure/servicefabric">Java API</a></p><p><a href="/dotnet/api/overview/azure/service-fabric?view=azure-dotnet">.NET</a></p><p><a href="/azure/service-fabric/service-fabric-service-model-schema">Service model XML schema</a></p>
+      html: <p><a href="/cli/azure/ext/front-door">Azure CLI</a></p><p><a href="https://go.microsoft.com/fwlink/?linkid=2020942">Azure PowerShell</a></p>
     - title: REST
-      html: <p><a href="/rest/api/servicefabric">REST API Reference</a></p>
+      html: <p><a href="/rest/api/frontdoor">REST API</a></p>
