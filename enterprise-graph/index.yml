@@ -1,22 +1,25 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: I can make this say 'poop' if I want
+title: Enterprise Graph by Microsoft
 metadata:
-  title: Azure Service Fabric Documentation - Tutorials, API Reference | Microsoft Docs
+  title: Enterprise Graph documentation - Tutorials, concepts, API reference | Microsoft Docs
   meta.description: Learn how to use Service Fabric middleware platform to package and deploy microservices for cloud-scale applications. Tutorials, API references, and code samples.
-  services: service-fabric
-  author:   
-  manager: carolz
+  meta.description: Learn how to create and deploy a knowledge graph for your business based on a custom ontology. Tutorials, concepts, API references and best practices.
+  author: Stephen Flanagan
+  manager: stflanag
   layout: LandingPage
   ms.assetid: 
-  ms.service: service-fabric
+  ms.service: enterprise-graph
   ms.tgt_pltfrm: na
   ms.devlang: na
   ms.topic: landing-page
-  ms.date: 11/03/2017
-  ms.author: carolz
+  ms.date: 28/02/2019
+  ms.author: stflanag
 abstract:
-  description: Azure Service Fabric is a distributed systems platform that makes it easy to package, deploy, and manage scalable and reliable microservices and containers. Developers and administrators can avoid complex infrastructure problems and focus on implementing mission-critical, demanding workloads that are scalable, reliable, and manageable. Learn how to use Azure Service Fabric with our quickstarts, tutorials, and samples.  
+  description: Enterprise Graph is a platform that makes it easy to define a custom ontology for your graph, set up a data pipeline, create your graph, and then query it through natural language or a graph query language like SPARQL. Learn basic graph conceots and how to use Enterprise Graph from a basic tutorial up to your own production implementations.
+
+Everything after this point is from the original page template.
+
 sections:
 - title: 5-Minute Quickstarts
   items:
