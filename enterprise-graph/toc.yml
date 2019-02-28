@@ -36,7 +36,7 @@
   - name: SPARQL queries
     href: sparql-queries.md
 - name: APIs
-  - items:
+  items:
   - name: API references to go here
     href: api-ref-swagger.md
 - name: Best practices
@@ -51,7 +51,7 @@
   items:
   - name: Knowledge graph concepts
     href: knowledge-graph-concepts.md
-    - items:
+    items:
       - name: Entities
         href: concepts-entities.md
       - name: Attributes
