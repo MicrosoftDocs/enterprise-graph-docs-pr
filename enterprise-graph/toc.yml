@@ -51,7 +51,7 @@
   items:
   - name: Knowledge graph concepts
     href: knowledge-graph-concepts.md
-    - items:
+    items:
       - name: Entities
         href: concepts-entities.md
       - name: Attributes
