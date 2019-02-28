@@ -18,4 +18,34 @@ metadata:
 abstract:
   description: Enterprise Graph is a platform that makes it easy to define a custom ontology for your graph, set up a data pipeline, create your graph, and then query it through natural language or a graph query language like SPARQL. Learn basic graph conceots and how to use Enterprise Graph from a basic tutorial up to your own production implementations.
 
-Testing to see if this line will appear.
+sections:
+- title: 5-Minute Quickstarts
+  items:
+  - type: paragraph
+    text: 'Create a Front Door for a highly available global web application.'
+  - type: list
+    style: icon48
+    items: 
+    - image: 
+        src: https://docs.microsoft.com/media/common/i_portal.svg
+      text: Azure Portal
+      href: quickstart-create-front-door.md
+- title: Step-by-Step Tutorials
+  items:
+  - type: paragraph
+    text: Learn how to configure Azure Front Door Service for your needs.
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="front-door-custom-domain.md">Add a custom domain to your Front Door</a>
+    - html: <a href="front-door-custom-domain-https.md">Enable HTTPS for a custom doman</a>
+- title: Reference
+  items:
+  - type: list
+    style: cards
+    className: cardsD
+    items:
+    - title: Command-Line
+      html: <p><a href="/cli/azure/ext/front-door">Azure CLI</a></p><p><a href="https://go.microsoft.com/fwlink/?linkid=2020942">Azure PowerShell</a></p>
+    - title: REST
+      html: <p><a href="/rest/api/frontdoor">REST API</a></p>
