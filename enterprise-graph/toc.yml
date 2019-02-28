@@ -4,77 +4,62 @@
   items:
   - name: What is the Enterprise Graph?
     href: enterprise-graph-overview.md
+  - name: Enterprise graph use-cases
+    href: enterprise-graph-use-cases.md
 - name: Quickstarts
   expanded: true
   items:
-  - name: This is the first thing you can do
-    href: first-thing-doc-name.md
-  - name: This is the second thing you can do
-    href: second-thing-doc-name.md
-  - name: Here's a nest of things
+  - name: Building your first knowledge graph
+    href: building-your-first-graph.md
+    expanded: true
     items:
-    - name: Nest item one
-      href: nest-itme-one-doc.md
-    - name: Nest item two
-      href: nest-item-two-doc.md
+      - name: Using an ontology
+        href: qs-creating-an-ontology.md
+      - name: Mapping input data
+        href: qs-mapping-input-data.md
+      - name: Ingesting data to the graph
+        href: qs-ingesting-data.md
+      - name: Querying your graph
+        href: qs-querying-your-graph.md
 - name: Tutorials
   items:
-  - name: This is the first tutorial I think
-    items:
-    - name: 1- Tutorial part first
-      href: tutorial-the-first.md
-    - name: 2- Tutorial part second
-      href: tutorial-the-second.md
-  - name: This is the second tutorial I think
-    items:
-    - name: 1- Do a thing
-      href: service-fabric-tutorial-create-java-app.md
-    - name: 2- Do a differet thing
-      href: service-fabric-tutorial-debug-log-local-cluster.md
+  - name: Creating your own ontology
+    href: creating-your-ontology.md
+  - name: Mapping your input data
+    href: mapping-data.md
+  - name: Ingesting your data
+    href: ingesting-data.md
+  - name: Conflating your data
+    href: conflating-data.md
+  - name: Natural language queries
+    href: natural-language-queries.md
+  - name: SPARQL queries
+    href: sparql-queries.md
+- name: APIs
+  - items:
+  - name: API references to go here
+    href: api-ref-swagger.md
 - name: Best practices
   items:
-  - name: Detail on ontology will probably go here
-    href: service-fabric-best-practices-overview.md
+  - name: Building and iterating on your ontology
+    href: ontology-best-practices.md
   - name: Stuff
     href: service-fabric-best-practices-security.md
   - name: More stuff 
     href: service-fabric-best-practices-networking.md  
-- name: Samples
-  items:
-  - name: Code samples - this links to a page outside of docs
-    href: https://azure.microsoft.com/resources/samples/?service=service-fabric
-  - name: Azure PowerShell
-    href: service-fabric-powershell-samples.md
-  - name: Service Fabric CLI
-    href: samples-cli.md
 - name: Concepts
   items:
-  - name: Topic the first
-    href: service-fabric-overview-microservices.md
-  - name: Topic the second
-    href: service-fabric-content-roadmap.md
-  - name: Topic with nested topics    
-    items:
-    - name: Item one
-      href: service-fabric-choose-framework.md
-    - name: Item two      
-      items:
-      - name: Item two sub one
-        href: service-fabric-containers-overview.md
-      - name: Item two sub two
-        href: service-fabric-docker-compose.md
-- name: How-to guides
-  items:
-  - name: Our first how-to guide
-    items:
-    - name: Windows
-      href: service-fabric-get-started.md
-    - name: Linux
-      href: service-fabric-get-started-linux.md
-    - name: Mac OS
-      href: service-fabric-get-started-mac.md
-    - name: Set up the Service Fabric CLI
-      href: service-fabric-cli.md
+  - name: Knowledge graph concepts
+    href: knowledge-graph-concepts.md
+    - items:
+      - name: Entities
+        href: concepts-entities.md
+      - name: Attributes
+        href: concepts-attributes.md
+      - name: Links
+        href: concepts-links.md
+      - name: Ontology
+        href: concepts-ontology.md
 
 - name: Reference
   items:
