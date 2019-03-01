@@ -44,16 +44,6 @@
   items:
   - name: Knowledge graph concepts
     href: knowledge-graph-concepts.md
-    items:
-      - name: Entities
-        href: concepts-entities.md
-      - name: Attributes
-        href: concepts-attributes.md
-      - name: Links
-        href: concepts-links.md
-      - name: Ontology
-        href: concepts-ontology.md
-
 - name: Reference
   items:
   - name: Available on request
@@ -64,4 +54,3 @@
     href: https://azure.microsoft.com/updates/?product=service-fabric
   - name: Videos
     href: https://azure.microsoft.com/documentation/videos/index/?services=service-fabric
-
