@@ -26,3 +26,7 @@ Enterprise Graph is currently available on a whitelist basis. If you think it's 
 * Answer complex queries through the combination of data that would otherwise be in separate silos
 * Bring powerful answers to all users through natural language, not just data scientists and analysts
 * Discover new insights through the relationships between the entities in your graph
+
+## Getting started
+
+Check out our ten-minute tutorial for creating your first graph, and then dive into creating your own production system.
