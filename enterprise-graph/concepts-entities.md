@@ -18,7 +18,3 @@ ms.author: rclaus
 ms.custom: H1Hack27Feb2017, mvc
 ---
 
-# Graph entities
-
-Entities: Entities represent the things in your business that you care about. You could have entities that represent people, products, projects, customers, deals, contracts, inventory or anything else you need. You can define custom entities for your business, or use entities from a standard ontology, which we’ll talk about later. 
-

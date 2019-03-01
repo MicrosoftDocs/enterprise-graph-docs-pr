@@ -18,7 +18,7 @@ ms.author: rclaus
 ms.custom: H1Hack27Feb2017, mvc
 ---
 
-# Enterprise Graph by Microsoft
+# Building your first graph
 
 Enterprise Graph enables you to bring many sources of data about your business together in one place. The graph is composed of entities and the relationships between them, based on a custom ontology for your business. Once you have created it you can run natural language queries on it, or use the SPARQL query language.
 
