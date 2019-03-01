@@ -18,18 +18,18 @@ ms.author: rclaus
 ms.custom: H1Hack27Feb2017, mvc
 ---
 
-# Enterprise Graph by Microsoft
+# Planning your graph project
 
-Enterprise Graph enables you to bring many sources of data about your business together in one place. The graph is composed of entities and the relationships between them, based on a custom ontology for your business. Once you have created it you can run natural language queries on it, or use the SPARQL query language.
+Some up-front planning can help you develop an ontology that works for you, and figure out the right data you need to support the use-cases you want.
 
-# Availability
+## (1) Decide what use-cases you want to enable
 
-Enterprise Graph is currently available on a whitelist basis. If you think it's a good fit for your business and use cases, please contact us and we'd love to talk. Stephen: Contact process to follow.
+Start with the use-cases that you are trying to enable. For example, if your aim is to enable a query like ‘Show me all the people who are based in London’, you’re going to need entities for people, entities for locations, and links that enable the ‘based in’ relationship. Start by figuring out your key use-cases.
 
-# Key capabilities
+## (2) Decide on your ontology
 
-* Create a graph with custom entities for your specific business, compiled from multiple data sources as required
-* Resolve conflicts between different information sources to create one consistent graph of information and relationships
-* Answer complex queries through the combination of data that would otherwise be in separate silos
-* Bring powerful answers to all users through natural language, not just data scientists and analysts
-* Discover new insights through the relationships between the entities in your graph
+Your ontology will be decided by the entities, attributes and links you will need to enable your use cases. Defining an ontology of any complexity will take a few iterations to get right, and we’ll discuss it in more depth in [the ontology section reference]. With the MSEKG product, you can choose to start with an ontology we provide, use one that you may previously have created for other projects, or create one from scratch.
+
+## (3) Understand what data you need
+
+Your graph is not a copy of all the data in your business – it includes only the data that you need to enable the use-cases you defined. You will likely need to bring in data from different sources (a two step process – schema mapping and ingestion, both of which we’ll cover in detail in [link to those sections]). For example, let’s say you want to enable the query ‘Show me products we have sold to Microsoft’ (assuming you have sold things to Microsoft in the past). The system will need to understand the products that were included in past deals with Microsoft, and also the details of those products. That information is likely to come from at least two different systems, one with details of past sales and another with details of the products currently for sale and for sale in the past.
