@@ -18,18 +18,11 @@ ms.author: rclaus
 ms.custom: H1Hack27Feb2017, mvc
 ---
 
-# Enterprise Graph by Microsoft
+# Applying a knowledge graph in your business
 
-Enterprise Graph enables you to bring many sources of data about your business together in one place. The graph is composed of entities and the relationships between them, based on a custom ontology for your business. Once you have created it you can run natural language queries on it, or use the SPARQL query language.
+A knowledge graph composed of enterprise information lets you answer questions about your business. For example, let’s say that your company sells furniture, and your graph is aimed at external users. You may have entities in your graph for tables, chairs, couches, lamps and so on. For each entity, there may be attributes like price, description, collection name, model number, supplier, related products and so on. That would allow a customer to run a query like ‘Show me all kitchens’, and then refine it with, ‘Show me kitchen tables for less than $350’, and then to ask, ‘What chairs are sold with these tables?’ You can show the answers to these questions on a web page or through a digital assistant, or anywhere else your customers are asking questions about your business.
 
-# Availability
+Alternatively, you might want a graph that is internally-focused to your business, and contains information like customer name, contact details, sales history, outstanding invoices, assigned account manager, and so on. That would enable queries like ‘Who is the account manager for Contoso?’ or ‘Show me customers that bought Product X’, where ‘Product X’ is one the products or services that your company sells.
 
-Enterprise Graph is currently available on a whitelist basis. If you think it's a good fit for your business and use cases, please contact us and we'd love to talk. Stephen: Contact process to follow.
 
-# Key capabilities
-
-* Create a graph with custom entities for your specific business, compiled from multiple data sources as required
-* Resolve conflicts between different information sources to create one consistent graph of information and relationships
-* Answer complex queries through the combination of data that would otherwise be in separate silos
-* Bring powerful answers to all users through natural language, not just data scientists and analysts
-* Discover new insights through the relationships between the entities in your graph
+# To add: More specific use-cases based on how we have been recently describing it to customers
