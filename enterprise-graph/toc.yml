@@ -36,12 +36,10 @@
     href: api-ref-swagger.md
 - name: Best practices
   items:
-  - name: Building and iterating on your ontology
-    href: ontology-best-practices.md
-  - name: Stuff
-    href: service-fabric-best-practices-security.md
-  - name: More stuff 
-    href: service-fabric-best-practices-networking.md  
+  - name: Planning your Enterprise Graph project
+    href: project-planning.md
+  - name: Building sustainable ontologies
+    href: ontology-best-practices.md  
 - name: Concepts
   items:
   - name: Knowledge graph concepts
