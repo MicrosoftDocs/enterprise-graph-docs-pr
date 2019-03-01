@@ -6,21 +6,16 @@
     href: enterprise-graph-overview.md
   - name: Enterprise graph use-cases
     href: enterprise-graph-use-cases.md
-- name: Quickstarts
-  expanded: true
+- name: Quickstart - Your first graph
   items:
-  - name: Building your first knowledge graph
-    href: building-your-first-graph.md
-    expanded: true
-    items:
-      - name: Using an ontology
-        href: qs-creating-an-ontology.md
-      - name: Mapping input data
-        href: qs-mapping-input-data.md
-      - name: Ingesting data to the graph
-        href: qs-ingesting-data.md
-      - name: Querying your graph
-        href: qs-querying-your-graph.md
+    - name: (1) Start with an ontology
+      href: qs-creating-an-ontology.md
+    - name: (2) Map input data
+      href: qs-mapping-input-data.md
+    - name: (3) Ingest data to the graph
+      href: qs-ingesting-data.md
+    - name: (4) Query your graph
+      href: qs-querying-your-graph.md
 - name: Tutorials
   items:
   - name: Creating your own ontology
