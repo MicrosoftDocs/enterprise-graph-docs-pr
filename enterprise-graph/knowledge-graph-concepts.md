@@ -18,18 +18,29 @@ ms.author: rclaus
 ms.custom: H1Hack27Feb2017, mvc
 ---
 
-# Enterprise Graph by Microsoft
+# Knowledge graph concepts
 
-Enterprise Graph enables you to bring many sources of data about your business together in one place. The graph is composed of entities and the relationships between them, based on a custom ontology for your business. Once you have created it you can run natural language queries on it, or use the SPARQL query language.
+NOTE: This page needs to be updated, currently describes a property graph.
 
-# Availability
+There are a few key concepts we will refer to throughout this documentation. 
 
-Enterprise Graph is currently available on a whitelist basis. If you think it's a good fit for your business and use cases, please contact us and we'd love to talk. Stephen: Contact process to follow.
+## Entities
+Entities represent the things in your business that you care about. You could have entities that represent people, products, projects, customers, deals, contracts, inventory or anything else you need. You can define custom entities for your business, or use entities from a standard ontology, which we’ll talk about later. 
 
-# Key capabilities
+In this simple example, let’s look at two kinds of entities: ‘Person’ and ‘Location’.
 
-* Create a graph with custom entities for your specific business, compiled from multiple data sources as required
-* Resolve conflicts between different information sources to create one consistent graph of information and relationships
-* Answer complex queries through the combination of data that would otherwise be in separate silos
-* Bring powerful answers to all users through natural language, not just data scientists and analysts
-* Discover new insights through the relationships between the entities in your graph
+## Attributes
+
+Entities have attributes which contain some piece of information about them. In our example, we see that the ‘Person’ entity has the attributes ‘Name’ and ‘Start date’, and the ‘Location’ entity has the attributes ‘Name’ and ‘Population’.
+  
+## Links
+
+Entities link to one another with links of a particular type, defined in your ontology. So in our example, if Anne Smith worked out of the company office in Seattle, we can represent the information as:
+
+Now imagine that we want to add an additional relationship to show who is Anne’s manager in the company. Her manager is Daniella Ku, so we need another person entity and a new relationship.
+
+## Ontology
+
+The ‘dictionary’ of your entities, their attributes and the types of links that they can have. The ontology is like the mapping of the entities in the graph, what data they contain, and how they can link together. Entities in the ontology have organizational relationships, e.g. ‘business.employee’ to show the an employee is part of a large ‘business’ entity or concept.
+
+To help you get started with MSEKG we provide some initial ontologies that you can use and extend.
