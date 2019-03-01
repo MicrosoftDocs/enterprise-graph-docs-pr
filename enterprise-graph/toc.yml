@@ -26,7 +26,7 @@
   - name: Creating your own ontology
     href: creating-your-ontology.md
   - name: Mapping your input data
-    href: mapping-data.md
+    href: schema-mapping.md
   - name: Ingesting your data
     href: ingesting-data.md
   - name: Conflating your data
