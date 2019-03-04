@@ -28,7 +28,7 @@ Your ontology is the like the 'dictionary' of your graph, containing the definit
 
 To get started...
 
- ![Creating your first ontology](media/building-your-first-graph/choose-ontology.png)
+ ![Creating your first ontology](media/building-your-first-graph/choose_ontology.png)
 
 
 
