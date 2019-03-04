@@ -38,29 +38,31 @@ sections:
   - type: paragraph
     text: Get your first graph up and running with sample data
   - type: list
+    style: ordered
     items:
     - html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
     
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
-    text: Goddammit I wish this would just work.
+    text: Learn how to build your own knowledge graph.
   - type: list
     style: ordered
     items:
-    - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
-    - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
+    - html: <a href="./knowledge-graph-concepts">Ontology</a>
+    - html: <a href="./knowledge-graph-concepts">Schema mapping</a>
+    - html: <a href="./knowledge-graph-concepts">Data ingestion</a>
+    - html: <a href="./knowledge-graph-concepts">Natural language queries</a>
   
 
-- title: Step-by-Step Tutorials
+- title: Knowledge graph concepts
   items:
   - type: paragraph
-    text: Goddammit I wish this would just work.
+    text: Get an overview of key concepts like entities, relations and ontology.
   - type: list
     style: ordered
     items:
-    - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
-    - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
+    - html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
     
     
 
