@@ -29,8 +29,9 @@ sections:
 - title: Knowledge graph concepts
   items:
   - type: paragraph
-    text: 
-    text: I want a HTML link here.
+    text: Get an overview of key concepts like entities, relations and ontology.
+    html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
+    text: A second text line.
 
 
 - title: Step-by-Step Tutorials
@@ -40,7 +41,6 @@ sections:
   - type: list
     style: ordered
     items:
-    - html: <a href="/enterprise-graph/knowledge-graph-concepts.md>Define and assess security policies</a>
     - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
     - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
     
