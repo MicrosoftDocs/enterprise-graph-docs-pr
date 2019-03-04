@@ -31,13 +31,12 @@ sections:
   - type: paragraph
     text: Get an overview of key concepts like entities, relations and ontology.
     html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
-    text: A second text line.
 
 
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
-    text: Learn how to define security policies, protect your resources against malicious activity, and respond to security alerts and incidents.
+    text: Goddammit I wish this would just work.
   - type: list
     style: ordered
     items:
