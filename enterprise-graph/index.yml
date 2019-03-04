@@ -20,14 +20,6 @@ abstract:
 
 sections:
 
-- title: Ten-minute quick-start
-  items:
-  - type: paragraph
-    text: Get your first graph up and running with sample data in ten minutes!
-  - type: list
-    items:
-    - html: html: <a href="./building-your-first-graph.md">Get started now</a>
-
   - title: Knowledge graph concepts
   items:
   - type: paragraph
