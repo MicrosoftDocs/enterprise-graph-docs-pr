@@ -19,26 +19,29 @@ abstract:
   description: Enterprise Graph is a platform that makes it easy to define a custom ontology for your graph, set up a data pipeline, create your graph, and then query it through natural language or a graph query language like SPARQL. Learn basic graph conceots and how to use Enterprise Graph from a basic tutorial up to your own production implementations.
 
 sections:
-
-  - title: Knowledge graph concepts
+- title: Ten-minute quick-start
+  items:
+  - type: paragraph
+    text: Get your first graph up and running with sample data in ten minutes!
+    html: <a href="building-your-first-graph.md">Get started now</a> 
+    text: This is a test line to see what happens
+  
+- title: Knowledge graph concepts
   items:
   - type: paragraph
     text: Get an overview of key concepts like entities, relations and ontology.
-  - type: list
-    items:
-    - html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
+    html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
 
-- title: Graph tutorials
+
+- title: Step-by-Step Tutorials
   items:
   - type: paragraph
-    text: Learn how to build your own knowledge graph.
+    text: Goddammit I wish this would just work.
   - type: list
     style: ordered
     items:
-    - html: <a href="./knowledge-graph-concepts">Create an ontology</a>
-    - html: <a href="./knowledge-graph-concepts">Schema mapping</a>
-    - html: <a href="./knowledge-graph-concepts">Data ingestion</a>
-    - html: <a href="./knowledge-graph-concepts">Natural language queries</a>
+    - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
+    - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
     
 
     
