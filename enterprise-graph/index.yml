@@ -19,15 +19,12 @@ abstract:
   description: Enterprise Graph is a platform that makes it easy to define a custom ontology for your graph, set up a data pipeline, create your graph, and then query it through natural language or a graph query language like SPARQL. Learn basic graph conceots and how to use Enterprise Graph from a basic tutorial up to your own production implementations.
 
 sections:
-- title: Step-by-Step Tutorials
+- title: Ten-minute quick-start
   items:
   - type: paragraph
-    text: Learn how to configure Azure Front Door Service for your needs.
-  - type: list
-    style: unordered
-    items:
-    - html: <a href="front-door-custom-domain.md">Add a custom domain to your Front Door</a>
-    - html: <a href="front-door-custom-domain-https.md">Enable HTTPS for a custom doman</a>
+    text: Get your first graph up and running with sample data in ten minutes.
+    html: <a href="building-your-first-graph.md">Get started now</a> 
+  
 - title: Reference
   items:
   - type: list
