@@ -33,3 +33,17 @@ sections:
     text: I want a HTML link here.
 
 
+- title: Step-by-Step Tutorials
+  items:
+  - type: paragraph
+    text: Learn how to define security policies, protect your resources against malicious activity, and respond to security alerts and incidents.
+  - type: list
+    style: ordered
+    items:
+    - html: <a href="/knowledge-graph-concepts.md">Define and assess security policies</a>
+    - html: <a href="/knowledge-graph-concepts.md">Define and assess security policies</a>
+    - html: <a href="/knowledge-graph-concepts.md">Define and assess security policies</a>
+    
+
+    
+
