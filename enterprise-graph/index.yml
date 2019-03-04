@@ -38,7 +38,6 @@ sections:
   - type: paragraph
     text: Get your first graph up and running with sample data
   - type: list
-    style: ordered
     items:
     - html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
     
