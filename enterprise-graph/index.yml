@@ -24,14 +24,11 @@ sections:
   - type: paragraph
     text: Get your first graph up and running with sample data in ten minutes!
     text: <a href="building-your-first-graph.md">Get started now</a> 
+    text: This is a test line to see what happens
   
-- title: Reference
+- title: Knowledge graph concepts
   items:
-  - type: list
-    style: cards
-    className: cardsD
-    items:
-    - title: Command-Line
-      html: <p><a href="/cli/azure/ext/front-door">Azure CLI</a></p><p><a href="https://go.microsoft.com/fwlink/?linkid=2020942">Azure PowerShell</a></p>
-    - title: REST
-      html: <p><a href="/rest/api/frontdoor">REST API</a></p>
+  - type: paragraph
+    text: Get an overview of key graph ideas like entities, relations and ontology.
+    text: I want a HTML link here.
+    
