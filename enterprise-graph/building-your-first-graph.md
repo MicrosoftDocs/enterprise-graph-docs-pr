@@ -26,9 +26,15 @@ To get started with the Enterprise graph, we've provided everything you need to 
 
 Your ontology is the like the 'dictionary' of your graph, containing the definitions of the entities you want to use and what properties they have. The ontology defines the entity types, and then later we'll import data to create actual entities. So for example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entites, e.g. Kniman, Cubero and so on.
 
-To get started...
+To get started, choose **Configure Ontology** from the Overview page, or choose the **Configure your ontology** option from the menu blade.
 
  ![Creating your first ontology](media/building-your-first-graph/choose_ontology.png)
+
+Click on the **+Add** button, and you'll see the **Add ontology version** pane.
+
+![Add ontology pane](media/building-your-first-graph/add_ontology_pane.png)
+
+In this pane, you can see there are options to create an ontology from scratch, modify one of the Microsoft-supplied ontologies, or import an existing ontology. For now, we're going to import a pre-created ontology, based on the <a href="http:///www.microsoft.com>World Wide Importers sample data</a>. 
 
 
 
