@@ -27,7 +27,7 @@ sections:
   - type: list
     style: ordered
     items:
-    - html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
+    - html: <a href="./building-your-first-graph">Build your first graph</a>
     
 - title: Step-by-Step Tutorials
   items:
