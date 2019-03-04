@@ -22,7 +22,7 @@ sections:
 - title: Ten-minute quick-start
   items:
   - type: paragraph
-    text: Get your first graph up and running with sample data in ten minutes!
+    text: Get your first graph up and running with sample data
     html: <a href="building-your-first-graph.md">Get started now</a> 
     text: This is a test line to see what happens
   
@@ -32,6 +32,26 @@ sections:
     text: Get an overview of key concepts like entities, relations and ontology.
     html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
 
+
+- title: Ten-minute quick-start
+  items:
+  - type: paragraph
+    text: Get your first graph up and running with sample data
+  - type: list
+    style: ordered
+    items:
+    - html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
+    
+- title: Step-by-Step Tutorials
+  items:
+  - type: paragraph
+    text: Goddammit I wish this would just work.
+  - type: list
+    style: ordered
+    items:
+    - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
+    - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
+  
 
 - title: Step-by-Step Tutorials
   items:
@@ -43,6 +63,5 @@ sections:
     - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
     - html: <a href="./knowledge-graph-concepts">Define and assess security policies</a>
     
-
     
 
