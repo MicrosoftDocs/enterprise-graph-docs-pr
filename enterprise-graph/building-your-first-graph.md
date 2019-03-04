@@ -20,11 +20,17 @@ ms.custom: H1Hack27Feb2017, mvc
 
 # Building your first graph
 
-Enterprise Graph enables you to bring many sources of data about your business together in one place. The graph is composed of entities and the relationships between them, based on a custom ontology for your business. Once you have created it you can run natural language queries on it, or use the SPARQL query language.
+To get started with the Enterprise graph, we've provided everything you need to complete the graph-build process end to end.
 
-# Availability
+## (1) Creating an ontology
 
-Enterprise Graph is currently available on a whitelist basis. If you think it's a good fit for your business and use cases, please contact us and we'd love to talk. Stephen: Contact process to follow.
+Your ontology is the like the 'dictionary' of your graph, containing the definitions of the entities you want to use and what properties they have. The ontology defines the entity types, and then later we'll import data to create actual entities. So for example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entites, e.g. Kniman, Cubero and so on.
+
+To get started...
+
+ ![Creating your first ontology](media/building-your-first-graph/choose-ontology.png)
+
+
 
 # Key capabilities
 
