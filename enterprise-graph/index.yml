@@ -23,12 +23,13 @@ sections:
   items:
   - type: paragraph
     text: Get your first graph up and running with sample data in ten minutes!
-    text: <a href="building-your-first-graph.md">Get started now</a> 
+    html: <a href="building-your-first-graph.md">Get started now</a> 
     text: This is a test line to see what happens
   
 - title: Knowledge graph concepts
   items:
   - type: paragraph
-    text: Get an overview of key graph ideas like entities, relations and ontology.
+    text: 
     text: I want a HTML link here.
-    
+
+
