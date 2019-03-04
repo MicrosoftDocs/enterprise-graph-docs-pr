@@ -40,7 +40,7 @@ sections:
   - type: list
     style: ordered
     items:
-    - html: <a href="./knowledge-graph-concepts.md">Define and assess security policies</a>
+    - html: <a href="/enterprise-graph/knowledge-graph-concepts.md">Define and assess security policies</a>
     - html: <a href="./knowledge-graph-concepts.md">Define and assess security policies</a>
     - html: <a href="./knowledge-graph-concepts.md">Define and assess security policies</a>
     
