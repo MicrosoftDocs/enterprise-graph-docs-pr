@@ -115,37 +115,3 @@ https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.5_Ingestion_Sal
 
 
 Once you've done this for each file, congratulations! You have built your first graph on the Enterprise Graph platform.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-A source schema how you relate the data you want to upload to your graph to the ontology of your graph. Conceptually, imagine you have a spreadsheet you want to upload containing a column of data called EmployeeName. The schema map is how you tell the system, 'EmployeeName in my spreadsheet should be used to fill in the 'Name' field in my employee entity type.'
-
-Let's have a look at what that means in practice. Click on the **Map source data** option in the tools pane:
-
-![Map source data](media/building-your-first-graph/map_source_data.png)
-
-Choose **Add** to create a new mapping. A source schema is a way of telling us 
-
-
-
-
-
-# Key capabilities
-
-* Create a graph with custom entities for your specific business, compiled from multiple data sources as required
-* Resolve conflicts between different information sources to create one consistent graph of information and relationships
-* Answer complex queries through the combination of data that would otherwise be in separate silos
-* Bring powerful answers to all users through natural language, not just data scientists and analysts
-* Discover new insights through the relationships between the entities in your graph
