@@ -46,8 +46,8 @@
     href: knowledge-graph-concepts.md
 - name: Reference
   items:
-  - name: Available on request
-    href: http://www.google.com
+  - name: Topic here
+    href: http://www.microsoft.com
   - name: Service Fabric versions
     href: service-fabric-versions.md
   - name: Service Updates
