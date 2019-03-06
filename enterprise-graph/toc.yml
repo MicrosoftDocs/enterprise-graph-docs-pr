@@ -6,19 +6,13 @@
     href: enterprise-graph-overview.md
   - name: Enterprise graph use-cases
     href: enterprise-graph-use-cases.md
-- name: Quickstart - Your first graph
+- name: Quickstart
   items:
-    - name: (1) Start with an ontology
-      href: qs-creating-an-ontology.md
-    - name: (2) Map input data
-      href: qs-mapping-input-data.md
-    - name: (3) Ingest data to the graph
-      href: qs-ingesting-data.md
-    - name: (4) Query your graph
-      href: qs-querying-your-graph.md
+    - name: Building your first graph
+      href: building-your-first-graph.md
 - name: Tutorials
   items:
-  - name: Creating your own ontology
+  - name: Creating your ontology
     href: creating-your-ontology.md
   - name: Mapping your input data
     href: schema-mapping.md
@@ -29,7 +23,7 @@
   - name: Natural language queries
     href: natural-language-queries.md
   - name: SPARQL queries
-    href: sparql-queries.md
+    href: sparql-queries.md  
 - name: APIs
   items:
   - name: API references to go here
@@ -43,14 +37,8 @@
 - name: Concepts
   items:
   - name: Knowledge graph concepts
-    href: knowledge-graph-concepts.md
+    href: knowledge-graph-concepts.md#Ontology
 - name: Reference
   items:
-  - name: Topic here
+  - name: Topic
     href: http://www.microsoft.com
-  - name: Service Fabric versions
-    href: service-fabric-versions.md
-  - name: Service Updates
-    href: https://azure.microsoft.com/updates/?product=service-fabric
-  - name: Videos
-    href: https://azure.microsoft.com/documentation/videos/index/?services=service-fabric
