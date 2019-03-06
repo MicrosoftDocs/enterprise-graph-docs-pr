@@ -13,11 +13,11 @@ ms.author: stflanag
 
 # What is the Enterprise Graph?
 
-Enterprise Graph enables you to bring many sources of data about your business together in one place. The graph is composed of entities and the relationships between them, based on a custom ontology for your business. Once you have created it you can run natural language queries on it, or use the SPARQL query language.
+Enterprise Graph by Microsoft enables you to build knowledge graphs that provide deeper insight into your business data. Bring many sources of data together to create one aggregate picture of your business knowledge, organised in entities and an ontology that you can customize for your business needs. Then query the graph through natural language or SPARQL.
 
 ## Availability
 
-Enterprise Graph is currently available on a whitelist basis. If you think it's a good fit for your business and use cases, please contact us and we'd love to talk. Stephen: Contact process to follow.
+Enterprise Graph is currently available on a whitelist basis. If you think it's a good fit for your business and use cases, please <a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">contact us</a> and we'd love to talk.
 
 ## Key capabilities
 
@@ -29,4 +29,4 @@ Enterprise Graph is currently available on a whitelist basis. If you think it's 
 
 ## Getting started
 
-Check out our ten-minute tutorial for creating your first graph, and then dive into creating your own production system.
+Check out the <a href="building-your-first-graph">ten-minute tutorial </a> for creating your first graph, and then dive into creating your own production system.
