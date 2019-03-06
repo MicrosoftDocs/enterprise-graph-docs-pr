@@ -88,11 +88,11 @@ What is happening in each case is:
 
 The power of the graph is built up through these simple links between entities, which can represent and help you understand enormously complex information.
 
-##Ontology
+## Ontology
 
 The ontology is where you define your entities and their properties. Building the right ontology to represent the data you want to include and the use-cases you want to enable can be tricky, so we have provided some starter ontologies for you to use and modify.
 
-##Conflation
+## Conflation
 
 When you add a new piece of information to your graph, should it be an entirely new instance of an entity (e.g. a new entity of the type 'document') or an update to an existing entity (e.g. a new property for a document that already exists in the graph)? Answering this question can be very tricky, and we have provided powerful tools to help make the right decisions.
 
