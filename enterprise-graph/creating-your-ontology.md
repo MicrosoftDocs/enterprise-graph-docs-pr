@@ -1,7 +1,6 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Describes Enterprise graph overview and key concepts
-services: virtual-machines-linux
+title: Creating your Enterprise Graph ontology | Microsoft Docs
+description: Describes how to create an ontology in Enterprise Graph
 documentationcenter: enterprise-graph-docs
 author: stflanag
 manager: stflanag
@@ -105,6 +104,12 @@ In this case, the **type** for the property definition is the entity Application
 
 There are eight possible potions for the type value for a property:
 
-![Type values](media/creating-your-ontology/types_values.png)
+![Type values](media/creating-your-ontology/type_values.png)
 
+The interface will allow to see the property names you have defined and their types, giving you a visual view of the entity. To see the relations you have defined (i.e. links to other entities), click on the Relations tab:
 
+![Type values](media/creating-your-ontology/relations_tab.png)
+
+In this screenshot, we can see that the SupplierID relation links to the entity type Purchasing.Suppliers. Additional relations can be added here also if you want to modify or refine your ontology.
+
+Note: You cannot make changes to an ontology that is currently live.
