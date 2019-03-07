@@ -12,17 +12,19 @@
       href: building-your-first-graph.md
 - name: Tutorials
   items:
-  - name: Creating your ontology
+  - name: (1) Creating your ontology
     href: creating-your-ontology.md
-  - name: Mapping your input data
-    href: schema-mapping.md
-  - name: Ingesting your data
+  - name: (2) Defining your input data
+    href: create-source-schema.md
+  - name: (3) Mapping data to ontology
+    href: mapping-source-data.md
+  - name: (4) Ingesting your data TBD
     href: ingesting-data.md
-  - name: Conflating your data
+  - name: Conflating your data TBD
     href: conflating-data.md
-  - name: Natural language queries
+  - name: Natural language queries TBD
     href: natural-language-queries.md
-  - name: SPARQL queries
+  - name: SPARQL queries TBD
     href: sparql-queries.md  
 - name: APIs
   items:
