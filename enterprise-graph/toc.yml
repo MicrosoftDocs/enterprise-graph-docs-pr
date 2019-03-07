@@ -8,7 +8,6 @@
     href: enterprise-graph-use-cases.md
 - name: Quickstart
   items:
-  expanded: true
     - name: Building your first graph
       href: building-your-first-graph.md
 - name: Tutorials
