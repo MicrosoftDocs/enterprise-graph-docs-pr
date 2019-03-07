@@ -26,18 +26,20 @@ To get started, navigate to the 'Map source data' section of the interface.
 The source schema that you need depends on the source data you use. Input to the graph is in TSV format, and for illustration let's <a href="http://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv"> look at the file here.</a>
 
 Taking the first three lines of that file as a sample, we see:
-'''
+
+```
 Application.Cities_17940	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Kniman", "CityID": "17940", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
 Application.Cities_13428	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Goose Prairie", "CityID": "13428", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "50"}
 Application.Cities_16149	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Hudson Lake", "CityID": "16149", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
-'''
+```
+
 In the graph creation process, you will define the equivalent file for your input data. We recommend that you host it on <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Azure Blob Store</a>, which is what we have done for the sample file. However, you can host it anywhere that you want.
 
 To create the source schema, you upload a sample of the data from your input file. To see this in action, go to the sample Enterprise Graph files package, and look at 02_Schema_Application.Cities.json. The entire contents of that file is:
 
-'''
+```
 {"LastEditedBy": "1", "ValidTo": "null", "CityName": "Kniman", "CityID": "17940", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
-'''
+```
 
 You'll recognize this as the first line of the input TSV file. You can either upload the JSON file directly, or copy and paste in the sample data in the correct format, as we've done here for the Application.Sales.Customers:
 
