@@ -12,13 +12,13 @@
       href: building-your-first-graph.md
 - name: Tutorials
   items:
-  - name: (1) Creating your ontology
+  - name: Creating your ontology
     href: creating-your-ontology.md
-  - name: (2) Defining your input data
+  - name: Defining your input data
     href: create-source-schema.md 
-  - name: (3) Mapping data to ontology
+  - name: Mapping data to ontology
     href: mapping-source-data.md
-  - name: (4) Ingesting your data TBD
+  - name: Ingesting your data TBD
     href: ingesting-data.md
   - name: Conflating your data TBD
     href: conflating-data.md
