@@ -35,11 +35,11 @@
   - name: API references to go here
     href: api-ref-swagger.md
 - name: Best practices
-  items:
+  items: 
+  - name: Ontology design
+    href: ontology-best-practices.md
   - name: Planning your Enterprise Graph project
-    href: project-planning.md
-  - name: Building sustainable ontologies
-    href: ontology-best-practices.md  
+    href: project-planning.md  
 - name: Knowledge graph concepts
   items:
   - name: Entities
