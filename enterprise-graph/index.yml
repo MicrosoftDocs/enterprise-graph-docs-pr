@@ -16,7 +16,7 @@ metadata:
   ms.date: 28/02/2019
   ms.author: stflanag
 abstract:
-  description: Enterprise Graph is a platform that makes it easy to define a custom ontology for your graph, set up a data pipeline, create your graph, and then query it through natural language or a graph query language like SPARQL. Learn basic graph conceots and how to use Enterprise Graph from a basic tutorial up to your own production implementations.
+  description: Enterprise Graph is a platform that makes it easy to build a custom knowledge graph for your business. If you'd like to use Enterprise Graph within your organisation, please <a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">contact us</a> to discuss your needs.
 
 sections:
 
