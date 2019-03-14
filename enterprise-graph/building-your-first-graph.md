@@ -1,21 +1,17 @@
 ---
 title: Overview of Enterprise Graph | Microsoft Docs
-description: Describes Enterprise graph overview and key concepts
-services: virtual-machines-linux
+description: Common use cases for Enterprise Graph
+services: enterprise-graph
 documentationcenter: enterprise-graph-docs
-author: stflanag
-manager: stflanag
+author: microsteve
+manager: microsteve
 editor: ''
 
-ms.assetid: 7965a80f-ea24-4cc2-bc43-60b574101902
-ms.service: virtual-machines-linux
+ms.service: enterprise-graph
 ms.devlang: NA
 ms.topic: overview
-ms.tgt_pltfrm: vm-linux
-ms.workload: infrastructure
-ms.date: 11/29/2017
-ms.author: rclaus
-ms.custom: H1Hack27Feb2017, mvc
+ms.date: 03/14/2019
+ms.author: stflanag
 ---
 
 # Building your first graph
@@ -26,7 +22,7 @@ You can download the sample files we use for this quick-start here <a href="http
 
 ## (1) Creating an ontology
 
-Your ontology is the like the 'dictionary' of your graph, containing the definitions of the entities you want to use and what properties they have. The ontology defines the entity types, and then later we'll import data to create actual entities. So for example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entites, e.g. Kniman, Cubero and so on.
+Your ontology is the like the 'dictionary' of your graph, containing the definitions of the entities you want to use and what properties and relationships they have. The ontology defines the entity types, and then later we'll import data to create actual entities. So for example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entites, e.g. Kniman, Cubero and so on.
 
 To get started, choose **Configure Ontology** from the Overview page, or choose the **Configure your ontology** option from the menu blade.
 
@@ -42,7 +38,7 @@ In the ontology pane, choose a suitable name (like 'WWI ontology'), add a descri
 
 ![Ontology uploaded](media/building-your-first-graph/ontology_uploaded_view.png)
 
-Once the ontology is created, you can examine the different entity types and the attributes they have through the browser. In this screenshot for example we can see the **Application.Cities** entity type. We can also see that two other entities link to the **Cities** entities - **Purchasing.Suppliers** and **Sales.Customers**. We can also see that **Application.Cities** itself links to the entity **Application.StateProvinces** with a link type of 'StateProvinceID' showing the province the city is located in.
+Once the ontology is created, you can examine the different entity types and the attributes they have through the browser. In this screenshot for example we can see the ```Application.Cities``` entity type. We can also see that two other entities link to the ```Cities``` entities - ```Purchasing.Suppliers``` and ```Sales.Customers```. We can also see that ```Application.Cities``` itself links to the entity ```Application.StateProvinces``` with a link type of 'StateProvinceID' showing the province the city is located in.
 
 To complete this step, choose **Publish** to put your ontology live. 
 
@@ -62,7 +58,9 @@ In the sample data we've provided, there are five source schemas:
 
 In each case, what the source schema is saying is: These are the headings of the data I intend to upload. So for example, the 02_Schema_Application.Cities.json file looks like this:
 
+```
 {"LastEditedBy": "1", "ValidTo": "null", "CityName": "Kniman", "CityID": "17940", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
+```
 
 What we're interested in right now are the column headings - 'ValidTo', 'CityName', 'CityID' and so on. We want to get these headings into the system so we can map them to our ontology in the next step. To do that:
 
