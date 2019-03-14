@@ -20,8 +20,12 @@
     href: mapping-source-data.md
   - name: Ingesting your data TBD
     href: ingesting-data.md
-  - name: Conflating your data TBD
-    href: conflating-data.md
+  - name: Conflation overview
+    href: conflation-overview.md
+  - name: Conflation rules
+    href: conflation-rules.md
+  - name: Conflation example
+    href: conflation-example.md
   - name: Natural language queries TBD
     href: natural-language-queries.md
   - name: SPARQL queries TBD
@@ -36,10 +40,26 @@
     href: project-planning.md
   - name: Building sustainable ontologies
     href: ontology-best-practices.md  
-- name: Concepts
+- name: Knowledge graph concepts
   items:
-  - name: Knowledge graph concepts
-    href: knowledge-graph-concepts.md#Ontology
+  - name: Entities
+    href: concepts/entities.md
+  - name: Properties
+    href: concepts/properties.md
+  - name: Relationships
+    href: concepts/relationships.md
+  - name: Ontology
+    href: concepts/ontology.md
+  - name: Input data
+    href: concepts/input_data.md
+  - name: Source schema
+    href: concepts/source_schema.md
+  - name: Schema maps
+    href: concepts/schema_maps.md
+  - name: Conflation
+    href: concepts/conflation.md  
+  - name: SPARQL
+    href: concepts/sparql.md  
 - name: Reference
   items:
   - name: Topic
