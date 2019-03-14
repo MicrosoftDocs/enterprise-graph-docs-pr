@@ -43,23 +43,23 @@
 - name: Knowledge graph concepts
   items:
   - name: Entities
-    href: ../concepts/entities.md
+    href: concepts/entities.md
   - name: Properties
-    href: ../concepts/properties.md
+    href: concepts/properties.md
   - name: Relationships
-    href: ../concepts/relationships.md
+    href: concepts/relationships.md
   - name: Ontology
-    href: ../concepts/ontology.md
+    href: concepts/ontology.md
   - name: Input data
-    href: ../concepts/input_data.md
+    href: concepts/input_data.md
   - name: Source schema
-    href: ../concepts/source_schema.md
+    href: concepts/source_schema.md
   - name: Schema maps
-    href: ../concepts/schema_maps.md
+    href: concepts/schema_maps.md
   - name: Conflation
-    href: ../concepts/conflation.md  
+    href: concepts/conflation.md  
   - name: SPARQL
-    href: ../concepts/sparql.md  
+    href: concepts/sparql.md  
 - name: Reference
   items:
   - name: Topic
