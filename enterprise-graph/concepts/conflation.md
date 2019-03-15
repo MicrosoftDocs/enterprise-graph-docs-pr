@@ -14,7 +14,7 @@ ms.date: 03/14/2019
 ms.author: stflanag
 ---
 
-# Enterprise graph use-cases
+# Conflation
 
 The Enterprise Graph contains entities, their properties, and the links between them, all customizable for your business. Once this is in place, you can access that 'knowledge' through APIs, and incorporate it is needed.
 
