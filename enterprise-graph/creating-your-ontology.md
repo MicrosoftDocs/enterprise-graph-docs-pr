@@ -14,7 +14,7 @@ ms.author: stflanag
 
 # Creating your ontology
 
-The ontology is the key part of your knowledge graph. It defines the entities, properties and relationships that you need to enable the use-cases and analyses that you want. 
+The ontology is the key part of your knowledge graph. It defines the entities, properties and relationships that you need, to enable the use-cases and analyses that you want.
 
 In this article we will cover the mechanics of creating your ontology. For detail on how to think about the ontology itself and how to structure, entities, inheritance and so on, please see the best practices section. (BP CONTENT TO FOLLOW)
 
