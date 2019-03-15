@@ -1,35 +1,55 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Describes Enterprise graph overview and key concepts
-services: virtual-machines-linux
+title: Enterprise Graph conflation overview | Microsoft Docs
+description: Conflation concepts and approach
+services: enterprise-graph
 documentationcenter: enterprise-graph-docs
-author: stflanag
-manager: stflanag
+author: microsteve
+manager: microsteve
 editor: ''
 
-ms.assetid: 7965a80f-ea24-4cc2-bc43-60b574101902
-ms.service: virtual-machines-linux
+ms.service: enterprise-graph
 ms.devlang: NA
 ms.topic: overview
-ms.tgt_pltfrm: vm-linux
-ms.workload: infrastructure
-ms.date: 11/29/2017
-ms.author: rclaus
-ms.custom: H1Hack27Feb2017, mvc
+ms.date: 03/14/2019
+ms.author: stflanag
 ---
 
 # Conflating data
 
-Enterprise Graph enables you to bring many sources of data about your business together in one place. The graph is composed of entities and the relationships between them, based on a custom ontology for your business. Once you have created it you can run natural language queries on it, or use the SPARQL query language.
+Conflation is the process of ensuring that new information is added to the graph correctly. A new piece of information may be an update to an existing entity (e.g. if a person has moved location from one city to another) or it may relate to a new entity that should be created.
 
-## Availability
+In the input data, a key concept is the **Subject Key**. That is what tells the system whether the information should be added to an existing entity or whether it belongs to a new entity. We'll discuss this further below.
 
-Enterprise Graph is currently available on a whitelist basis. If you think it's a good fit for your business and use cases, please contact us and we'd love to talk. Stephen: Contact process to follow.
+## Conflation cycle
 
-## Key capabilities
+Conflation is the process of adding new data to the graph correctly, so there must be some existing data in the graph before conflation can be carried out. The overall cycle is:
 
-* Create a graph with custom entities for your specific business, compiled from multiple data sources as required
-* Resolve conflicts between different information sources to create one consistent graph of information and relationships
-* Answer complex queries through the combination of data that would otherwise be in separate silos
-* Bring powerful answers to all users through natural language, not just data scientists and analysts
-* Discover new insights through the relationships between the entities in your graph
+(1) Create your graph through the standard process of defining your ontology, creating your source schemas, defining your schema map, and completing ingestion from your source data.
+
+(2) Once that iteration of the graph is in place, you can create your **schema model**. The model is essentially a set of rules which will be applied to the input data to decide how to map it to the existing data.
+
+For example, if you are defining a model to manage a new ingestion of information about people, you might define a rule that says: 'If the first name matches and the surname matches and the email address matches an entity that is already in the graph, this new informatio refers to the same entity.'
+
+(3) When you run a new ingestion to add new data to the graph, it will be conflated against the existing data based on the rules you have defined in the conflation model.
+
+## Subject key
+
+Understanding the role of the Subject Key is critical to conflating your graph correctly. 
+
+In the simplest case, imagine that in your company data you have an EmployeeID which is used to refer to a specific person, i.e. every employee has an EmployeeID which is used consistently, and no two employees have the same EmployeeID. 
+
+Then when you need to ingest new data, you can have a conflation rule which says: 'When the EmployeeID in the input data is the same as an EmployeeID in the graph, this refers to the same entity.' 
+
+However, in many cases you will not have a consistent piece of information to use to identify a given entity, i.e. there will not be an equivalent of the EmployeeID. 
+
+Imagine, for example, that you are ingesting information about business projects to populate ```Projects``` entities which have properties like ```Name```, ```Owner```, ```Assigned People```, ```Summary```, ```Budget```, ```Resources``` and so on. In the event that there is no consistent 'ProjectID' or equivalent, it will be necessary to define some rules for how the system can know whether a given piece of update data relates to a new project entity it hasn't seen before, or an existing project entity. 
+
+A simple place to start might be with the project name. If it's called the 'Seattle Network Expansion Project', for example, you can set a rule that says that if the name matches, then the update is referring to an existing entity. 
+
+However in real life, people will refer to the project in many different ways: 'The Seattle Network Expansion Project', 'The Seattle Project', 'Seattle Network Project', and so on ad infinitum. Furthermore, at large data scales even well-thought-out rule groups will result in a set of possible answers, which need to be ranked. For more details, see this article on conflation rule types and ranking. 
+
+The key point for our current purposes is that when there is no obvious ```SubjectKey``` candidate, you need to define one based on your knowledge of the underlying data and the powerful conflation rules available.
+
+QUESTION FROM STEPHEN: IS THIS DONE IN CONFLATION OR SCHEMA MAPPING STAGE? OR BOTH? WHEN IS THE SUBJECT KEY MAPPED TO THE FINAL GRAPH ENTITY ID?
+
+

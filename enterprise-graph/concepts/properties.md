@@ -1,6 +1,6 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Common use cases for Enterprise Graph
+title: Enterprise Graph concepts | Microsoft Docs
+description: Understanding properties
 services: enterprise-graph
 documentationcenter: enterprise-graph-docs
 author: microsteve

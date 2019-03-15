@@ -53,9 +53,9 @@
   - name: Input data
     href: concepts/input_data.md
   - name: Source schema
-    href: concepts/source_schema.md
+    href: concepts/source-schema.md
   - name: Schema maps
-    href: concepts/schema_maps.md
+    href: concepts/schema-maps.md
   - name: Conflation
     href: concepts/conflation.md  
   - name: SPARQL

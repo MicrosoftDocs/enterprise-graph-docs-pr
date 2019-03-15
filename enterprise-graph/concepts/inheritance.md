@@ -36,4 +36,4 @@ Manager
 
 In this case it makes sense for the ```Employee``` entity to inherit from the ```Person``` entity. 
 
-To see how this works in practice, check out the [Creating your ontology tutorial](creating_your_ontology.md), and for a much more broad-ranging discussion of ontology design and implementation, see [Building sustainable ontologies](ontology-best-practices.md)
+To see how this works in practice, check out the [Creating your ontology tutorial](../creating_your_ontology.md), and for a much more broad-ranging discussion of ontology design and implementation, see [Building sustainable ontologies](../ontology-best-practices.md)
