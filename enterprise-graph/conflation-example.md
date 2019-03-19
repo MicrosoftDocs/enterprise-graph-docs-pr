@@ -14,85 +14,60 @@ ms.date: 6/3/2019
 ms.author: stflanag
 ---
 
-# Knowledge graph concepts
+# Conflation example
 
-### Triples
+In this example we will create a conflation model to apply to the Customer entity type. 
 
-Triples are the building blocks of the Enterprise Graph. They are in the form Subject -> Predicate -> Object, e.g. Jane Smith -> ManagerOf -> John White. Every piece of information in the Enterprise Graph is stored this way. 
+Previously in the tutorials, we have created a source schema to the original Customer data, created a schema map to map that data to the ontology, and then ingested the datat to the graph.
 
-### Entities
+Now, let's assume we want to ingest new data to the graph. To make sure that the new data is ingested correctly, we need to create a conflation model which will match the new data to existing entity instances, or create new entity instances as appropriate.
 
-Entities are the 'things' in your graph. For example you could have an entity of the type 'Document', and it would have properties like:
+To begin, navigate to 'Conflate data' on the left side options.
 
-* Author
-* Creation date
-* Date last edited
-* Collaborators
-* Subject
-* Related projects
+![Conflate data](media/conflation-example/conflate-data-option.png)
 
-With Enterprise Graph, you can define any entity and any set of properties that you want when you are creating your ontology.
+Choose 'Add' to start the process of creating a new model, and you'll see this screen:
 
-The 'entity type', i.e. the 'blank entity', is defined in your ontology. Then when you actually import your data into you graph, you will have a 'filled-out' entity, e.g.:
+![Add conflation model](media/conflation-example/add-conflation-model.png)
 
-**Document: April Status Report**
-* Author: James Ryan
-* Creation date: March 3, 2019
-* Dates last edited: March 5, 2019
-* Collaborators: Jane Williams, Aaron Skye
-* Subject: Weekly status updates for the Alpha project
-* Related projects: Alpha
+The name should be something descriptive, like 'Customer data conflation' in this case, and you can optionally add a more detailed description.
 
-Note one additional key concept: The value for things like 'Author', 'Collaborators' and 'Related Projects' are most likley other entites, rather than literal values. So in the graph, the entity for the document 'April Status Report' has a link of type 'Author' to the entity for the person 'James Ryan'.
+In 'Source schema name', you are choosing the schema map that will be the source of the new data you want to conflate:
 
-### Properties
+![Choose source schema](media/conflation-example/choose-source-schema.png)
 
-The 'attributes' of each entity are called its 'properties'. In the example above, the attributes of the entity type 'Document' are 'Author', 'Creation date', 'Date last edited' and so on. 
+In this case, we want to conflate sources for Application Sales Customers, and we choose that option. 
 
-### Inheritance
+You can then choose to create a new model or import an existing one, if you've already been through this process and understand model creation. For our purposes here, choose to create a new model.
 
-In the Enterprise Graph system, each entity type in the ontology inherits from a 'parent type'. So for example, you may have a generic 'object' type, which in turn has a sub-class called 'vehicles', and within that you have 'cars' and 'trucks'. Within cars you have 'gas-powered' and 'electric-powered'. That's represented with dot notation, i.e.:
+Then you'll see options of which entity type you want to conflate against:
 
-**object.vehicles**
-**object.vehicles.trucks**
-**object.vehicles.cars**
-**object.vehicles.cars.gas-powered**
-**object.vehicles.cars.electric-powered**
+![Choose entity type](media/conflation-example/choose-entity-type.png)
 
-In each case, the child entity inherits properties from the parent. 
+This option enables to choose the type of entity you are updating, i.e. in this case it's ```wwi:Sales.Customers```. 
 
-* **object.vehicles**: Has properties like length, width, price, manufacturer
-* **object.vehicles.trucks**.: Has the same properties as object.vehicles but also properties like towing capacity, road clearance height
-* **object.vehicles.cars**: Inherits the properties of object.vehicles but also has detail on child seat mounting points, top speed
-* **object.vehicles.cars.gas-powered**: Inherits the properties of object.vehicles.cars, but also has properties for fuel economy
-* **object.vehicles.cars.eletric-powered**: Inherits the properties of object.vehicles.cars, but also has properties for driving range
+So to be clear to this point: By choosing your source schema and then choosing the entity type, you are saying 'I want to use the new data from this source to update entity of this type'. Or more specifically in this instance, 'I want to use data from Application Sales Customers to update entities of the type ```wwi:Sales.Customers```.'
 
-This is simplified example, so we can point out for example that it's not just cars that have a 'top speed' property, trucks have one also. So perhaps it would be better to put the 'top speed' property at the **object.vehicles** level. Making these kinds of decisions and figuring out the best structure for your business and use-cases is a key part of developing your ontology. 
+Now that we have chosen the new input data and the entity type, we need to set some rules for how the system 'knows' whether this an update to an existing entity instance or a new entity instance, and that's what we do next.
 
-### Links
+![Conflation rules blank](media/conflation-example/conflation-rules-blank.png)
 
-When we say that 'an entity has a property', what we really mean is that the entity links to that piece of information. Looking again at our document from the Entities section above, and selecting some properties to focus on:
+On the left side, we choose the 'Source property', i.e. the property in the source data (via the source schema map) that we want to use for our comparison.
 
-**Document: April Status Report**
-* Author: James Ryan
-* Creation date: March 3, 2019
-* Collaborators: Jane Williams, Aaron Skye
+![Source property](media/conflation-example/source-property.png)
 
-What is happening in each case is:
+On the right, we choose the property of the existing entities already in the graph that we want to compare against:
 
-* The entity for the document 'April Status Report' links to the entity for the person 'James Ryan' with the link type 'Author'
-* The entity for the document 'April Status Report' links to the entity for the time/date object 
-'March 3, 2019' with the link type 'Creation date'
-* The entity for the document 'April Status Report' links to the entity for the person 'Jane Wiliams' with the link type 'Collaborator'
-* The entity for the document 'April Status Report' links to the entity for person 'Aaoron Skye' with the link type 'Collaborator'
+![Graph property](media/conflation-example/graph-property.png)
 
-The power of the graph is built up through these simple links between entities, which can represent and help you understand enormously complex information.
+Now we need to choose how we want to compare the two values. For a full discussion of this topic, see the conflation rules help document. For now, we're going to use the exact match option:
 
-### Ontology
+![Matching rule](media/conflation-example/exact-match.png)
 
-The ontology is where you define your entities and their properties. Building the right ontology to represent the data you want to include and the use-cases you want to enable can be tricky, so we have provided some starter ontologies for you to use and modify.
+> [!TIP]
+> Note that additional rules inside the same rule group (i.e. within the same shaded grey box) are evaluated as AND rules, and rule groups themselves are evaluated as OR rules. 
 
-### Conflation
+Once all of the information is in place, you can create the model. Note that it may take some time to complete, up to several hours depending on the size of your dataset.
 
-When you add a new piece of information to your graph, should it be an entirely new instance of an entity (e.g. a new entity of the type 'document') or an update to an existing entity (e.g. a new property for a document that already exists in the graph)? Answering this question can be very tricky, and we have provided powerful tools to help make the right decisions.
+When your model is created, the next step is to validate it, and what's what we'll look at next.
 
