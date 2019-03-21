@@ -1,16 +1,11 @@
 ---
-title: Enterprise Graph concepts | Microsoft Docs
-description: Formatting your input data
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Enterprise Graph concepts - Input data | Microsoft Docs
+description: Setting up your graph input data
 author: microsteve
-manager: microsteve
-editor: ''
 
-ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: conceptual
+ms.service: enterprise-graph 
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
@@ -19,8 +14,6 @@ ms.author: stflanag
 Your graph can combine many sources of data together in one consistent set of entities. To be ingested into the graph, your intput data must be correctly formatted as a TSV file. 
 
 A sample input file can be found <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv">here</a>. These are the first three lines of that file:
-
-TO ADD: WHAT IS Application.Cities_17940 ETC?
 
 ```
 Application.Cities_17940	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Kniman", "CityID": "17940", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}

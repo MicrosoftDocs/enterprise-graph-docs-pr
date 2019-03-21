@@ -1,19 +1,13 @@
 ---
-title: Enterprise Graph concepts | Microsoft Docs
-description: Understanding properties
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Enterprise Graph concepts - schema maps | Microsoft Docs
+description: Linking your source data to your ontology using schema maps
 author: microsteve
-manager: microsteve
-editor: ''
 
-ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: conceptual
+ms.service: enterprise-graph 
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
-
 # Schema map
 
 A schema map is how you define the relationship between the data you are importing and the ontology that you have defined. This is where it sits in the graph creation process:
