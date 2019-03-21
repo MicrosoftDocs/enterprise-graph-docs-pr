@@ -12,7 +12,7 @@
       href: building-your-first-graph.md
 - name: Tutorials
   items:
-  - name: Set up your ontology
+  - name: Create and edit your ontology
     href: creating-your-ontology.md
   - name: Map source schema
     href: create-source-schema.md 
@@ -23,7 +23,9 @@
   - name: Conflate new data
     href: conflation-overview.md
   - name: Querying your graph
-    href: natural-language-queries.md  
+    href: natural-language-queries.md
+  - name: Deleting your ontology
+    href: deleting-your-ontology.md  
 - name: APIs
   items:
   - name: Enterprise Graph APIs
@@ -44,8 +46,6 @@
     href: concepts/entities.md
   - name: Properties
     href: concepts/properties.md
-  - name: Relationships
-    href: concepts/relationships.md
   - name: Ontology
     href: concepts/ontology.md
   - name: Input data

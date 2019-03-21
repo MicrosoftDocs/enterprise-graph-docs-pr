@@ -10,6 +10,8 @@ ms.author: stflanag
 ---
 # Ontology
 
+For
+
 The ontology is where you define and manage your entities. For example, if you wanted to have an entity to represent the concept of a business project, you might want it to have properties like:
 
 ```
