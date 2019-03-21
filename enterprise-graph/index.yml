@@ -16,17 +16,12 @@ sections:
 - title: Enterprise Graph availability
   items:
   - type: paragraph
-    text: <a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">Contact us</a> to discuss your needs and project aims.
+    text: Enterprise Graph is currently available on a limited basis. <a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">Contact us</a> to discuss your needs and project aims.
   
 - title: Getting started with Enterprise Graph
   items:
   - type: paragraph
-    text: 'Check out the quick start guide to create your first graph end to end.'
-  - type: list
-    style: unordered
-    items:
-    - html: '<a href="building-your-first-graph">Enterprise Graph quickstart</a>: Building a sample graph.'
-
+    text: Check out the <a href="building-your-first-graph">quick start guide</a> to create your first graph end to end.
 
 - title: Step-by-Step Tutorials
   items:
