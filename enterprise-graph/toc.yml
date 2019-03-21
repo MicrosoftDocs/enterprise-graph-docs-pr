@@ -19,7 +19,7 @@
   - name: Create schema map
     href: schema-map-tutorial.md
   - name: Ingest data
-    href: ingesting-data.md
+    href: ingestion-tutorial.md
   - name: Conflate new data
     href: conflation-tutorial.md
   - name: Querying your graph
@@ -35,7 +35,7 @@
   - name: Entities and ontologies
     href: ontology-concepts.md
   - name: Source schemas for input data
-    href: source-schema-concpets.md
+    href: source-schema-concepts.md
   - name: Schema maps
     href: schema-map-concepts.md
   - name: Conflation and graph updates
@@ -53,12 +53,8 @@
   - name: Source schema
     href: concepts/source-schema.md
   - name: Schema maps
-    href: concepts/schema-maps.md
+    href: concepts/schema-map.md
   - name: Conflation
     href: concepts/conflation.md  
   - name: SPARQL
-    href: concepts/sparql.md  
-- name: Best practices
-  items:
-  - name: Advanced conflation
-    href: conflation-rules.md
+    href: concepts/sparql.md

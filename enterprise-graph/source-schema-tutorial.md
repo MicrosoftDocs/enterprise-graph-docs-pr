@@ -21,7 +21,7 @@ The source schema that you need depends on the source data you use. Input to the
 
 Use the first line of your input data in JSON format as a sample, which the system will then use to identify your column headers:
 
-![Map source data](media/source-schema/schema-sample-data.png)
+![Map source data](media/source-schema/schema_sample_data.png)
 
 Once this is done, you can move on to creating schema maps, completing the link between your source data and your ontology.
 
