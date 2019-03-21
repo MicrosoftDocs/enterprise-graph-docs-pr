@@ -13,7 +13,7 @@
 - name: Tutorials
   items:
   - name: Create and edit your ontology
-    href: creating-your-ontology.md
+    href: ontology-tutorial.md
   - name: Map source schema
     href: create-source-schema.md 
   - name: Create schema map
@@ -33,7 +33,7 @@
 - name: Concepts
   items:
   - name: Entities and ontologies
-    href: creating-your-ontology.md
+    href: ontology-concepts.md
   - name: Source schemas and input data
     href: create-source-schema.md
   - name: Schema maps and ontology

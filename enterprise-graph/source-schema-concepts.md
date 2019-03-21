@@ -11,11 +11,11 @@ ms.date: 9/3/2019
 ms.author: stflanag
 ---
 
-# Creating and source schemas
+# Understanding source schemas
 
-**Source schemas** are how you define the data you want to import to the Enterprise Graph. Conceptually, if you wanted to import a table of data to the graph, the source schema would define the headings of the columns of data in the table.
+**Source schemas** are how you define the data you want to import to the Enterprise Graph so that we can later map it to your ontology. Conceptually, if you wanted to import a table of data to the graph, the source schema would define the headings of the columns of data in the table.
 
-Note that in the next step we will define how you relate the data you are importing to the ontology you created in step one, using a **schema map**. Right now, however, we're focused on defining the **source schema**.
+In the next step we will define how you relate the data you are importing to the ontology you created in step one, using a **schema map**. Right now, however, we're focused on defining the **source schema**.
 
 ## Availability
 
