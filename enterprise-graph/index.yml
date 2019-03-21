@@ -11,8 +11,7 @@ metadata:
   ms.author: stflanag
   ms.date: 03/29/2019
 abstract:
-  description: Enterprise Graph by Microsoft provides everything you need to create a powerful knowledge-driven platform for your application. We provide tools to define your ontology, map and ingest data, conflate your data, and query your graph. Get started now with our quickstarts and tutorials.
- sections:      
+  description: Enterprise Graph by Microsoft provides everything you need to create a powerful knowledge-driven platform for your application. We provide tools to define your ontology, map and ingest data, conflate your data, and query your graph. Get started now with our quickstarts and tutorials.    
 - title: Getting started
   items:
   - type: paragraph
