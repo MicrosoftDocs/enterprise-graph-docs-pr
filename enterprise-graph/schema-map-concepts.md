@@ -26,7 +26,7 @@ Our job now is to create the links between these two things. For example, you ma
 In the interface, you can create this mapping by clicking on the 'CityName' on the right, and ticking the checkbox, then clicking on type.object.name in the left column.
 
 What we are saying here conceptually is:
-* We have defined an ontology, and in that ontology is an entity of the type **Cities**. The **Cities** entity has a property called **name**
+* We have defined an ontology, and in that ontology is an entity of the type ```Cities```. The ```Cities``` entity has a property called ```name```
 * Separately, we have created source data in a TSV file, and it contains information about cities that we want to import into the graph as Cities entities. In step two, we created a source schema which said that the names of the cities in our input data are stored in a column called 'CityName'
 * Now in the current step, we're conceptually linking our ontology and our source data by saying, in the ontology, the name field for the Cities entity should be filled out using the data in the CityName column in our source data.
 
@@ -86,11 +86,6 @@ You can find this file in the sample files we've provided for Enterprise Graph. 
 '''
 You can use any URL you like here when you are defining your own ontology. 
 
-* TO ADD:
-<XmlFeedMap xmlns="http://schemas.microsoft.com/bing/mapping">
-  <MappingHeader minorVersion="0" majorVersion="2" mappingName="wwi_Application_Cities_Mapping">
-PLUS THE REST OF THE MAPPING HEADER
-
 Let's look at a specific entry:
 
 '''
@@ -116,7 +111,7 @@ For example, imagine that from a data source about Population, we want to includ
 
 Choosing a subject key may be easy - if for example you were uploading detail about people, and each person had a unique ID which was used consistently across all of your source of data, then you coudl use that as a subject key.
 
-In other cases, you will need to choose a subject key and then use it consistently yourself. In the screenshot above, for example, you can see that the subject key is the concatenation of the CITY NAME? NEED CLARITY and the CityID.
+In other cases, you will need to choose a subject key and then use it consistently yourself. In the screenshot above, for example, you can see that the subject key is created by concatenation of other properties.
 
 
 

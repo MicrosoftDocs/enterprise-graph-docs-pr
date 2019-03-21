@@ -11,7 +11,7 @@ ms.author: stflanag
 
 # Deleting your ontology
 
-To delete your ontology, you first need to delete your schema maps. 
+## To delete your ontology, you first need to delete your schema maps. 
 
 > [!TIP]
 > If it was possible to delete your ontology while you had source schemas which still mapped to it, the system could get into an inconsistent state. Hence the requirement to complete the steps in the first order.
