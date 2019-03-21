@@ -20,6 +20,7 @@ sections:
   - type: list
     style: unordered
     items:
+    - html: '<a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">Contact us</a>: We would love to discuss your needs and project aims.'
     - html: '<a href="quickstart-create-workspace-with-python">Enterprise Graph quickstart</a>: Check out the getting started guide which will show you the steps to getting your first test graph up and running.'
 
 
