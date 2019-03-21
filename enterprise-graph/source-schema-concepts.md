@@ -17,8 +17,6 @@ ms.author: stflanag
 
 In the next step we will define how you relate the data you are importing to the ontology you created in step one, using a **schema map**. Right now, however, we're focused on defining the **source schema**.
 
-## Availability
-
 To get started, navigate to the 'Map source data' section of the interface.
 
 ![Map source data](media/creating-your-ontology/1_ontology_config.png)
@@ -61,16 +59,4 @@ Once you have created all of the schema maps for your input data, you'll see som
 
 ![Create source schema](media/creating-your-ontology/fields_not_mapped.png)
 
-You see the status 'No fields mapped' in the right-hand column because while you have created your input data files and created a schema map for them, you have not yet related the data to the ontology you created in step one. We'll look at that in the next tutorial, <a href="mapping_source_data">Mapping Source Data</a>.
-
-
-
-
-
-
-
-
-
-
-
-
+You see the status 'No fields mapped' in the right-hand column because while you have created your input data files and created a schema map for them, you have not yet related the data to the ontology you created in step one. We'll look at that in the next tutorial, <a href="schema-map-concepts">schema map concepts</a>.
