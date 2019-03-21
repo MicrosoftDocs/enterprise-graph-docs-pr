@@ -20,7 +20,7 @@ To get started with the Enterprise graph, we've provided everything you need to 
 
 You can download the sample files we use for this quick-start here <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/EGDemo_WWI_Files.zip">here</a>.
 
-## Creating an ontology
+## (1) Creating an ontology
 
 Your ontology is the like the 'dictionary' of your graph, containing the definitions of the entities you want to use and what properties and relationships they have. The ontology defines the entity types, and then later we'll import data to create actual entities. So for example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entites, e.g. Kniman, Cubero and so on.
 
@@ -42,7 +42,7 @@ Once the ontology is created, you can examine the different entity types and the
 
 To complete this step, choose **Publish** to put your ontology live. 
 
-## Creating and mapping source schema
+## (2) Creating and mapping source schema
 
 Now that we have our ontology in place, we can move to the next step: relating the ontology to your source data. Your 'source data' is the data you intend to upload to your graph.
 
@@ -97,7 +97,7 @@ wwi: Sales.Customers -> 11_Mapping_Sales.Customer
 
 ![Countries mapping example](media/building-your-first-graph/countries_mapping_example.png)
 
-## Data ingestion
+## (3) Data ingestion
 
 The hard work of creating the ontology and mapping your source data is now done, and it's time to import your input data.
 
