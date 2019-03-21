@@ -26,7 +26,7 @@ In this tutorial, we are using the sample ontology from the quickstart.
 
 From the 'Select version' option in the top left, you can see the published and unpublished versions of your ontology:
 
-![Version view](media/ontology-tutorial/version-slector.png)
+![Version view](media/ontology-tutorial/version-selector.png)
 
 In the left pane, you can see the entity types that make up your ontology:
 

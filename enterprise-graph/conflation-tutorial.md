@@ -14,11 +14,11 @@ ms.date: 6/3/2019
 ms.author: stflanag
 ---
 
-# Conflation example
+# Conflation in practice
 
 In this example we will create a conflation model to apply to the Customer entity type. 
 
-Previously in the tutorials, we have created a source schema to the original Customer data, created a schema map to map that data to the ontology, and then ingested the datat to the graph.
+Previously we have created a source schema to the original Customer data, created a schema map to map that data to the ontology, and then ingested the datat to the graph.
 
 Now, let's assume we want to ingest new data to the graph. To make sure that the new data is ingested correctly, we need to create a conflation model which will match the new data to existing entity instances, or create new entity instances as appropriate.
 
