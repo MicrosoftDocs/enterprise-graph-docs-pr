@@ -13,15 +13,19 @@ metadata:
 
 sections: 
 
-- title: Getting started
+- title: Enterprise Graph availability
   items:
   - type: paragraph
-    text: 'Enterprise Graph is available on a whitelist basis right now.'
+    text: <a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">Contact us</a> to discuss your needs and project aims.
+  
+- title: Getting started with Enterprise Graph
+  items:
+  - type: paragraph
+    text: 'Check out the quick start guide to create your first graph end to end.'
   - type: list
     style: unordered
     items:
-    - html: '<a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">Contact us</a>: We would love to discuss your needs and project aims.'
-    - html: '<a href="building-your-first-graph">Enterprise Graph quickstart</a>: Check out the getting started guide to learn more about the platform.'
+    - html: '<a href="building-your-first-graph">Enterprise Graph quickstart</a>: Building a sample graph.'
 
 
 - title: Step-by-Step Tutorials
@@ -31,7 +35,7 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: <a href="creating-your-ontology">Setting up your ontology</a> 
+    - html: <a href="creating-your-ontology">Set up your ontology</a> 
     - html: Map your source data with <a href="create-source-schema">source schemas</a> and <a href="mapping-source-data">schema maps</a>
     - html: <a href="ingesting-data">Ingest your data</a>
     - html: <a href="conflation-overview">Conflate graph data</a>
@@ -40,7 +44,15 @@ sections:
 - title: Graph topics and concepts
   items:
   - type: paragraph
-    text: 'Find <a href="samples-notebooks">Jupyter notebooks</a> to help you explore the service on Github.'
+    text: 'Understand the key underlying concepts that power the Enterprise Graph'
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="creating-your-ontology">Entities and ontologies</a> 
+    - html: <a href="create-source-schema">Mapping input data - source schemas and schema maps</a>
+    - html: <a href="ingesting-data">Conflation and graph updates</a>
+    - html: <a href="conflation-overview">Conflate graph data</a>
+    - html: <a href="creating-your-ontology">Knowledge applications</a>
     
 - title: Reference
   items:
@@ -52,19 +64,3 @@ sections:
     - html: '<a href="https://aka.ms/aml-monitoring-sdk">Monitoring</a> Python SDK: collect data on deployed web services'
 
   
-- title: Other Azure Machine Learning technologies
-  items:
-  - type: list
-    style: cards
-    className: cardsFTitle
-    items:
-    - title: Azure Machine Learning Studio
-      href: /azure/machine-learning/studio/
-      image: 
-        src: media/index/machine-learning-studio.svg
-        href: /azure/machine-learning/studio/
-    - title: Data Science Virtual Machine
-      href: /azure/machine-learning/data-science-virtual-machine/
-      image: 
-        src: media/index/virtual-machines.svg
-        href: /azure/machine-learning/data-science-virtual-machine/
