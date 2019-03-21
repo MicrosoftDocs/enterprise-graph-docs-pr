@@ -1,51 +1,66 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Enterprise Graph by Microsoft
+title: Enterprise Graph by Microsoft documentation
 metadata:
-  title: Enterprise Graph documentation - Tutorials, concepts, API reference | Microsoft Docs
-  meta.description: Learn how to use Service Fabric middleware platform to package and deploy microservices for cloud-scale applications. Tutorials, API references, and code samples.
-  meta.description: Learn how to create and deploy a knowledge graph for your business based on a custom ontology. Tutorials, concepts, API references and best practices.
-  author: Stephen Flanagan
-  manager: stflanag
-  layout: LandingPage
-  ms.assetid: 
+  title: Enterprise Graph by Microsoft documentation – Tutorials, concepts and examples | Microsoft Docs
+  description: Enterprise Graph by Microsoft provides everything you need to create a powerful knowledge-driven platform for your application. We provide tools to define your ontology, map and ingest data, conflate your data, and query your graph. Get started now with our quickstarts and tutorials.
+  services: machine-learning
   ms.service: enterprise-graph
-  ms.tgt_pltfrm: na
-  ms.devlang: na
   ms.topic: landing-page
-  ms.date: 28/02/2019
+  author: microsteve
   ms.author: stflanag
+  ms.date: 03/29/2019
 abstract:
-  description: Enterprise Graph is a platform that makes it easy to build a custom knowledge graph for your business. If you'd like to use Enterprise Graph within your organisation, please <a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">contact us</a> to discuss your needs.
-
-sections:
-
-- title: Ten-minute quick-start
+  description: Enterprise Graph by Microsoft provides everything you need to create a powerful knowledge-driven platform for your application. We provide tools to define your ontology, map and ingest data, conflate your data, and query your graph. Get started now with our quickstarts and tutorials.
+ sections:      
+- title: Getting started
   items:
   - type: paragraph
-    text: Get your first graph up and running with sample data
+    text: 'Enterprise Graph is available on a restricted basis right now.'
   - type: list
-    style: ordered
+    style: unordered
     items:
-    - html: <a href="./building-your-first-graph">Build your first graph</a>
-    
+    - html: '<a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">Contact us</a> and we'd love to discuss your needs and project aims.'
+    - html: '<a href="quickstart-create-workspace-with-python">Enterprise Graph quickstart</a>: Check out the getting started guide which will show you the steps to getting your first test graph up and running.'
+
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
-    text: Learn how to build your own knowledge graph.
+    text: 'Learn how to prep data, set up experiments, train and operationalize your machine learning models:'
   - type: list
-    style: ordered
+    style: unordered
     items:
-    - html: <a href="./knowledge-graph-concepts">Ontology</a>
-    - html: <a href="./knowledge-graph-concepts">Schema mapping</a>
-    - html: <a href="./knowledge-graph-concepts">Data ingestion</a>
-    - html: <a href="./knowledge-graph-concepts">Natural language queries</a>
-  
-- title: Knowledge graph concepts
+    - html: <a href="tutorial-train-models-with-aml">Train</a> and <a href="tutorial-deploy-models-with-aml">deploy</a>  image classification models (<b>two-part series</b>).
+    - html: <a href="tutorial-data-prep">Prep data</a> and <a href="tutorial-auto-train-models">use automated machine learning</a> to train & tune regression models  (<b>two-part series</b>).
+
+- title: Samples
   items:
   - type: paragraph
-    text: Get an overview of key concepts like entities, relations and ontology.
+    text: 'Find <a href="samples-notebooks">Jupyter notebooks</a> to help you explore the service on Github.'
+    
+- title: Reference
+  items:
   - type: list
-    style: ordered
+    style: unordered
     items:
-    - html: <a href="./knowledge-graph-concepts">Knowledge graph concepts</a>
+    - html: '<a href="https://aka.ms/aml-sdk">Main Python SDK</a>: core functionality, automated machine learning, pipelines, and more'
+    - html: '<a href="https://aka.ms/data-prep-sdk">Data Prep</a> Python SDK: prep and transform your data'
+    - html: '<a href="https://aka.ms/aml-monitoring-sdk">Monitoring</a> Python SDK: collect data on deployed web services'
+
+  
+- title: Other Azure Machine Learning technologies
+  items:
+  - type: list
+    style: cards
+    className: cardsFTitle
+    items:
+    - title: Azure Machine Learning Studio
+      href: /azure/machine-learning/studio/
+      image: 
+        src: media/index/machine-learning-studio.svg
+        href: /azure/machine-learning/studio/
+    - title: Data Science Virtual Machine
+      href: /azure/machine-learning/data-science-virtual-machine/
+      image: 
+        src: media/index/virtual-machines.svg
+        href: /azure/machine-learning/data-science-virtual-machine/

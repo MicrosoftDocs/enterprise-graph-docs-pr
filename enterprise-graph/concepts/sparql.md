@@ -1,22 +1,15 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Common use cases for Enterprise Graph
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Enterprise Graph concepts - SPARQL | Microsoft Docs
+description: Graph queries in Enterprise Graph
 author: microsteve
-manager: microsteve
-editor: ''
 
-ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: conceptual
+ms.service: enterprise-graph 
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
 # SPARQL
-
-THIS DOC TO BE COMPLETED
 
 To run queries on the Enterprise Graph you can either ask natural language questions, or you can write queries in SPARQL. You can submit queries either in the Enterprise Graph interfact, or using the API.
 

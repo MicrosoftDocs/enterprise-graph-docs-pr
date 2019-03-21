@@ -1,19 +1,13 @@
 ---
-title: Enterprise Graph concepts | Microsoft Docs
-description: Understanding your ontology
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Enterprise Graph concepts - Ontology | Microsoft Docs
+description: Your graph is underpinned by an ontology
 author: microsteve
-manager: microsteve
-editor: ''
 
-ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: conceptual
+ms.service: enterprise-graph 
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
-
 # Ontology
 
 The ontology is where you define and manage your entities. For example, if you wanted to have an entity to represent the concept of a business project, you might want it to have properties like:

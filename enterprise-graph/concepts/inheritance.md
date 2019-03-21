@@ -1,19 +1,13 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Common use cases for Enterprise Graph
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Enterprise Graph concepts - Inheritance | Microsoft Docs
+description: Inheritance between entities in your ontology
 author: microsteve
-manager: microsteve
-editor: ''
 
-ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/17/2019
+ms.topic: conceptual
+ms.service: enterprise-graph 
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
-
 # Inheritance
 
 Entities are organized into classes which inherit from the parent class.

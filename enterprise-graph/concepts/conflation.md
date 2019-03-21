@@ -1,16 +1,11 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Common use cases for Enterprise Graph
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Enterprise Graph concepts - Conflation | Microsoft Docs
+description: What conflation is and why you need it
 author: microsteve
-manager: microsteve
-editor: ''
 
-ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: conceptual
+ms.service: enterprise-graph 
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 

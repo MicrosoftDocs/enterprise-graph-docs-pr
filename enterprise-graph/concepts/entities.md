@@ -1,19 +1,13 @@
 ---
-title: Conceptual definition - Entities | Microsoft Docs
-description: Understanding the concept of entities
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Enterprise Graph concepts - Entities | Microsoft Docs
+description: Entities - the building blocks of your graph
 author: microsteve
-manager: microsteve
-editor: ''
 
-ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: conceptual
+ms.service: enterprise-graph 
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
-
 # Entities
 
 Entities are the key building blocks of the knowledge graph. At a conceptual level, an entity is a representation of something in the world, and it has a set of properties. An entity representing a person, for example, has properties like:
