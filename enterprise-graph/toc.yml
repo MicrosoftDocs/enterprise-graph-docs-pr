@@ -12,42 +12,40 @@
       href: building-your-first-graph.md
 - name: Tutorials
   items:
-  - name: Creating your ontology
+  - name: Create and edit your ontology
     href: creating-your-ontology.md
-  - name: Defining your input data
+  - name: Map source schema
     href: create-source-schema.md 
-  - name: Mapping data to ontology
+  - name: Create schema map
     href: mapping-source-data.md
-  - name: Ingesting your data TBD
+  - name: Ingest data
     href: ingesting-data.md
-  - name: Conflation overview
+  - name: Conflate new data
     href: conflation-overview.md
-  - name: Conflation rules
-    href: conflation-rules.md
-  - name: Conflation example
-    href: conflation-example.md
-  - name: Natural language queries TBD
+  - name: Querying your graph
     href: natural-language-queries.md
-  - name: SPARQL queries TBD
-    href: sparql-queries.md  
+  - name: Deleting your ontology
+    href: deleting-your-ontology.md  
 - name: APIs
   items:
-  - name: API references to go here
+  - name: Enterprise Graph APIs
     href: api-ref-swagger.md
-- name: Best practices
-  items: 
-  - name: Ontology design
-    href: ontology-best-practices.md
-  - name: Planning your Enterprise Graph project
-    href: project-planning.md  
-- name: Knowledge graph concepts
+- name: Concepts
+  items:
+  - name: Entities and ontologies
+    href: creating-your-ontology.md
+  - name: Source schemas and input data
+    href: create-source-schema.md
+  - name: Schema maps and ontology
+    href: mapping-source-data.md
+  - name: Conflation and graph updates
+    href: conflation-overview.md
+- name: Quick reference
   items:
   - name: Entities
     href: concepts/entities.md
   - name: Properties
     href: concepts/properties.md
-  - name: Relationships
-    href: concepts/relationships.md
   - name: Ontology
     href: concepts/ontology.md
   - name: Input data
@@ -60,7 +58,7 @@
     href: concepts/conflation.md  
   - name: SPARQL
     href: concepts/sparql.md  
-- name: Reference
+- name: Best practices
   items:
-  - name: Topic
-    href: http://www.microsoft.com
+  - name: Advanced conflation
+    href: conflation-rules.md

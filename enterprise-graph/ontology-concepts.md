@@ -12,11 +12,9 @@ ms.author: stflanag
 
 ---
 
-# Creating your ontology
+# Ontology concepts
 
 The ontology is the key part of your knowledge graph. It defines the entities, properties and relationships that you need, to enable the use-cases and analyses that you want.
-
-In this article we will cover the mechanics of creating your ontology. For detail on how to think about the ontology itself and how to structure, entities, inheritance and so on, please see the best practices section. (BP CONTENT TO FOLLOW)
 
 ## Ontology creation in Enterprise Graph
 
@@ -30,7 +28,7 @@ There are four paths to creating an ontology for your graph:
 
 **(2) Start with existing:** You can use one of the free pre-supplied ontologies, and modify it if you need to.
 
-**(3) Create from scratch:** NEED MORE DETAIL ON THIS ONE
+**(3) Create from scratch:** Build an ontology for your use cases from the ground up.
 
 **(4) Clone existing:** If you have previously created an ontology, you can clone it here, e.g. to modify it and then publish it as a new version.
 
@@ -47,7 +45,6 @@ Looking through this file content line by line, we see this is how it opens:
       "types":[
 ...
 ```
-
 
 **shorthand** is the short description you want to use for your namespace, in this case 'wwi'. ADD NAMESPACE DEFINITION IN CONCEPTS
 
@@ -73,8 +70,6 @@ Within **types** we see that the first definition is for the 'Cities' entity typ
 **namespace**: The namespace this type is to be created in
 
 **name**: The name of the entity type you are creating, in this case Application.Cities. (The word 'Application' comes from the way this example ontology is structure - some entities, like 'cities', are part of the core concepts of the graph 'application', as opposed to something like 'Purchasing.SupplierCategories' which is specific to the purchasing data use-cases.)
-
-**category** DETAIL TO FOLLOW
 
 **fields**: The properties that this entity will have, i.e. links to specific pieces of data or to other entities. The first field that the Application.Cities entity type has is Location, and it's defined like this:
 
@@ -102,7 +97,7 @@ Within **types** we see that the first definition is for the 'Cities' entity typ
 
 In this case, the **type** for the property definition is the entity Application.StateProvinces. This fits with how we natually think about things - cities are part of a region, and the region itself as a concept has many other values.
 
-There are eight possible potions for the type value for a property:
+There are eight possible options for the type value for a property:
 
 ![Type values](media/creating-your-ontology/type_values.png)
 
