@@ -16,25 +16,28 @@ sections:
 - title: Getting started
   items:
   - type: paragraph
-    text: 'Enterprise Graph is available on a restricted basis right now.'
+    text: 'Enterprise Graph is available on a whitelist basis right now.'
   - type: list
     style: unordered
     items:
     - html: '<a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">Contact us</a>: We would love to discuss your needs and project aims.'
-    - html: '<a href="quickstart-create-workspace-with-python">Enterprise Graph quickstart</a>: Check out the getting started guide which will show you the steps to getting your first test graph up and running.'
+    - html: '<a href="building-your-first-graph">Enterprise Graph quickstart</a>: Check out the getting started guide to learn more about the platform.'
 
 
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
-    text: 'Learn how to prep data, set up experiments, train and operationalize your machine learning models:'
+    text: 'Learn how to set up an ontology, map your source data, create your graph, and conflate new data'
   - type: list
     style: unordered
     items:
-    - html: <a href="tutorial-train-models-with-aml">Train</a> and <a href="tutorial-deploy-models-with-aml">deploy</a>  image classification models (<b>two-part series</b>).
-    - html: <a href="tutorial-data-prep">Prep data</a> and <a href="tutorial-auto-train-models">use automated machine learning</a> to train & tune regression models  (<b>two-part series</b>).
+    - html: <a href="creating-your-ontology">Setting up your ontology</a> 
+    - html: Map your source data with <a href="create-source-schema">source schemas</a> and <a href="mapping-source-data">schema maps</a>
+    - html: <a href="ingesting-data">Ingest your data</a>
+    - html: <a href="conflation-overview">Conflate graph data</a>
+    - html: <a href="creating-your-ontology">Query API endpoints</a>
 
-- title: Samples
+- title: Graph topics and concepts
   items:
   - type: paragraph
     text: 'Find <a href="samples-notebooks">Jupyter notebooks</a> to help you explore the service on Github.'
