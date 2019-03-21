@@ -15,13 +15,13 @@
   - name: Create and edit your ontology
     href: ontology-tutorial.md
   - name: Map source schema
-    href: create-source-schema.md 
+    href: source-schema-tutorial.md 
   - name: Create schema map
-    href: mapping-source-data.md
+    href: schema-map-tutorial.md
   - name: Ingest data
     href: ingesting-data.md
   - name: Conflate new data
-    href: conflation-overview.md
+    href: conflation-tutorial.md
   - name: Querying your graph
     href: natural-language-queries.md
   - name: Deleting your ontology
@@ -34,12 +34,12 @@
   items:
   - name: Entities and ontologies
     href: ontology-concepts.md
-  - name: Source schemas and input data
-    href: create-source-schema.md
-  - name: Schema maps and ontology
-    href: mapping-source-data.md
+  - name: Source schemas for input data
+    href: source-schema-concpets.md
+  - name: Schema maps
+    href: schema-map-concepts.md
   - name: Conflation and graph updates
-    href: conflation-overview.md
+    href: conflation-concepts.md
 - name: Quick reference
   items:
   - name: Entities
