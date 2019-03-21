@@ -13,6 +13,16 @@ metadata:
 
 sections: 
 
+- title: Getting started
+  items:
+  - type: paragraph
+    text: 'Enterprise Graph is available on a restricted basis right now.'
+  - type: list
+    style: unordered
+    items:
+    - html: '<a href="quickstart-create-workspace-with-python">Enterprise Graph quickstart</a>: Check out the getting started guide which will show you the steps to getting your first test graph up and running.'
+
+
 - title: Step-by-Step Tutorials
   items:
   - type: paragraph
