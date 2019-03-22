@@ -16,10 +16,10 @@ ms.author: stflanag
 
 # Enterprise graph use-cases
 
-The Enterprise Graph contains entities, their properties, and the links between them, all customizable for your business. Once this is in place, you can access that 'knowledge' through APIs, and incorporate it is needed.
+The Enterprise Graph contains entities, their properties, and the links between them, all customizable for your business. Once this is in place, you can access that 'knowledge' through APIs, and incorporate it as needed.
 
 ## Powering AI assistance
-A chat-based assistant combined with natural language understanding (for which there is a solution as part of the Enterprise Graph platform) can bring the power of the graph to every use in the business, not just the data or engineering teams. For example, if you included HR and organizational data in your graph, you could enable users to ask questions like 'Who is John Murphy's manager', and the Enterprise Graph platform can understand the user's query, turn it into a technical graph query, and return the answer. 
+A chat-based assistant combined with natural language understanding (for which there is a solution as part of the Enterprise Graph platform) can bring the power of the graph to every user in the business, not just the data or engineering teams. For example, if you included HR and organizational data in your graph, you could enable users to ask questions like 'Who is John Murphy's manager', and the Enterprise Graph platform can understand the user's query, turn it into a technical graph query, and return the answer. 
 
 ## Enriching search
 The Enterprise Graph platform has built-in capabilities for graph search (i.e when you want to know a specific property or relationship of a given entity) as well as free-text search (i.e. when you are not quite sure which entity or property you need, but you want to see what the graph contains on a given topic). The graph can be a powerful augmentation to existing search solutions. For example, if your graph contains knowledge on documents that are linked to a specific project, it may more effective to ask a question like 'Show me all the documents related to the Alpha project' versus just searching for the term 'Alpha project'.

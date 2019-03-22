@@ -6,14 +6,14 @@ author: stflanag
 manager: stflanag
 editor: ''
 
-ms.topic: overview
-ms.date: 9/3/2019
+ms.topic: conceptual
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
 # Mapping source data
 
-Once you have created your source data TSV files and then created schema maps for those files, the next step is to map to your ontology. To do that, you use schema maps.
+Once your schema maps are in place, the next step is to map to your ontology. To do that, you use schema maps.
 
 First, let's have a look at the interface, which makes it clear conceptually what's happening:
 
@@ -109,7 +109,7 @@ It's critical because we need to have a unique identifier that can be used to pu
 
 For example, imagine that from a data source about Population, we want to include the population numbers for the city, and from another data source about Sales Data, we want to populate information about total sales. In each case, we are talking about the same entity, and thus the subject key for each source should be the same.
 
-Choosing a subject key may be easy - if for example you were uploading detail about people, and each person had a unique ID which was used consistently across all of your source of data, then you coudl use that as a subject key.
+Choosing a subject key may be easy - if for example you were uploading detail about people, and each person had a unique ID which was used consistently across all of your source of data, then you could use that as a subject key.
 
 In other cases, you will need to choose a subject key and then use it consistently yourself. In the screenshot above, for example, you can see that the subject key is created by concatenation of other properties.
 
