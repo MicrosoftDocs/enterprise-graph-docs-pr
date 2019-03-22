@@ -35,7 +35,7 @@ In the ontology pane, choose a suitable name (like 'WWI ontology'), add a descri
 
 Once the ontology is created, you can examine the different entity types and the attributes they have through the browser. In this screenshot for example we can see the ```Application.Cities``` entity type. We can also see that two other entities link to the ```Cities``` entities - ```Purchasing.Suppliers``` and ```Sales.Customers```. We can also see that ```Application.Cities``` itself links to the entity ```Application.StateProvinces``` with a link type of 'StateProvinceID' showing the province the city is located in.
 
-To complete this step, choose **Publish** to put your ontology live. 
+To complete this step, choose **Publish** to put your ontology live.
 
 ## (2) Creating and mapping source schema
 
