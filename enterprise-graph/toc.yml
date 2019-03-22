@@ -40,22 +40,22 @@
     href: schema-map-concepts.md
   - name: Conflation and graph updates
     href: conflation-concepts.md
-    - name: Quick reference
-      items:
-      - name: Entities
+  - name: Quick reference
+    items:
+    - name: Entities
       href: concepts/entities.md
-      - name: Properties
+    - name: Properties
       href: concepts/properties.md
-      - name: Ontology
-        href: concepts/ontology.md
-      - name: Source schema
-        href: concepts/source-schema.md
-      - name: Schema maps
-        href: concepts/schema-map.md
-      - name: Conflation
+    - name: Ontology
+      href: concepts/ontology.md
+    - name: Source schema
+      href: concepts/source-schema.md
+    - name: Schema maps
+      href: concepts/schema-map.md
+    - name: Conflation
       href: concepts/conflation.md  
-      - name: SPARQL
-        href: concepts/sparql.md
+    - name: SPARQL
+      href: concepts/sparql.md
 - name: APIs
   items:
   - name: Enterprise Graph APIs
