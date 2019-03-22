@@ -53,7 +53,7 @@ For reference, here are the five input files we're using:
 * <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.4_Ingestion_Application.People.tsv">People data<a>
 * <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.5_Ingestion_Sales.Customers.tsv">Customer data<a>
 
-Note though that right now, we are just taking the first line of those files to use it as a sample to create the schema map.
+Note that we are just taking the first line of those files to use it as a sample to create the schema map.
 
 Once you have created all of the schema maps for your input data, you'll see something like this:
 

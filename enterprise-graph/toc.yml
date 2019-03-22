@@ -9,7 +9,7 @@
 - name: Quickstart
   items:
     - name: Building your first graph
-      href: building-your-first-graph.md
+      href: quickstart.md
 - name: Tutorials
   items:
   - name: Create and edit your ontology
@@ -21,17 +21,17 @@
   - name: Ingest data
     href: ingestion-tutorial.md
   - name: Conflate new data
-    href: conflation-tutorial.md
+    href: conflation-model-tutorial.md
+  - name: Conflation model validation
+    href: conflation-validation-tutorial.md
   - name: Querying your graph
-    href: natural-language-queries.md
+    href: graph-queries-tutorial.md
   - name: Deleting your ontology
     href: deleting-your-ontology.md  
-- name: APIs
-  items:
-  - name: Enterprise Graph APIs
-    href: api-ref-swagger.md
 - name: Concepts
   items:
+  - name: Input data format
+    href: input-data-concepts.md  
   - name: Entities and ontologies
     href: ontology-concepts.md
   - name: Source schemas for input data
@@ -40,6 +40,10 @@
     href: schema-map-concepts.md
   - name: Conflation and graph updates
     href: conflation-concepts.md
+- name: APIs
+  items:
+  - name: Enterprise Graph APIs
+    href: api-overview.md
 - name: Quick reference
   items:
   - name: Entities
@@ -48,8 +52,6 @@
     href: concepts/properties.md
   - name: Ontology
     href: concepts/ontology.md
-  - name: Input data
-    href: concepts/input_data.md
   - name: Source schema
     href: concepts/source-schema.md
   - name: Schema maps

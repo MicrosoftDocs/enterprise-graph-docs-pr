@@ -19,7 +19,7 @@ Source schemas are created in the 'Map source schema' section of the interface:
 
 The source schema that you need depends on the source data you use. Input to the graph is in TSV format, and for illustration let's <a href="http://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv"> look at the file here.</a>
 
-Use the first line of your input data in JSON format as a sample, which the system will then use to identify your column headers:
+Use the first line of your input data in JSON format as a sample, which the system will then use to identify your column headers. Make sure that you are not using personally identifiable information (PII) in this step.
 
 ![Map source data](media/source-schema/schema_sample_data.png)
 

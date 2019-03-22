@@ -11,7 +11,7 @@ ms.author: stflanag
 
 # Input data
 
-Your graph can combine many sources of data together in one consistent set of entities. To be ingested into the graph, your intput data must be correctly formatted as a TSV file. 
+Your graph can combine many sources of data together in one consistent set of entities. To be ingested into the graph, your input data must be correctly formatted as a TSV file. 
 
 A sample input file can be found <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv">here</a>. These are the first three lines of that file:
 

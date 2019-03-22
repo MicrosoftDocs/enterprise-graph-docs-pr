@@ -17,7 +17,7 @@ Once you've got your ontology, source schemas, and schema maps in palce, it's ti
 
 If you have previously carried out ingestion events, you will be able to see those in the interface. (Note that you may need to update the 'Start' time at the top left if your ingestion was in the past to make sure that the reporting time-window covers your ingestion event.)
 
-![Ingestion events](./media/ingestion-tutorial/ingestion-events.png)
+![Ingestion events](./media/ingestion-tutorial/existing-ingestions.png)
 
 If you have not previously completed ingestion events, you will not see any reporting here, and will instead see an icon inviting you to create your first ingestion.
 
