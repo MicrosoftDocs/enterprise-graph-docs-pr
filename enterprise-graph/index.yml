@@ -16,7 +16,7 @@ sections:
 - title: Enterprise Graph availability
   items:
   - type: paragraph
-    text: Enterprise Graph is currently available on a limited basis. <a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">Contact us</a> to discuss your needs and project aims.
+    text: Enterprise Graph is currently available on a limited basis. <a href="mailto:eg-support@microsoft.com?Subject=EG%20interest">Contact us</a> to discuss your needs and project aims.
   
 - title: Getting started with Enterprise Graph
   items:
@@ -57,5 +57,6 @@ sections:
     - html: '<a href="https://aka.ms/aml-sdk">Main Python SDK</a>: core functionality, automated machine learning, pipelines, and more'
     - html: '<a href="https://aka.ms/data-prep-sdk">Data Prep</a> Python SDK: prep and transform your data'
     - html: '<a href="https://aka.ms/aml-monitoring-sdk">Monitoring</a> Python SDK: collect data on deployed web services'
+    
 
   
