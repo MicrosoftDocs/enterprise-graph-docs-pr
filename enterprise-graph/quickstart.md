@@ -1,16 +1,11 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Common use cases for Enterprise Graph
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Getting started with Enterprise Graph | Microsoft Docs
+description: Create and query your first graph in ten minutes
 author: microsteve
-manager: microsteve
-editor: ''
 
 ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: quickstart
+ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
@@ -40,7 +35,7 @@ In the ontology pane, choose a suitable name (like 'WWI ontology'), add a descri
 
 Once the ontology is created, you can examine the different entity types and the attributes they have through the browser. In this screenshot for example we can see the ```Application.Cities``` entity type. We can also see that two other entities link to the ```Cities``` entities - ```Purchasing.Suppliers``` and ```Sales.Customers```. We can also see that ```Application.Cities``` itself links to the entity ```Application.StateProvinces``` with a link type of 'StateProvinceID' showing the province the city is located in.
 
-To complete this step, choose **Publish** to put your ontology live. 
+To complete this step, choose **Publish** to put your ontology live.
 
 ## (2) Creating and mapping source schema
 

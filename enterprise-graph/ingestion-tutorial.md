@@ -1,12 +1,10 @@
 ---
-title: Creating your Enterprise Graph ontology | Microsoft Docs
-description: Describes how to create an ontology in Enterprise Graph
-documentationcenter: enterprise-graph-docs
-author: stflanag
-manager: stflanag
-editor: ''
+title: Ingesting data in Enterprise Graph | Microsoft Docs
+description: How to ingest data into your Enterprise Graph once your ontology, source schema and schema maps are in place
+author: microsteve
 
-ms.topic: overview
+ms.service: enterprise-graph
+ms.topic: tutorial
 ms.date: 03/27/2019
 ms.author: stflanag
 ---

@@ -1,13 +1,11 @@
 ---
-title: Creating schema maps for your data | Microsoft Docs
-description: Describes how to create a schema map in Enterprise Graph
-documentationcenter: enterprise-graph-docs
-author: stflanag
-manager: stflanag
-editor: ''
+title: Schema maps in Enterprise Graph by Microsoft | Microsoft Docs
+description: Understanding how to map your input data with schema maps in Enterprise Graph by Microsoft
+author: microsteve
 
-ms.topic: overview
-ms.date: 9/3/2019
+ms.service: enterprise-graph
+ms.topic: conceptual
+ms.date: 03/27/2019
 ms.author: stflanag
 ---
 

@@ -1,16 +1,11 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Describes Enterprise graph overview and key concepts
-services: virtual-machines-linux
-documentationcenter: enterprise-graph-docs
+title: Using conflation models in Enterprise Graph by Microsoft | Microsoft Docs
+description: How to create a conflation model in Enterprise Graph by Microsoft
 author: microsteve
-manager: microsteve
-editor: ''
 
-ms.assetid: 7965a80f-ea24-4cc2-bc43-60b574101902
-ms.devlang: NA
-ms.topic: overview
-ms.date: 6/3/2019
+ms.service: enterprise-graph
+ms.topic: tutorial
+ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
