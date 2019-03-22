@@ -1,15 +1,12 @@
 ---
-title: Creating your Enterprise Graph ontology | Microsoft Docs
-description: Describes how to create an ontology in Enterprise Graph
-documentationcenter: enterprise-graph-docs
-author: stflanag
-manager: stflanag
-editor: ''
+title: Ontologies in Enterprise Graph by Microsoft | Microsoft Docs
+description: Getting up and running with an ontology to power your Enterprise Graph use cases
+author: microsteve
 
-ms.topic: overview
-ms.date: 9/3/2019
+ms.service: enterprise-graph
+ms.topic: conceptual
+ms.date: 03/27/2019
 ms.author: stflanag
-
 ---
 
 # Ontology concepts

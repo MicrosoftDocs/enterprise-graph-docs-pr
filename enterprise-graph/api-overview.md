@@ -1,35 +1,33 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Describes Enterprise graph overview and key concepts
-services: virtual-machines-linux
-documentationcenter: enterprise-graph-docs
-author: stflanag
-manager: stflanag
-editor: ''
+title: Enterprise Graph APIs overview | Microsoft Docs
+description: Overview of what Enterprise Graph APIs are available and how to use them
+author: microsteve
 
-ms.assetid: 7965a80f-ea24-4cc2-bc43-60b574101902
-ms.service: virtual-machines-linux
-ms.devlang: NA
-ms.topic: overview
-ms.tgt_pltfrm: vm-linux
-ms.workload: infrastructure
-ms.date: 11/29/2017
-ms.author: rclaus
-ms.custom: H1Hack27Feb2017, mvc
+ms.service: enterprise-graph
+ms.topic: conceptual
+ms.date: 03/27/2019
+ms.author: stflanag
 ---
 
 # API references and Swagger
 
-Enterprise Graph enables you to bring many sources of data about your business together in one place. The graph is composed of entities and the relationships between them, based on a custom ontology for your business. Once you have created it you can run natural language queries on it, or use the SPARQL query language.
+Enterprise Graph includes APIs which you can use to create and query your graph. To understand these APIs and test them out, you can view the Swagger file based on your Enterprise Graph instance.
 
-# Availability
+## Viewing the Swagger file for your instance
 
-Enterprise Graph is currently available on a whitelist basis. If you think it's a good fit for your business and use cases, please contact us and we'd love to talk. Stephen: Contact process to follow.
+The URL for your Swagger will be:
 
-# Key capabilities
+https://your_name_here.ekg.microsoft.com/
 
-* Create a graph with custom entities for your specific business, compiled from multiple data sources as required
-* Resolve conflicts between different information sources to create one consistent graph of information and relationships
-* Answer complex queries through the combination of data that would otherwise be in separate silos
-* Bring powerful answers to all users through natural language, not just data scientists and analysts
-* Discover new insights through the relationships between the entities in your graph
+where 'your_name_here' is the 'Name' entry from the 'Properties' section in 'Settings' in the left-hand-side navigation pane.
+
+So for example, if your name from the properties page was 'MyGraph1', your Swagger URL would be:
+
+https://your_RG_here.ekg.microsoft.com/
+
+## The Swagger page
+
+On the Swagger page you will see 
+
+
+

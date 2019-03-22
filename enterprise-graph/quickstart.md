@@ -1,16 +1,11 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Common use cases for Enterprise Graph
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Getting started with Enterprise Graph | Microsoft Docs
+description: Create and query your first graph in ten minutes
 author: microsteve
-manager: microsteve
-editor: ''
 
 ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: quickstart
+ms.date: 03/27/2019
 ms.author: stflanag
 ---
 

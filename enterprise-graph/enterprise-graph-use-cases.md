@@ -1,16 +1,11 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Common use cases for Enterprise Graph
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Enterprise Graph use cases | Microsoft Docs
+description: Understanding how the Enterprise Graph platform can add value to your business
 author: microsteve
-manager: microsteve
-editor: ''
 
 ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: conceptual
+ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
@@ -31,4 +26,4 @@ The advanced conflation tools included with the Enterprise Graph enable you take
 
 ## Reflecting the nuances of your specific business
 
-Every business has detailed, deep knowledge of that is specific to that business and its context within the industry. No standard-issue ontology can hope to reflect the exact information and knowledge that you need, and so the Enterprise Graph platform offers a completely customizable ontology. That means that no matter how specific the needs of your business, the Enterprise Graph platform can meet them. An entity can be defined to represent any concept you need, from a custom machine part to the individual chemicals in a manufacturing process to the dig sites for oil exploration. Whatever you need, you can build.
+Every business has detailed, deep knowledge that is specific to that business and its context within the industry. No standard-issue ontology can hope to reflect the exact information and knowledge that you need, and so the Enterprise Graph platform offers a completely customizable ontology. That means that no matter how specific the needs of your business, the Enterprise Graph platform can meet them. An entity can be defined to represent any concept you need, from a custom machine part to the individual chemicals in a manufacturing process to the dig sites for oil exploration. Whatever you need, you can build.

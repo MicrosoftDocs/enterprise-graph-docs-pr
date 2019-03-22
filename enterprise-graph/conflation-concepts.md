@@ -1,16 +1,11 @@
 ---
-title: Enterprise Graph conflation overview | Microsoft Docs
-description: Conflation concepts and approach
-services: enterprise-graph
-documentationcenter: enterprise-graph-docs
+title: Understanding conflation in Enterprise Graph by Microsoft | Microsoft Docs
+description: Understand what conflation is and why you need to use it
 author: microsteve
-manager: microsteve
-editor: ''
 
 ms.service: enterprise-graph
-ms.devlang: NA
-ms.topic: overview
-ms.date: 03/14/2019
+ms.topic: conceptual
+ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
@@ -42,7 +37,7 @@ Then when you need to ingest new data, you can have a conflation rule which says
 
 However, in many cases you will not have a consistent piece of information to use to identify a given entity, i.e. there will not be an equivalent of the EmployeeID. 
 
-Imagine, for example, that you are ingesting information about business projects to populate ```Projects``` entities which have properties like ```Name```, ```Owner```, ```Assigned People```, ```Summary```, ```Budget```, ```Resources``` and so on. In the event that there is no consistent 'ProjectID' or equivalent, it will be necessary to define some rules for how the system can know whether a given piece of update data relates to a new project entity it hasn't seen before, or an existing project entity. 
+Imagine, for example, that you are ingesting information about business projects to populate ```Projects``` entities which have properties like ```Name```, ![Choose source schema](media/conflation-example/choose-source-schema.png)Owner```, ```Assigned People```, ```Summary```, ```Budget```, ```Resources``` and so on. In the event that there is no consistent 'ProjectID' or equivalent, it will be necessary to define some rules for how the system can know whether a given piece of update data relates to a new project entity it hasn't seen before, or an existing project entity. 
 
 A simple place to start might be with the project name. If it's called the 'Seattle Network Expansion Project', for example, you can set a rule that says that if the name matches, then the update is referring to an existing entity. 
 

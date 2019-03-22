@@ -1,13 +1,11 @@
 ---
-title: Mapping source data | Microsoft Docs
-description: Describes how to relate your source data to your schema
-documentationcenter: enterprise-graph-docs
-author: stflanag
-manager: stflanag
-editor: ''
+title: Creating and using schema maps in Enterprise Graph by Microsoft | Microsoft Docs
+description: Creating or uploading a schema map in Enterprise Graph by Microsoft
+author: microsteve
 
-ms.topic: tutorial
-ms.date: 03/29/2019
+ms.service: enterprise-graph
+ms.topic: conceptual
+ms.date: 03/27/2019
 ms.author: stflanag
 ---
 

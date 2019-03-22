@@ -1,11 +1,11 @@
 ---
-title: Enterprise Graph concepts - Input data | Microsoft Docs
-description: Setting up your graph input data
+title: Deleting your ontology in Enterprise Graph by Microsoft | Microsoft Docs
+description: The steps you need to take to delete your ontology Enterprise Graph by Microsoft
 author: microsteve
 
+ms.service: enterprise-graph
 ms.topic: tutorial
-ms.service: enterprise-graph 
-ms.date: 03/29/2019
+ms.date: 03/27/2019
 ms.author: stflanag
 ---
 

@@ -1,35 +1,53 @@
 ---
-title: Overview of Enterprise Graph | Microsoft Docs
-description: Describes Enterprise graph overview and key concepts
-services: virtual-machines-linux
-documentationcenter: enterprise-graph-docs
-author: stflanag
-manager: stflanag
-editor: ''
+title: Querying your graph in Enterprise Graph by Microsoft | Microsoft Docs
+description: Understanding how to run free-text and graph queries in Enterprise Graph by Microsoft
+author: microsteve
 
-ms.assetid: 7965a80f-ea24-4cc2-bc43-60b574101902
-ms.service: virtual-machines-linux
-ms.devlang: NA
-ms.topic: overview
-ms.tgt_pltfrm: vm-linux
-ms.workload: infrastructure
-ms.date: 11/29/2017
-ms.author: rclaus
-ms.custom: H1Hack27Feb2017, mvc
+ms.service: enterprise-graph
+ms.topic: tutorial
+ms.date: 03/27/2019
+ms.author: stflanag
 ---
 
-# Natural language queries
+# Querying your graph
 
-Enterprise Graph enables you to bring many sources of data about your business together in one place. The graph is composed of entities and the relationships between them, based on a custom ontology for your business. Once you have created it you can run natural language queries on it, or use the SPARQL query language.
+Once your graph is set up you can query it in one of two ways - through free text search or through a SPARQL graph query.
 
-## Availability
+## Graph query
 
-Enterprise Graph is currently available on a whitelist basis. If you think it's a good fit for your business and use cases, please contact us and we'd love to talk. Stephen: Contact process to follow.
+To get entity-based answers from your graph based on its properties and relations, you can write SPARQL queries. A full discussion of SPARQL is outside the scope of this documentation, but check out the <a href="https://en.wikipedia.org/wiki/SPARQL">Wikipedia entry</a> for an overview guide.
 
-## Key capabilities
+You can run graph queries from the 'Graph query' interface under 'Use your graph' in the left-side navigation pane. For example, a query that runs on the sample data we have looked at is:
 
-* Create a graph with custom entities for your specific business, compiled from multiple data sources as required
-* Resolve conflicts between different information sources to create one consistent graph of information and relationships
-* Answer complex queries through the combination of data that would otherwise be in separate silos
-* Bring powerful answers to all users through natural language, not just data scientists and analysts
-* Discover new insights through the relationships between the entities in your graph
+```
+PREFIX wwi: <http://knowledge.microsoft.com/wwi/>
+PREFIX ekg: <http://knowledge.microsoft.com/ekg/>
+SELECT ?s ?n
+WHERE {
+?s ekg:type.object.type wwi:Sales.Customers .
+?s wwi:Sales.Customers.CustomerName ?n .
+?s wwi:Sales.Customers.CustomerCategoryID 4
+}
+LIMIT 5
+```
+
+When you run this query on the sample data, you can see entity-based results.
+
+## Free text search
+
+Alternatively, you can run a free-text search across the graph. In this case, you are not formulating a graph query, and thus you won't see graph results based on propertie and entities. Instead, entities will be returned if they include the string that you searched for.
+
+![Free text search](media/graph-queries-tutorial/free-text-kniman-result.png)
+
+In this case there is just one matching entity. If you click on its name, you can see the details for it from the graph:
+
+![Free text search](media/graph-queries-tutorial/entity-details-view.png)
+
+You can make edits to the entity direct from this screen also through the 'Edit entity' button, and export the JSON entity detail also.
+
+
+
+
+
+
+
