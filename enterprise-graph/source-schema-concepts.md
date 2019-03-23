@@ -19,7 +19,7 @@ To get started, navigate to the 'Map source data' section of the interface.
 
 ![Map source data](media/creating-your-ontology/1_ontology_config.png)
 
-The source schema that you need depends on the source data you use. Input to the graph is in TSV format, and for illustration let's <a href="http://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv"> look at the file here.</a>
+The source schema that you need depends on the source data you use. Input to the graph is in TSV format, and for illustration let's <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv"> look at the file here.</a>
 
 Taking the first three lines of that file as a sample, we see:
 
