@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<XmlFeedMap xmlns="http://schemas.microsoft.com/bing/mapping">
+  <MappingHeader minorVersion="0" majorVersion="2" mappingName="wwi_Sales_Customers_Mapping">
+    <Description>Mapping for wwi:Sales.Customers</Description>
+    <Specification>wwi_Sales_Customers</Specification>
+    <Parameters>
+      <Parameter type="xs:string" name="externalid" />
+      <Parameter type="xs:string" name="language" />
+      <Parameter type="xs:string" name="payload" />
+    </Parameters>
+    <Contexts>
+      <Context value="'wwi'" />
+    </Contexts>
+  </MappingHeader>
+  <Map id="wwi_Sales_Customers" targetClass="http://knowledge.microsoft.com/wwi/Sales#Customers">
+    <Rules>
+      <Map property="$subjectId" value="StringConcat('wwi_Application_People', '-', ./PrimaryContactPersonID)" />
+      <Map property="type.object.type" value="'http://knowledge.microsoft.com/wwi/Sales.Customers'" namespace="http://knowledge.microsoft.com/ekg/" />
+      <Map property="type.object.type" value="'http://knowledge.microsoft.com/ekg/type.object'" namespace="http://knowledge.microsoft.com/ekg/" />
+	  <Map property="type.object.name" value="./CustomerName" namespace="http://knowledge.microsoft.com/ekg/" />
+      <Map property="Sales.Customers.CustomerID" value="./CustomerID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.CustomerName" value="./CustomerName" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.BillToCustomerID" value="./BillToCustomerID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.CustomerCategoryID" value="./CustomerCategoryID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.BuyingGroupID" value="./BuyingGroupID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.PrimaryContactPersonID" value="InvokeMap('wwi_Application_People')" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.AlternateContactPersonID" value="./AlternateContactPersonID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.DeliveryMethodID" value="./DeliveryMethodID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.DeliveryCityID" value="InvokeMap('wwi_Application_Cities')" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.PostalCityID" value="./PostalCityID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.CreditLimit" value="./CreditLimit" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.AccountOpenedDate" value="./AccountOpenedDate" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.StandardDiscountPercentage" value="./StandardDiscountPercentage" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.IsStatementSent" value="./IsStatementSent" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.IsOnCreditHold" value="./IsOnCreditHold" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.PaymentDays" value="./PaymentDays" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.PhoneNumber" value="./PhoneNumber" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.FaxNumber" value="./FaxNumber" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.DeliveryRun" value="./DeliveryRun" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.RunPosition" value="./RunPosition" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.WebsiteURL" value="./WebsiteURL" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.DeliveryAddressLine1" value="./DeliveryAddressLine1" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.DeliveryAddressLine2" value="./DeliveryAddressLine2" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.DeliveryPostalCode" value="./DeliveryPostalCode" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.DeliveryLocation" value="./DeliveryLocation" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.PostalAddressLine1" value="./PostalAddressLine1" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.PostalAddressLine2" value="./PostalAddressLine2" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.PostalPostalCode" value="./PostalPostalCode" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.LastEditedBy" value="./LastEditedBy" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.ValidFrom" value="./ValidFrom" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Sales.Customers.ValidTo" value="./ValidTo" namespace="http://knowledge.microsoft.com/wwi/" />
+    </Rules>
+  </Map>
+  <Map id="wwi_Application_People" targetClass="http://knowledge.microsoft.com/wwi/Application#People">
+      <Rules>
+         <Map property="$subjectId" value="StringConcat('wwi_Application_People', '-', ./PrimaryContactPersonID)" />
+         <Map property="type.object.type" value="'http://knowledge.microsoft.com/wwi/Application.People'" namespace="http://knowledge.microsoft.com/ekg/" />
+         <Map property="type.object.type" value="'http://knowledge.microsoft.com/ekg/type.object'" namespace="http://knowledge.microsoft.com/ekg/" />
+      </Rules>
+   </Map>
+   <Map id="wwi_Application_Cities" targetClass="http://knowledge.microsoft.com/wwi/Application#Cities">
+      <Rules>
+         <Map property="$subjectId" value="StringConcat('wwi_Application_Cities', '-', ./DeliveryCityID)" />
+         <Map property="type.object.type" value="'http://knowledge.microsoft.com/wwi/Application.Cities'" namespace="http://knowledge.microsoft.com/ekg/" />
+         <Map property="type.object.type" value="'http://knowledge.microsoft.com/ekg/type.object'" namespace="http://knowledge.microsoft.com/ekg/" />
+      </Rules>
+   </Map>
+</XmlFeedMap>

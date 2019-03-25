@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<XmlFeedMap xmlns="http://schemas.microsoft.com/bing/mapping">
+  <MappingHeader minorVersion="0" majorVersion="2" mappingName="wwi_Application_Countries_Mapping">
+    <Description>Mapping for wwi:Application.Countries</Description>
+    <Specification>wwi_Application_Countries</Specification>
+    <Parameters>
+      <Parameter type="xs:string" name="externalid" />
+      <Parameter type="xs:string" name="language" />
+      <Parameter type="xs:string" name="payload" />
+    </Parameters>
+    <Contexts>
+      <Context value="'wwi'" />
+    </Contexts>
+  </MappingHeader>
+  <Map id="wwi_Application_Countries" targetClass="http://knowledge.microsoft.com/wwi/Application#Countries">
+    <Rules>
+      <Map property="$subjectId" value="./CountryID" />
+      <Map property="type.object.type" value="'http://knowledge.microsoft.com/wwi/Application.Countries'" namespace="http://knowledge.microsoft.com/ekg/" />
+      <Map property="type.object.type" value="'http://knowledge.microsoft.com/ekg/type.object'" namespace="http://knowledge.microsoft.com/ekg/" />
+	  <Map property="type.object.name" value="./CountryName" namespace="http://knowledge.microsoft.com/ekg/" />
+      <Map property="Application.Countries.CountryID" value="./CountryID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.CountryName" value="./CountryName" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.FormalName" value="./FormalName" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.IsoAlpha3Code" value="./IsoAlpha3Code" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.IsoNumericCode" value="./IsoNumericCode" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.CountryType" value="./CountryType" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.LatestRecordedPopulation" value="./LatestRecordedPopulation" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.Continent" value="./Continent" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.Region" value="./Region" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.Subregion" value="./Subregion" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.Border" value="./Border" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.LastEditedBy" value="./LastEditedBy" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.ValidFrom" value="./ValidFrom" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Countries.ValidTo" value="./ValidTo" namespace="http://knowledge.microsoft.com/wwi/" />
+    </Rules>
+  </Map>
+</XmlFeedMap>

@@ -11,40 +11,29 @@ ms.author: stflanag
 
 # Conflating data
 
-Conflation is the process of ensuring that new information is added to the graph correctly. A new piece of information may be an update to an existing entity (e.g. if a person has moved location from one city to another) or it may relate to a new entity that should be created.
-
-In the input data, a key concept is the **Subject Key**. That is what tells the system whether the information should be added to an existing entity or whether it belongs to a new entity. We'll discuss this further below.
+Conflation is a process for merging two entities if they refer to the same concept. If information about the same entity is being brought in by two different sources, then these two entities must be combined into one entity in the graph. For example, if one source of data includes data about customer contact information like their address, phone number and so on, and a second source brings in their past activities like support interactions, sales, refunds etc, then the conflation process is how we ensure all this data is added to the correct entity.
 
 ## Conflation cycle
 
-Conflation is the process of adding new data to the graph correctly, so there must be some existing data in the graph before conflation can be carried out. The overall cycle is:
+As conflation is the process of merging new data with existing graph data, there must be some existing data in the graph before conflation can be carried out. The overall cycle is:
 
-(1) Create your graph through the standard process of defining your ontology, creating your source schemas, defining your schema map, and completing ingestion from your source data.
+1. Create your graph through the standard process of ontology, source schemas, schema map, and ingestion from your source data.
+1. Once that version of the graph is in place, you can create your **conflation model**, a set of rules that will be applied to the input data to decide how to map it to the existing data.
 
-(2) Once that iteration of the graph is in place, you can create your **schema model**. The model is essentially a set of rules which will be applied to the input data to decide how to map it to the existing data.
+For example, if you're defining a model to manage a new ingestion of information about people, you might define a rule that says: 'If the first name matches and the surname matches and the email address matches an entity that is already in the graph, this new information refers to the same entity.'
 
-For example, if you are defining a model to manage a new ingestion of information about people, you might define a rule that says: 'If the first name matches and the surname matches and the email address matches an entity that is already in the graph, this new informatio refers to the same entity.'
+1. When you run a new ingestion to add new data to the graph, it will be conflated against the existing data based on the rules you have defined in the conflation model.
 
-(3) When you run a new ingestion to add new data to the graph, it will be conflated against the existing data based on the rules you have defined in the conflation model.
+## Conflation models
 
-## Subject key
+In the [conflation tutorial](/conflation-tutorial.md), we will go through the practical steps of creating and validating a conflation model. 
 
-Understanding the role of the Subject Key is critical to conflating your graph correctly. 
+At a conceptual level, what is happening is:
 
-In the simplest case, imagine that in your company data you have an EmployeeID which is used to refer to a specific person, i.e. every employee has an EmployeeID which is used consistently, and no two employees have the same EmployeeID. 
+1. In the model, you set up the rules that will match the new data you are matching to the graph to the existing data that is already in the graph.
 
-Then when you need to ingest new data, you can have a conflation rule which says: 'When the EmployeeID in the input data is the same as an EmployeeID in the graph, this refers to the same entity.' 
+In a simple case, you may be inputting data about projects, and from your source data (e.g. your internal project management system), each project has a ProjectID field to consistently identify it. In this case when you are defining your conflation rules, you set a rule that says: 'If a new entity has the same ProjectID as an existing entity, then these entities are in fact the same thing and can be merged.'
 
-However, in many cases you will not have a consistent piece of information to use to identify a given entity, i.e. there will not be an equivalent of the EmployeeID. 
+In real life, however, you may not have a ProjectID field to use. In that case, you need to use some other rules to decide whether entities are the same or not. You may for example set up a rule which says 'Two project entities can be merged if the project name is the same and the project owner is the same and the budget is the same.'
 
-Imagine, for example, that you are ingesting information about business projects to populate ```Projects``` entities which have properties like ```Name```, ![Choose source schema](media/conflation-example/choose-source-schema.png)Owner```, ```Assigned People```, ```Summary```, ```Budget```, ```Resources``` and so on. In the event that there is no consistent 'ProjectID' or equivalent, it will be necessary to define some rules for how the system can know whether a given piece of update data relates to a new project entity it hasn't seen before, or an existing project entity. 
-
-A simple place to start might be with the project name. If it's called the 'Seattle Network Expansion Project', for example, you can set a rule that says that if the name matches, then the update is referring to an existing entity. 
-
-However in real life, people will refer to the project in many different ways: 'The Seattle Network Expansion Project', 'The Seattle Project', 'Seattle Network Project', and so on ad infinitum. Furthermore, at large data scales even well-thought-out rule groups will result in a set of possible answers, which need to be ranked. For more details, see this article on conflation rule types and ranking. 
-
-The key point for our current purposes is that when there is no obvious ```SubjectKey``` candidate, you need to define one based on your knowledge of the underlying data and the powerful conflation rules available.
-
-QUESTION FROM STEPHEN: IS THIS DONE IN CONFLATION OR SCHEMA MAPPING STAGE? OR BOTH? WHEN IS THE SUBJECT KEY MAPPED TO THE FINAL GRAPH ENTITY ID?
-
-
+We'll also discuss the various conflation rules you can use in the [conflation tutorial](/conflation-tutorial.md).

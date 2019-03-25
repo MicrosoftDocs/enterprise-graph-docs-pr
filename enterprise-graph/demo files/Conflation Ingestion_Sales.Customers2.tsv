@@ -1,0 +1,5 @@
+Sales.Customers_887	{"WebsiteURL":"http://www.contoso.com/BaranJonsson/","CustomerName":"Baran Jonsson","BillToCustomerID":"887","FaxNumber":"(458) 555-0101","DeliveryAddressLine2":"1349 Lukstina Road","CustomerID":"887",}
+Sales.Customers_21	{"WebsiteURL":"http://www.contoso.com/Tresckow","CustomerName":"Tailspin Toys (Tresckow, PA)","BillToCustomerID":"1","FaxNumber":"(215) 555-0101","CustomerID":"21","DeliveryAddressLine2":"640 Chakraborty Street"}
+Sales.Customers_22	{"WebsiteURL": "http://www.contoso.com/WardRidge", "CustomerName": "Tailspin Toys (Ward Ridge, FL)", "FaxNumber": "(239) 555-0101", "CustomerID": "22", "DeliveryAddressLine2": "73 Berg Crescent"}
+Sales.Customers_439	{"WebsiteURL": "http://www.contoso.com/Cylon", "CustomerName": "Wingtip Toys (Cylon)", "BillToCustomerID": "401", "FaxNumber": "(262) 555-0101", "DeliveryAddressLine2": "1673 Pokorna Avenue", "CustomerID": "439"}
+Sales.Customers_511	{"WebsiteURL": "http://www.contoso.com/NorthManitou", "CustomerName": "Wingtip Toys (North Manitou)","BillToCustomerID":"511", "FaxNumber": "(231) 555-0101","CustomerID": "511", "DeliveryAddressLine2": "1745 Penttila Road"}
