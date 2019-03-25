@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<XmlFeedMap xmlns="http://schemas.microsoft.com/bing/mapping">
+  <MappingHeader minorVersion="0" majorVersion="2" mappingName="wwi_Application_People_Mapping">
+    <Description>Mapping for wwi:Application.People</Description>
+    <Specification>wwi_Application_People</Specification>
+    <Parameters>
+      <Parameter type="xs:string" name="externalid" />
+      <Parameter type="xs:string" name="language" />
+      <Parameter type="xs:string" name="payload" />
+    </Parameters>
+    <Contexts>
+      <Context value="'wwi'" />
+    </Contexts>
+  </MappingHeader>
+  <Map id="wwi_Application_People" targetClass="http://knowledge.microsoft.com/wwi/Application#People">
+    <Rules>
+      <Map property="$subjectId" value="StringConcat('wwi_Application_People', '-', ./PersonID)" />
+      <Map property="type.object.type" value="'http://knowledge.microsoft.com/wwi/Application.People'" namespace="http://knowledge.microsoft.com/ekg/" />
+      <Map property="type.object.type" value="'http://knowledge.microsoft.com/ekg/type.object'" namespace="http://knowledge.microsoft.com/ekg/" />
+	  <Map property="type.object.name" value="./FullName" namespace="http://knowledge.microsoft.com/ekg/" />
+      <Map property="Application.People.PersonID" value="./PersonID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.FullName" value="./FullName" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.PreferredName" value="./PreferredName" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.SearchName" value="./SearchName" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.IsPermittedToLogon" value="./IsPermittedToLogon" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.LogonName" value="./LogonName" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.IsExternalLogonProvider" value="./IsExternalLogonProvider" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.IsSystemUser" value="./IsSystemUser" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.IsEmployee" value="./IsEmployee" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.IsSalesperson" value="./IsSalesperson" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.UserPreferences" value="./UserPreferences" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.PhoneNumber" value="./PhoneNumber" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.FaxNumber" value="./FaxNumber" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.EmailAddress" value="./EmailAddress" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.CustomFields" value="./CustomFields" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.OtherLanguages" value="./OtherLanguages" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.LastEditedBy" value="./LastEditedBy" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.ValidFrom" value="./ValidFrom" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.People.ValidTo" value="./ValidTo" namespace="http://knowledge.microsoft.com/wwi/" />
+    </Rules>
+  </Map>
+</XmlFeedMap>

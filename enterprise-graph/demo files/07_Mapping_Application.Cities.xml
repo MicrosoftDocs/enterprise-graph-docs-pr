@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<XmlFeedMap xmlns="http://schemas.microsoft.com/bing/mapping">
+  <MappingHeader minorVersion="0" majorVersion="2" mappingName="wwi_Application_Cities_Mapping">
+    <Description>Mapping for wwi:Application.Cities</Description>
+    <Specification>wwi_Application_Cities</Specification>
+    <Parameters>
+      <Parameter type="xs:string" name="externalid" />
+      <Parameter type="xs:string" name="language" />
+      <Parameter type="xs:string" name="payload" />
+    </Parameters>
+    <Contexts>
+      <Context value="'wwi'" />
+    </Contexts>
+  </MappingHeader>
+  <Map id="wwi_Application_Cities" targetClass="http://knowledge.microsoft.com/wwi/Application#Cities">
+    <Rules>
+      <Map property="$subjectId" value="StringConcat('wwi_Application_Cities', '-', ./CityID)" />
+      <Map property="type.object.type" value="'http://knowledge.microsoft.com/wwi/Application.Cities'" namespace="http://knowledge.microsoft.com/ekg/" />
+      <Map property="type.object.type" value="'http://knowledge.microsoft.com/ekg/type.object'" namespace="http://knowledge.microsoft.com/ekg/" />
+	  <Map property="type.object.name" value="./CityName" namespace="http://knowledge.microsoft.com/ekg/" />
+      <Map property="Application.Cities.CityID" value="./CityID" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Cities.CityName" value="./CityName" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Cities.StateProvinceID" value="InvokeMap('wwi_Application_StateProvinces')" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Cities.Location" value="./Location" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Cities.LatestRecordedPopulation" value="./LatestRecordedPopulation" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Cities.LastEditedBy" value="./LastEditedBy" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Cities.ValidFrom" value="./ValidFrom" namespace="http://knowledge.microsoft.com/wwi/" />
+      <Map property="Application.Cities.ValidTo" value="./ValidTo" namespace="http://knowledge.microsoft.com/wwi/" />
+    </Rules>
+  </Map>
+  <Map id="wwi_Application_StateProvinces" targetClass="http://knowledge.microsoft.com/wwi/Application#StateProvinces">
+      <Rules>
+         <Map property="$subjectId" value="StringConcat('wwi_Application_StateProvinces', '-', ./StateProvinceID)" />
+         <Map property="type.object.type" value="'http://knowledge.microsoft.com/wwi/Application.StateProvinces'" namespace="http://knowledge.microsoft.com/ekg/" />
+         <Map property="type.object.type" value="'http://knowledge.microsoft.com/ekg/type.object'" namespace="http://knowledge.microsoft.com/ekg/" />
+      </Rules>
+   </Map>
+</XmlFeedMap>
