@@ -9,60 +9,85 @@ ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
-# Conflate new data
+# Conflation
 
-In this example we will create a conflation model to apply to the Customer entity type. 
+In this example we will create a conflation model to apply to the Customer entity type.
 
-Previously we have created a source schema to the original Customer data, created a schema map to map that data to the ontology, and then ingested the data to the graph.
+As dicussed, conflation is the process of merging entities which refer to the same thing. To illustrate, we are going to input some new data about ```Customer``` entities, and create a model to merge the new information with the existing graph information.
 
-Now, let's assume we want to ingest new data to the graph. To make sure that the new data is ingested correctly, we need to create a conflation model which will match the new data to existing entity instances, or create new entity instances as appropriate.
+## (1) Ingest the new data
 
-To begin, navigate to 'Conflate data' on the left side options.
+Our first step is to ingest the new data so that it exists in the Enterprise Graph platform.
 
-![Conflate data](media/conflation-example/conflate-data-option.png)
+To do that, we can use the same source schema that we used previously in the quickstart example. In other words, the columns of data in the new source are the same as we were mapped in the original source schema, but the actual data is different. We add the new source in the **Ingest data to graph** section, as we did in the quickstart.
 
-Choose 'Add' to start the process of creating a new model, and you'll see this screen:
+![New data source](media/conflation-tutorial/C1-new-data-source.png)
 
-![Add conflation model](media/conflation-example/add-conflation-model.png)
+As before, this data needs to be mapped to the ontology. Again, we can use the same schema map as before for this new ingestion, because the fields map the same way to the ontology - it's the actual data which has changed, not the column headers.
 
-The name should be something descriptive, and you can optionally add a more detailed description.
+First we see the new source as not mapped:
 
-In 'Source schema name', you are choosing the schema map that will be the source of the new data you want to conflate:
+![New source not mapped](media/conflation-tutorial/C2-new-source-not-mapped.png)
 
-![Choose source schema](media/conflation-example/choose-source-schema.png)
+Then once we upload the mapping as in the quickstart, we see:
 
-In this case, we want to conflate sources for Application Sales Customers, and we choose that option.
+![Verify mapping](media/conflation-tutorial/C4-verify-mapping.png)
 
-You can then choose to create a new model or import an existing one, if you've already been through this process and understand model creation. For our purposes here, choose to create a new model.
+Now we can see we have two customer data sources:
 
-Then you'll see options of which entity type you want to conflate against:
+![Two data sources](media/conflation-tutorial/C5-two-data-sources.png)
 
-![Choose entity type](media/conflation-example/choose-entity-type.png)
+We're now ready to create the conflation model.
 
-This option enables to choose the type of entity you are updating, i.e. in this case it's ```wwi:Sales.Customers```. 
+## (2) Create conflation model
 
-So to be clear to this point: By choosing your source schema and then choosing the entity type, you are saying 'I want to use the new data from this source to update entity of this type'. Or more specifically in this instance, 'I want to use data from Application Sales Customers to update entities of the type ```wwi:Sales.Customers```.'
+Navigate to the **Conflate Data** section of the interface:
 
-Now that we have chosen the new input data and the entity type, we need to set some rules for how the system 'knows' whether this an update to an existing entity instance or a new entity instance, and that's what we do next.
+![Conflate data navigation](media/conflation-tutorial/C6-nav-to-conflate-data.png)
 
-![Conflation rules blank](media/conflation-example/conflation-rules-blank.png)
+Choose **+Add** at the top left, and you'll see the new creation model window:
 
-On the left side, we choose the 'Source property', i.e. the property in the source data (via the source schema map) that we want to use for our comparison.
+![New conflation model](media/conflation-tutorial/C7-new-conflation-model-1.png)
 
-![Source property](media/conflation-example/source-property.png)
+Choose a name and optionally add a description, and select the source schema you want to conflate.
 
-On the right, we choose the property of the existing entities already in the graph that we want to compare against:
+As soon as you choose 'New' from the 'Create model from...' option (as opposed to upload an existing conflation model), you will see additional options:
 
-![Graph property](media/conflation-example/graph-property.png)
+![Conflation model options](media/conflation-tutorial/C8-new-conflation-model-2.png)
 
-Now we need to choose how we want to compare the two values. For a full discussion of this topic, see the conflation rules help document. For now, we're going to use the exact match option:
+This is where we set the matching rules for how the new data and the old data should be combined, i.e. what rules need to be satisfied before an entity will be merged.
 
-![Matching rule](media/conflation-example/exact-match.png)
+On the left, the **Source property** information refers to the new data you want to add to your graph. On the right, the **Reference property** refers to the existing graph information. IN the middle, you set the matching rules, which we will discuss in more detail in the conflation rules article.
 
-> [!TIP]
-> Note that additional rules inside the same rule group (i.e. within the same shaded grey box) are evaluated as AND rules, and rule groups themselves are evaluated as OR rules. 
+For this example, we will conflate the data based on the customer name, with some fuzzy matching to allow for spelling variations and so on. The configuration looks like:
 
-Once all of the information is in place, you can create the model. Note that it may take some time to complete, up to several hours depending on the size of your dataset.
+![Conflation rules](media/conflation-tutorial/C11-rule-set.png)
 
-When your model is created, the next step is to validate it - check out the tutorial in the sidebar to the left.
+What we're saying here is:
+* For the entity type ```wwwi:Sales.Customers```...
+* ...if the name of the entity created from the source data...
+* ...is the same as the name of the entity from the existing data...
+* ...as matched by the Jaccard Matching function we have set...
+* ...then these two entities shoudl be combined.
 
+Note also that all rules you set in a single rule block will be evaluated on an AND basis. If you add an additional rule block, they two blocks will be evaluated on an OR basis:
+
+![Conflation rules expanded](media/conflation-tutorial/C12-expanded-rule-set.png)
+
+Once you save your new model, it may take some time to be created and the status will change to 'Awaiting validation'.
+
+## (3) Validate conflation model
+
+Now that we have created our model, it's time to validate it before we go live and put it into action. This step is necessary because we want to make sure that we are combining entities correctly before we make those changes.
+
+Select the model you want to validate and then choose **Validate** at the top of the screen. You will see a view like:
+
+![Conflation rules expanded](media/conflation-tutorial/C13-validation-view.png)
+
+There are a few things happening on this page:
+
+* ***Matched entities:** Towards the bottom of the page you see a display for a 'Soure entity' (i.e. an entity from your new source data) and a 'Graph entity' (an entity that was already in the graph). Under the rules of the model you have created, these entities should be merged.
+* ***Human approval:** Underneath that are the options for human review: 'Yes', 'No', and 'Not sure'
+* ***Success metrics:** The upper part of the screen shows the results for the human evaluations in terms of matching rate, precision and recall. 'Matching rate' means, 'Of all the samples in the new source, what percentage have been matched to an existing entity?' Precision and recall have their standard machine learning definitions.
+
+Once you have reached the precision and recall numbers you need for the use-case you are working to enable, you can publish the model. It will then apply to all incoming data from the selected source schema until you choose to 'Unpublish' it on the conflation home screen.
