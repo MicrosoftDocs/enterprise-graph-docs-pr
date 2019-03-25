@@ -1,5 +1,5 @@
 ---
-title: Validating conflation models in Enterprise Graph by Microsoft | Microsoft Docs
+title: Validating conflation models in Enterprise Graph by Microsoft 
 description: Understand how to validate that your conflation model is a success and operating correctly
 author: microsteve
 

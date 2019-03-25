@@ -1,5 +1,5 @@
 ---
-title: Using conflation models in Enterprise Graph by Microsoft | Microsoft Docs
+title: Using conflation models in Enterprise Graph by Microsoft
 description: How to create a conflation model in Enterprise Graph by Microsoft
 author: microsteve
 

@@ -1,5 +1,5 @@
 ---
-title: Understanding conflation in Enterprise Graph by Microsoft | Microsoft Docs
+title: Understanding conflation in Enterprise Graph by Microsoft
 description: Understand what conflation is and why you need to use it
 author: microsteve
 
@@ -47,4 +47,5 @@ The key point for our current purposes is that when there is no obvious ```Subje
 
 QUESTION FROM STEPHEN: IS THIS DONE IN CONFLATION OR SCHEMA MAPPING STAGE? OR BOTH? WHEN IS THE SUBJECT KEY MAPPED TO THE FINAL GRAPH ENTITY ID?
 
+ # Next steps
 
