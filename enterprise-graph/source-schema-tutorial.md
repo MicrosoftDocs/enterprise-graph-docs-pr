@@ -1,6 +1,6 @@
 ---
-title: Creating schema maps for your data | Microsoft Docs
-description: Describes how to create a schema map in Enterprise Graph
+title: Creating source schemas for your data | Microsoft Docs
+description: Describes how to create a source schema in Enterprise Graph
 documentationcenter: enterprise-graph-docs
 author: stflanag
 
@@ -10,19 +10,27 @@ ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
-# Creating source schemas
+# Source schemas
 
-Source schemas are created in the 'Map source schema' section of the interface:
+In this tutorial, we'll look at the same flow we covered in the quickstart but in a bit more detail.
 
-![Map source data](media/source-schema/nav-view.png)
+![Source schema step](media/quickstart/12-add-source-schema.png)
 
-The source schema that you need depends on the source data you use. Input to the graph is in TSV format, and for illustration let's <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv"> look at the file here.</a>
+1. Click on **+Add** to upload a source schema file
+1. Choose an appropriate name, e.g. 'Application-People'
+1. Choose the 'Upload a JSON file' option
+1. Choose the 02_Schema_Application.Cities.json file to upload
 
-Use the first line of your input data in JSON format as a sample, which the system will then use to identify your column headers. Make sure that you are not using personally identifiable information (PII) in this step.
+You'll see the file previewed in 'Sample Data' window, and you can click OK.
 
-![Map source data](media/source-schema/schema_sample_data.png)
+Note that as covered in the [overview guide](/source-schema-concepts.md), the JSON upload here just specifies the columns from your source data. We're interested in specifying the input data schema, at this point, not the input data values.
 
-Once this is done, you can move on to creating schema maps, completing the link between your source data and your ontology.
+In our example, we have five types of input data - Cities, Countries, State/Provinces, People and Customers. Each one of those has a separate input file, and therefore each one needs its own schema map describing that input file. 
 
-> [!IMPORTANT]
-> Prior to the final mapping stage being completed, you will see the message 'No fields mapped', i.e. the system is saying that while the soure data is mapped, those fields have not yet been mapped to schema.
+When all of the schema maps are created and uploaded, you see this view:
+
+![All schemas](media/quickstart/15-all-schema-uploaded.png)
+
+The reason we see 'No fields mapped' is because we have not defined any schema maps yet. We have created the input TSV files from your source data, and we have mapped those files in the Enterprise Graph system, but we have not yet created the link to the ontology.
+
+We'll look at that in the [next section](schema-map-conepts.md).

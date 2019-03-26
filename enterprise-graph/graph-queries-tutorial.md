@@ -11,7 +11,7 @@ ms.author: stflanag
 
 # Querying your graph
 
-Once your graph is set up you can query it in one of two ways - through free text search or through a SPARQL graph query.
+Once your graph is set up, you can query it in one of two ways - through free text search or through a SPARQL graph query.
 
 ## Graph query
 
@@ -35,15 +35,15 @@ When you run this query on the sample data, you can see entity-based results.
 
 ## Free text search
 
-Alternatively, you can run a free-text search across the graph. In this case, you are not formulating a graph query, and thus you won't see graph results based on propertie and entities. Instead, entities will be returned if they include the string that you searched for.
+Alternatively, you can run a free-text search across the graph. In this case, you are not formulating a graph query, and thus you won't see graph results based on properties and entities. Instead, entities will be returned if they include the string that you searched for.
 
 ![Free text search](media/graph-queries-tutorial/free-text-kniman-result.png)
 
-In this case there is just one matching entity. If you click on its name, you can see the details for it from the graph:
+In this case, there is just one matching entity. If you click on its name, you can see the details for it from the graph:
 
 ![Free text search](media/graph-queries-tutorial/entity-details-view.png)
 
-You can make edits to the entity direct from this screen also through the 'Edit entity' button, and export the JSON entity detail also.
+You can make edits to the entity direct from this screen also through the 'Edit entity' button, and export the JSON entity detail.
 
 
 
