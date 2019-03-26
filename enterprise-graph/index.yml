@@ -30,7 +30,7 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: <a href="creating-your-ontology">Set up your ontology</a> 
+    - html: <a href="ontology-tutorial">Set up your ontology</a> 
     - html: Map your source data with <a href="source-schema-tutorial">source schemas</a> and <a href="schema-map-tutorial">schema maps</a>
     - html: <a href="ingestion-tutorial">Ingest your data</a>
     - html: <a href="conflation-model-tutorial">Conflate graph data</a>
