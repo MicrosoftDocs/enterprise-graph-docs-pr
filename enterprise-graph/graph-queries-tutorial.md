@@ -41,7 +41,7 @@ Alternatively, you can run a free-text search across the graph. In this case, yo
 
 In this case, there is just one matching entity. If you click on its name, you can see the details for it from the graph:
 
-![Free text search](media/graph-queries-tutorial/entity-details-view.png)
+![Free text search](media/graph-queries-tutorial/entity-detail-view.png)
 
 You can make edits to the entity direct from this screen also through the 'Edit entity' button, and export the JSON entity detail.
 

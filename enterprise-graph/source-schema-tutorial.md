@@ -1,8 +1,7 @@
 ---
 title: Creating source schemas for your data | Microsoft Docs
 description: Describes how to create a source schema in Enterprise Graph
-documentationcenter: enterprise-graph-docs
-author: stflanag
+author: microsteve
 
 ms.service: enterprise-graph
 ms.topic: tutorial
@@ -33,4 +32,4 @@ When all of the schema maps are created and uploaded, you see this view:
 
 The reason we see 'No fields mapped' is because we have not defined any schema maps yet. We have created the input TSV files from your source data, and we have mapped those files in the Enterprise Graph system, but we have not yet created the link to the ontology.
 
-We'll look at that in the [next section](schema-map-conepts.md).
+We'll look at that in the [next section](schema-map-concepts.md).

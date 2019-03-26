@@ -1,19 +1,15 @@
 ---
 title: Creating your Enterprise Graph ontology | Microsoft Docs
 description: Describes how to create an ontology in Enterprise Graph
-documentationcenter: enterprise-graph-docs
-author: stflanag
-manager: stflanag
-editor: ''
+author: microsteve
 
 ms.service: enterprise-graph
-ms.topic: tutorial
+ms.topic: conceptual
 ms.date: 03/27/2019
 ms.author: stflanag
-
 ---
 
-# Create your ontology
+# Ontology
 
 Enterprise Graph enables you to review and edit your ontology graphically, so you can see how entities and properties link together visually before you publish the ontology and use it to create your graph. To make changes to your ontology, you create a new version in a pre-published state, and once you're happy with it you move from the existing ontology to the new version.
 
