@@ -26,4 +26,4 @@ Enterprise Graph by Microsoft enables you to build knowledge graphs that provide
 
 ## Getting started
 
-Check out the [quickstart](/quickstart.md) to create your first graph, and then dive into creating your own system.
+Check out the [quickstart](quickstart.md) to create your first graph, and then dive into creating your own system.

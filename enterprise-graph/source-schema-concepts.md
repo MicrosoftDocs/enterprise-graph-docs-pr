@@ -21,7 +21,7 @@ There are five overall data steps to creating your graph:
 1. Create schema maps to link the input files to your ontology
 1. Run your ingestion
 
-Then later, as we've seen, you can [conflate new data sources](/conflation-model-tutorial.md) and enrich the entities you have as required.
+Then later, as we've seen, you can [conflate new data sources](conflation-model-tutorial.md) and enrich the entities you have as required.
 
 In this article, we are going to focus on step 3, source schemas.
 
@@ -64,4 +64,4 @@ For example, imagine you have a source schema that defines source inputs for ent
 
 If you need to update those values, e.g. if some contact numbers have changed, you can re-ingest the new source data using the same source schema and subject key. The fact that you used the subject key means new entities will not be created, but rather the existing entities will be updated.
 
-We'll discuss subject keys further in the [schema mapping](/schema-map-concepts.md) overview.
+We'll discuss subject keys further in the [schema mapping](schema-map-concepts.md) overview.
