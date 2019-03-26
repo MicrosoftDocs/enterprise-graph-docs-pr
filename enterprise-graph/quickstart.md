@@ -19,7 +19,7 @@ You can download the sample files we use for this quick-start here <a href="http
 
 ## (1) Creating an ontology
 
-Your ontology is the like the 'dictionary' of your graph, containing the definitions of the entities you want to use and what properties and relationships they have. The ontology defines the entity types, and then later we'll import data to create actual entities. For example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entites, e.g. Kniman, Cubero and so on.
+Your ontology contains the definitions of the entities you want to use and what properties and relationships they have. The ontology defines the entity types, and then later we'll import data to create actual entities. For example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entites, e.g. Kniman, Cubero and so on.
 
 All of the steps you will complete in the graph creation process are laid out in the interface:
 
@@ -58,26 +58,20 @@ First, we want tell the system what fields your source data contains. Your sourc
 
 In the sample data we've provided, there are five source schemas:
 
-02_Schema_Application.Cities.json
-03_Schema_Application.Countries.json
-04_Schema_Application.StateProvinces.json
-05_Schema_Application.People.json
-06_Schema_Sales.Customers.json
+1. 02_Schema_Application.Cities.json
+1. 03_Schema_Application.Countries.json
+1. 04_Schema_Application.StateProvinces.json
+1. 05_Schema_Application.People.json
+1. 06_Schema_Sales.Customers.json
 
-In each case, what the source schema is saying is: 'These are the headings of the data I intend to upload.' So for example, the 02_Schema_Application.Cities.json file looks like this:
-
-```
-{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Kniman", "CityID": "17940", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
-```
-
-What we're interested in right now are the column headings - 'ValidTo', 'CityName', 'CityID' and so on. We want to get these headings into the system so we can map them to our ontology in the next step.
+In each case, what the source schema is saying is: 'These are the headings of the data I intend to upload.'
 
 ![Source schema step](media/quickstart/12-add-source-schema.png)
 
-(1) Click on **+Add** to upload a source schema file
-(2) Choose an appropriate name, e.g. 'Application-People'
-(3) Choose the 'Upload a JSON file' option
-(4) Choose the 02_Schema_Application.Cities.json file to upload
+1. Click on **+Add** to upload a source schema file
+1. Choose an appropriate name, e.g. 'Application-People'
+1. Choose the 'Upload a JSON file' option
+1. Choose the 02_Schema_Application.Cities.json file to upload
 
 You'll see the file previewed in 'Sample Data' window, and you can click OK.
 
@@ -103,11 +97,11 @@ Once you click 'OK', you'll see confirmation this mapping is now in place:
 
 To complete this step, we have provided XML mapping data files. Go ahead and upload those now for each of the provided files. In each case, choose the entity and the matching mapping file:
 
-wwi: Application.Cities -> 07_Mapping_Application.Cities.xml
-wwi: Application.Countries -> 08_Mapping_Application.Countries.xml
-wwi: Application.StateProvinces -> 09_Mapping_Application.StateProvinces.xml
-wwi: Application.People -> 10_Mapping_Application.People.xml
-wwi: Sales.Customers -> 11_Mapping_Sales.Customer.xml
+* wwi: Application.Cities -> 07_Mapping_Application.Cities.xml
+* wwi: Application.Countries -> 08_Mapping_Application.Countries.xml
+* wwi: Application.StateProvinces -> 09_Mapping_Application.StateProvinces.xml
+* wwi: Application.People -> 10_Mapping_Application.People.xml
+* wwi: Sales.Customers -> 11_Mapping_Sales.Customer.xml
 
 When you upload the file you'll see the mapping complete view:
 
@@ -127,11 +121,11 @@ Now that source schemas and schema maps are in place, we can ingest data to the 
 
 The input data for your graph comes from the input data you want to use in a TSV format. The easiest way to handle the import is to use Azure Blob Storage, and that is where we have put the sample data for you import. The URLs for each kind of sample data are:
 
-https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv
-https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.2_Ingestion_Application.Countries.tsv
-https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.3_Ingestion_Application.StateProvinces.tsv
-https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.4_Ingestion_Application.People.tsv
-https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.5_Ingestion_Sales.Customers.tsv
+* https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv
+* https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.2_Ingestion_Application.Countries.tsv
+* https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.3_Ingestion_Application.StateProvinces.tsv
+* https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.4_Ingestion_Application.People.tsv
+* https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.5_Ingestion_Sales.Customers.tsv
 
 Navigate to the **Ingest data to graph** section, choose **+Add** at the top, and you'll options for 'Source URL' and 'Source Schema':
 

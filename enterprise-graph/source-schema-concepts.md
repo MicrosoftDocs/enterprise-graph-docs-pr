@@ -11,17 +11,25 @@ ms.author: stflanag
 
 # Understanding source schemas
 
-**Source schemas** are how you define the data you want to import to the Enterprise Graph so that we can later map it to your ontology. Conceptually, if you wanted to import a table of data to the graph, the source schema would define the headings of the columns of data in the table.
+**Source schemas** are how you describe the schema of the data you want to import to the graph. Conceptually, if you wanted to import a table of data to the graph, the source schema would define the headings of the columns of data in the table.
 
-In the next step we will define how you relate the data you are importing to the ontology you created in step one, using a **schema map**. Right now, however, we're focused on defining the **source schema**.
+There are five overall data steps to creating your graph:
 
-To get started, navigate to the 'Map source data' section of the interface.
+1. Decide on what use cases you are enabling and what entities you need in your ontology to support them
+1. Create your source data TSV files
+1. Create source schemas to map those input files
+1. Create schema maps to link the input files to your ontolgy
+1. Run your ingestion
 
-![Map source data](media/creating-your-ontology/1_ontology_config.png)
+Then later, as we've seen, you can [conflate new data sources](/conflation-tutorial.md) and enrich the entities you have as required.
 
-The source schema that you need depends on the source data you use. Input to the graph is in TSV format, and for illustration let's <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv"> look at the file here.</a>
+In this article we are going to focus on step three, source schemas.
 
-Taking the first three lines of that file as a sample, we see:
+When you are creating a source schema, you upload a sample of your input data. For example in this screenshot, you can see the JSON-formatted sample of the first line of the Cities input data.
+
+![Add source schema](media/schema-maps-concepts/add-source-schema.png)
+
+Compare that to the first three lines of the input sample, for illustration:
 
 ```
 Application.Cities_17940	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Kniman", "CityID": "17940", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
@@ -29,32 +37,31 @@ Application.Cities_13428	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "G
 Application.Cities_16149	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Hudson Lake", "CityID": "16149", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
 ```
 
-In the graph creation process, you will define the equivalent file for your input data. We recommend that you host it on <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Azure Blob Store</a>, which is what we have done for the sample file. However, you can host it anywhere that you want.
+What we're interested in in this step is not the data values themselves (e.g. the city name 'Kniman', the StateProvinceID of 15), but rather the data schema headings, i.e. LastEditedBy, ValidTo, CityName, CityID and so on.
 
-To create the source schema, you upload a sample of the data from your input file. To see this in action, go to the sample Enterprise Graph files package, and look at 02_Schema_Application.Cities.json. The entire contents of that file is:
+> [!TIP]
+> Think carefully about what data you want to include in your graph. A knowledge graph is not a data warehouse - you should only include the data you need for the user cases you are enabling.
 
-```
-{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Kniman", "CityID": "17940", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
-```
+# A schema for every source
 
-You'll recognize this as the first line of the input TSV file. You can either upload the JSON file directly, or copy and paste in the sample data in the correct format, as we've done here for the Application.Sales.Customers:
+You need a source schema for each data source that you will be bringing into your graph.
 
-![Create source schema](media/creating-your-ontology/create_source_schema.png)
+For example, you may have one source file containing information about people, and another source containing information about products. Each of these needs to have its own source schema to describe its structure.
 
-In the sample files package there are five mapping files because there are five input data files we're going to use to create our graph.
+Here you can see five different schemas uploaded, as we covered in the quickstart:
 
-For reference, here are the five input files we're using:
+![All schema uploaded](media/schema-maps-concepts/all-schema-uploaded.png)
 
-* <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv">City data<a>
-* <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.2_Ingestion_Application.Countries.tsv">Country data<a>
-* <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.3_Ingestion_Application.StateProvinces.tsv">State/province data<a>
-* <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.4_Ingestion_Application.People.tsv">People data<a>
-* <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.5_Ingestion_Sales.Customers.tsv">Customer data<a>
+In this case we have five types of source information (one each for cities, countries, state/provinces, people and customers), and thus we have five source schemas.
 
-Note that we are just taking the first line of those files to use it as a sample to create the schema map.
+# Subject key and source schemas
 
-Once you have created all of the schema maps for your input data, you'll see something like this:
+The subject key is the unique identifier for a given entity in a given source. It is in effect saying, 'This piece of input data belongs to this pre-existing entity.'
 
-![Create source schema](media/creating-your-ontology/fields_not_mapped.png)
+If you need to add a new field from a data source to pre-existing entities, you can use the subject key to match the new data value to the existing entities.
 
-You see the status 'No fields mapped' in the right-hand column because while you have created your input data files and created a schema map for them, you have not yet related the data to the ontology you created in step one. We'll look at that in the next tutorial, <a href="schema-map-concepts">schema map concepts</a>.
+For example, imagine you have a source schema which defines source inputs for entities of type ```Person```, specifically ```Name```, ```Address``` and ```ContactNumber```.
+
+If you need to update those values, e.g. if some contact numbers have changed, you can re-ingest the new source data using the same source schema and subject key. The fact that you used the subject key means new entities will not be created, but rather the existing entities will be updated.
+
+We'll discuss subject keys further in the [schema mapping](/schema-map-concepts.md) overview.

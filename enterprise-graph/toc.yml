@@ -12,18 +12,16 @@
       href: quickstart.md
 - name: Tutorials
   items:
-  - name: Create and edit your ontology
+  - name: (1) Ontology
     href: ontology-tutorial.md
-  - name: Map source schema
+  - name: (2) Source schemas
     href: source-schema-tutorial.md 
-  - name: Create schema map
+  - name: (3) Schema map
     href: schema-map-tutorial.md
-  - name: Ingest data
+  - name: (4) Ingesting data
     href: ingestion-tutorial.md
-  - name: Conflate new data
+  - name: (5) Conflation
     href: conflation-model-tutorial.md
-  - name: Conflation model validation
-    href: conflation-validation-tutorial.md
   - name: Querying your graph
     href: graph-queries-tutorial.md
   - name: Deleting your ontology
