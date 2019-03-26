@@ -9,7 +9,7 @@ ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
-# Mapping source data
+# Schema maps
 
 Once your schema maps are in place, the next step is to map to your ontology. To do that, you use schema maps.
 

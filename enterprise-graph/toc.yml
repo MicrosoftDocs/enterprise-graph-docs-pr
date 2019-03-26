@@ -28,15 +28,15 @@
     href: deleting-your-ontology.md  
 - name: Concepts
   items:
-  - name: Input data format
+  - name: Input data
     href: input-data-concepts.md  
   - name: Entities and ontologies
     href: ontology-concepts.md
-  - name: Source schemas for input data
+  - name: Source schemas
     href: source-schema-concepts.md
   - name: Schema maps
     href: schema-map-concepts.md
-  - name: Conflation and graph updates
+  - name: Conflation
     href: conflation-concepts.md
   - name: Quick reference
     items:

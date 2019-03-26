@@ -9,7 +9,7 @@ ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
-# Understanding source schemas
+# Source schemas
 
 **Source schemas** are how you describe the schema of the data you want to import to the graph. Conceptually, if you wanted to import a table of data to the graph, the source schema would define the headings of the columns of data in the table.
 
@@ -42,7 +42,7 @@ What we're interested in in this step is not the data values themselves (e.g. th
 > [!TIP]
 > Think carefully about what data you want to include in your graph. A knowledge graph is not a data warehouse - you should only include the data you need for the user cases you are enabling.
 
-# A schema for every source
+## A schema for every source
 
 You need a source schema for each data source that you will be bringing into your graph.
 
@@ -54,7 +54,7 @@ Here you can see five different schemas uploaded, as we covered in the quickstar
 
 In this case we have five types of source information (one each for cities, countries, state/provinces, people and customers), and thus we have five source schemas.
 
-# Subject key and source schemas
+## Subject key and source schemas
 
 The subject key is the unique identifier for a given entity in a given source. It is in effect saying, 'This piece of input data belongs to this pre-existing entity.'
 
