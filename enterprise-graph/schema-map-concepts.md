@@ -9,7 +9,7 @@ ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
-# Mapping source data
+# Schema maps
 
 Once your schema maps are in place, the next step is to map to your ontology. To do that, you use schema maps.
 
@@ -17,16 +17,16 @@ First, let's have a look at the interface, which makes it clear conceptually wha
 
 ![Schema mapping](./media/schema_mapping/schema_mapping_ux.png)
 
-On the left side is the ontology that you defined in step one, representing the concepts that you care about for the use cases you want to enable. On the right is the schema map we defined in step two, which describe how your data is structured.
+On the left side is the ontology that you defined in step 1, representing the concepts that you care about for the use cases you want to enable. On the right is the schema map we defined in step 2, which describe how your data is structured.
 
-Our job now is to create the links between these two things. For example, you may want to say that type.object.name in the entity type Application.Cites (i.e. the name of the city; 'type.object' is the top level entity from which all entities inherit) should be populated by 'CityName' in your source data.
+Our job now is to create the links between these two things. For example, you may want to say that type.object.name in the entity type ```Application.Cities``` should be populated by 'CityName' in your source data.
 
-In the interface, you can create this mapping by clicking on the 'CityName' on the right, and ticking the checkbox, then clicking on type.object.name in the left column.
+In the interface, you can create this mapping by clicking on the 'CityName' on the right, and ticking the checkbox, then clicking on ```type.object.name``` in the left column.
 
 What we are saying here conceptually is:
 * We have defined an ontology, and in that ontology is an entity of the type ```Cities```. The ```Cities``` entity has a property called ```name```
-* Separately, we have created source data in a TSV file, and it contains information about cities that we want to import into the graph as Cities entities. In step two, we created a source schema which said that the names of the cities in our input data are stored in a column called 'CityName'
-* Now in the current step, we're conceptually linking our ontology and our source data by saying, in the ontology, the name field for the Cities entity should be filled out using the data in the CityName column in our source data.
+* Separately, we have created source data in a TSV file, and it contains information about cities that we want to import into the graph as Cities entities. In step 2, we created a source schema that said that the names of the cities in our input data are stored in a column called 'CityName'
+* Now in the current step, we're conceptually linking our ontology and our source data. We're saying, 'In the ontology, the name field for the Cities entity should be filled out using the data in the CityName column in our source data.'
 
 ## Using a mapping file
 
