@@ -17,7 +17,7 @@ The ontology is the key part of your knowledge graph. It defines the entities, p
 
 Ontology management and creation tasks are handled from the 'Configure your ontology' section in the tool. 
 
-![Ontology management](media/creating-your-ontology/1_ontology_config.png)
+![Ontology management](media/ontology-concepts/1_ontology_config.png)
 
 There are four paths to creating an ontology for your graph:
 
@@ -96,11 +96,11 @@ In this case, the **type** for the property definition is the entity Application
 
 There are eight possible options for the type value for a property:
 
-![Type values](media/creating-your-ontology/type_values.png)
+![Type values](media/ontology-concepts/type_values.png)
 
 The interface will allow you to see the property names you have defined and their types, giving you a visual view of the entity. To see the relations you have defined (that is, links to other entities), click on the Relations tab:
 
-![Type values](media/creating-your-ontology/relations_tab.png)
+![Type values](ontology-concepts/relations_tab.png)
 
 In this screenshot, we can see that the SupplierID relation links to the entity type Purchasing.Suppliers. Additional relations can be added here also if you want to modify or refine your ontology.
 
