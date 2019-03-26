@@ -153,7 +153,7 @@ You can click on the entity name to see the details the graph contains about it:
 
 ## (4) Conflation
 
-When you are building your own graphs, the next step is conflation. We won't cover that in this quickstart guide - check out the details [here](/conflation-concepts.md).
+When you are building your own graphs, the next step is conflation. We won't cover that in this quickstart guide - check out the details [here](conflation-concepts.md).
 
 
 
