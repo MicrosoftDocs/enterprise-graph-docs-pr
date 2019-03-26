@@ -9,7 +9,7 @@ ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
-# Conflating data
+# Conflation
 
 Conflation is a process for merging two entities if they refer to the same concept. If information about the same entity is being brought in by two different sources, then these two entities must be combined into one entity in the graph. For example, if one source of data includes data about customer contact information like their address, phone number and so on, and a second source brings in their past activities like support interactions, sales, refunds etc, then the conflation process is how we ensure all this data is added to the correct entity.
 
@@ -26,7 +26,7 @@ For example, if you're defining a model to manage a new ingestion of information
 
 ## Conflation models
 
-In the [conflation tutorial](/conflation-tutorial.md), we will go through the practical steps of creating and validating a conflation model. 
+In the [conflation tutorial](/conflation-model-tutorial.md), we will go through the practical steps of creating and validating a conflation model. 
 
 At a conceptual level, what is happening is:
 
@@ -36,4 +36,4 @@ In a simple case, you may be inputting data about projects, and from your source
 
 In real life, however, you may not have a ProjectID field to use. In that case, you need to use some other rules to decide whether entities are the same or not. You may for example set up a rule which says 'Two project entities can be merged if the project name is the same and the project owner is the same and the budget is the same.'
 
-We'll also discuss the various conflation rules you can use in the [conflation tutorial](/conflation-tutorial.md).
+We'll also discuss the various conflation rules you can use in the [conflation tutorial](/conflation-model-tutorial.md).

@@ -20,7 +20,7 @@ A chat-based assistant can bring the power of the graph to every user in the bus
 The graph can be a powerful augmentation to existing search solutions, returning graph-based answers alongside traditional keyword search results.
 
 ## Combining many sources of data into one source of truth
-The advanced conflation tools included with the Enterprise Graph enable you take many individual sources of information and combine them into one graph based on one ontology. For example, the entity type for a person may be made up of data sources from HR, your customer relationship management system, your project management system, external social feeds, and many other sources of data, all combined into one consistent view.
+The advanced conflation tools included with the Enterprise Graph enable you to take many individual sources of information and combine them into one graph based on one ontology. For example, the entity type for a person may be made up of data sources from HR, your customer relationship management system, your project management system, external social feeds, and many other sources of data, all combined into one consistent view.
 
 ## Reflecting the nuances of your specific business
 The flexible ontology system underlying the Enterprise Graph enables you to use and extend our pre-supplied business-focused ontologies, or create your own from scratch. An entity can be defined to represent any concept you need, from a custom machine part to the individual chemicals in a manufacturing process to the dig sites for oil exploration. Whatever concept you need, you can define an entity representation.

@@ -22,7 +22,7 @@ In this tutorial, we'll look at the same flow we covered in the quickstart but i
 
 You'll see the file previewed in 'Sample Data' window, and you can click OK.
 
-Note that as covered in the [overview guide](/source-schema-concepts.md), the JSON upload here just specifies the columns from your source data. We're interested in specifying the input data schema, at this point, not the input data values.
+Note that as covered in the [overview guide](source-schema-concepts.md), the JSON upload here just specifies the columns from your source data. We're interested in specifying the input data schema, at this point, not the input data values.
 
 In our example, we have five types of input data - Cities, Countries, State/Provinces, People and Customers. Each one of those has a separate input file, and therefore each one needs its own schema map describing that input file. 
 

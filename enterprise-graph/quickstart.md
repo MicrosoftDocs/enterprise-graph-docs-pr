@@ -1,6 +1,6 @@
 ---
 title: Getting started with Enterprise Graph | Microsoft Docs
-description: Create and query your first graph in ten minutes
+description: Create and query your first graph in 10 minutes
 author: microsteve
 
 ms.service: enterprise-graph
@@ -15,17 +15,17 @@ To get started with the Enterprise graph, we've provided everything you need to 
 
 FILE AVAILABILITY NEEDS TO BE UPDATED
 
-You can download the sample files we use for this quick-start here <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/EGDemo_WWI_Files.zip">here</a>.
+You can download the sample files we use for this quickstart here <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/EGDemo_WWI_Files.zip">here</a>.
 
 ## (1) Creating an ontology
 
-Your ontology contains the definitions of the entities you want to use and what properties and relationships they have. The ontology defines the entity types, and then later we'll import data to create actual entities. For example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entites, e.g. Kniman, Cubero and so on.
+Your ontology contains the definitions of the entities you want to use and what properties and relationships they have. The ontology defines the entity types, and then later we'll import data to create actual entities. For example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entities, for example, Kniman, Cubero, and so on.
 
 All of the steps you will complete in the graph creation process are laid out in the interface:
 
 ![All steps](media/quickstart/1-all-steps-overview.png)
 
-To get started, choose **Configure Ontology** from the Overview page, or choose the **Configure your ontology** option from the menu blade.
+To get started, choose **Configure Ontology** from the Overview page, or choose the **Configure your ontology** option from the the left-side navigation.
 
 ![Creating your first ontology](media/quickstart/2-create-your-graph-steps.png)
 
@@ -35,11 +35,11 @@ Click on the **+Add** button, and you'll see the **Create ontology** pane.
 
 In this pane, you can see there are options to create an ontology from scratch, modify one of the Microsoft-supplied ontologies, or import an existing ontology. For now, we're going to import an existing ontology, based on the <a href="http:///www.microsoft.com">World Wide Importers sample data</a>.
 
-In the ontology pane, choose a suitable name (like 'WWI'), add a description if you want, choose the 'Import' option from the 'Add ontology from' dropdown,and then choose the '01_WWIOntology.json' file from the sample files.
+In the ontology pane, choose a suitable name (like 'WWI'), add a description if you want, choose the 'Import' option from the 'Add ontology from' dropdown, and then choose the '01_WWIOntology.json' file from the sample files.
 
 ![Upload ontology](media/quickstart/6-upload-ontology.png)
 
-Once the ontology is created, you can examine the different entity types and the attributes they have through the browser. In the screenshot below for example we can see the ```Application.Cities``` entity type. We can also see that two other entities link to the ```Cities``` entities - ```Purchasing.Suppliers``` and ```Sales.Customers```. We can also see that ```Application.Cities``` itself links to the entity ```Application.StateProvinces``` with a link type of 'StateProvinceID' showing the province the city is located in.
+Once the ontology is created, you can examine the different entity types and the attributes they have through the browser. In the screenshot below for example, we can see the ```Application.Cities``` entity type. We can also see that two other entities link to the ```Cities``` entities - ```Purchasing.Suppliers``` and ```Sales.Customers```. We can also see that ```Application.Cities``` itself links to the entity ```Application.StateProvinces``` with a link type of 'StateProvinceID' showing the province the city is located in.
 
 ![Upload ontology](media/quickstart/7-ontology-uploaded.png)
 
@@ -54,7 +54,7 @@ To complete this step, choose **Publish** to put your ontology live.
 
 Now that we have our ontology in place, we can move to the next step: relating the ontology to your source data. Your 'source data' is the data you intend to upload to your graph.
 
-First, we want tell the system what fields your source data contains. Your source data must be formatted as a TSV, and in this step 'Sample data' means a sample of the data you ultimately intend to upload.
+First, we want to tell the system what fields your source data contains. Your source data must be formatted as a TSV, and in this step 'Sample data' means a sample of the data you ultimately intend to upload.
 
 In the sample data we've provided, there are five source schemas:
 
@@ -69,7 +69,7 @@ In each case, what the source schema is saying is: 'These are the headings of th
 ![Source schema step](media/quickstart/12-add-source-schema.png)
 
 1. Click on **+Add** to upload a source schema file
-1. Choose an appropriate name, e.g. 'Application-People'
+1. Choose an appropriate name, for example, 'Application-People'
 1. Choose the 'Upload a JSON file' option
 1. Choose the 02_Schema_Application.Cities.json file to upload
 
@@ -79,11 +79,11 @@ Repeat these steps for all of the source schema files, and you'll see a view lik
 
 ![All schemas](media/quickstart/15-all-schema-uploaded.png)
 
-You'll see that the last column says 'No fields mapped' - in other words, we have defined our ontology and we've defined what our source data looks like, but we have not defined the links between them. We'll add this mapping now.
+You'll see that the last column says 'No fields mapped'. In other words, we have defined our ontology and we've defined what our source data looks like, but we have not defined the links between them. We'll add this mapping now.
 
 Click on **No fields mapped** for Cities, and then choose ```wwi.ApplicationCities``` as the **Target Entity** on the left-hand side.
 
-![Entity mapping view](media/quickstart/17-mapping-app-cities.png)
+![Entity-mapping view](media/quickstart/17-mapping-app-cities.png)
 
 On the left you're seeing your ontology (specifically, the entity for cities) and on the right you're seeing the schema map of your own data.
 
@@ -103,7 +103,7 @@ To complete this step, we have provided XML mapping data files. Go ahead and upl
 * wwi: Application.People -> 10_Mapping_Application.People.xml
 * wwi: Sales.Customers -> 11_Mapping_Sales.Customer.xml
 
-When you upload the file you'll see the mapping complete view:
+When you upload the file, you'll see the mapping complete view:
 
 ![Countries mapping example](media/quickstart/20-mapping-complete.png)
 
@@ -127,11 +127,11 @@ The input data for your graph comes from the input data you want to use in a TSV
 * https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.4_Ingestion_Application.People.tsv
 * https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.5_Ingestion_Sales.Customers.tsv
 
-Navigate to the **Ingest data to graph** section, choose **+Add** at the top, and you'll options for 'Source URL' and 'Source Schema':
+Navigate to the **Ingest data to graph** section, choose **+Add** at the top, and you will options for 'Source URL' and 'Source Schema':
 
 ![All mapping complete](media/quickstart/23-all-mapping-complete.png)
 
-'Source URL' is where your input data can be found (i.e. in this case the blob store URL we provided above), and 'Source Schema' is the source schema we created in step (2) above to map this input data.
+'Source URL' is where your input data can be found (that is, in this case the blob store URL we provided above), and 'Source Schema' is the source schema we created in step (2) above to map this input data.
 
 When the ingestion completes, you'll see this view:
 
