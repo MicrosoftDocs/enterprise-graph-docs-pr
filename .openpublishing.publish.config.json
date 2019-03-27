@@ -21,7 +21,8 @@
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
-  "need_preview_pull_request": false,
+  "need_preview_pull_request": true,
+  "need_generate_pdf": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
@@ -31,6 +32,11 @@
       "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false
+  "branch_target_mapping": 
+    {
+    "live": ["Publish", "Pdf"],
+    "master": ["Publish", "Pdf"]
+    },
+  "need_generate_pdf_url_template": true,
+  "branches_to_filter": ["live", "master"]
 }
