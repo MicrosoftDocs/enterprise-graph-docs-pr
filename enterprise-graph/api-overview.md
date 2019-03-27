@@ -5,7 +5,7 @@ author: microsteve
 
 ms.service: enterprise-graph
 ms.topic: conceptual
-ms.date: 03/27/2019
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
@@ -23,11 +23,9 @@ where 'your_name_here' is the 'Name' entry from the 'Properties' section in 'Set
 
 So for example, if your name from the properties page was 'MyGraph1', your Swagger URL would be:
 
-https://your_RG_here.ekg.microsoft.com/
+https://MyGraph1.ekg.microsoft.com/
 
-## The Swagger page
 
-On the Swagger page you will see 
 
 
 

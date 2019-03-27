@@ -9,23 +9,21 @@
 - name: Quickstart
   items:
     - name: Building your first graph
-      href: quickstart.md
+      href: build-graph.md
 - name: Tutorials
   items:
-  - name: (1) Ontology
-    href: ontology-tutorial.md
-  - name: (2) Source schemas
-    href: source-schema-tutorial.md 
-  - name: (3) Schema map
-    href: schema-map-tutorial.md
-  - name: (4) Ingesting data
-    href: ingestion-tutorial.md
-  - name: (5) Conflation model
-    href: conflation-model-tutorial.md
-  - name: Querying your graph
-    href: graph-queries-tutorial.md
-  - name: Deleting your ontology
-    href: deleting-your-ontology.md  
+  - name: 1 - Create an ontology
+    href: create-ontology.md
+  - name: 2 - Create a source schema
+    href: create-source-schema.md 
+  - name: 3 - Ingest data to your graph
+    href: ingest-data.md
+  - name: 4 - Create a conflation model
+    href: create-conflation-model.md
+  - name: 5 - Query your graph
+    href: query-graph.md
+  - name: 6 - Delete your ontology
+    href: delete-ontology.md  
 - name: Concepts
   items:
   - name: Input data
@@ -45,19 +43,19 @@
   - name: Quick reference
     items:
     - name: Entities
-      href: concepts/entities.md
+      href: entities.md
     - name: Properties
-      href: concepts/properties.md
+      href: properties.md
     - name: Ontology
-      href: concepts/ontology.md
+      href: ontology.md
     - name: Source schema
-      href: concepts/source-schema.md
+      href: source-schema.md
     - name: Schema maps
-      href: concepts/schema-map.md
+      href: schema-map.md
     - name: Conflation
-      href: concepts/conflation.md  
+      href: conflation.md  
     - name: SPARQL
-      href: concepts/sparql.md
+      href: sparql.md
 - name: APIs
   items:
   - name: Enterprise Graph APIs

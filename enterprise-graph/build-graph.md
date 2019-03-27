@@ -5,7 +5,7 @@ author: microsteve
 
 ms.service: enterprise-graph
 ms.topic: quickstart
-ms.date: 03/27/2019
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
