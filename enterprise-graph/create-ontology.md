@@ -5,15 +5,13 @@ author: microsteve
 
 ms.service: enterprise-graph
 ms.topic: conceptual
-ms.date: 03/27/2019
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Ontology
+# Create an ontology
 
 Enterprise Graph enables you to review and edit your ontology graphically, so you can see how entities and properties link together visually before you publish the ontology and use it to create your graph. To make changes to your ontology, you create a new version in a pre-published state, and once you're happy with it you move from the existing ontology to the new version.
-
-## Creating an ontology
 
 To set up a new ontology, you can import one you have already, start with one of those we have pre-supplied, create a new ontology from scratch using the editor, or clone from an earlier ontology version that you have already created in Enterprise Graph.
 

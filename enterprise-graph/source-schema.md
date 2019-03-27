@@ -39,4 +39,4 @@ StateProvinceID
 
 In the next step, schema mapping, we will map this data to our ontology, i.e. we will say things like 'The CityName data in my input data is to be used to populate the Name property of the city entity in my ontology'. But in this step, we are just defining what columns the source data has.
 
-In practice, the way we do that is through uploading (or directly copying and pasting) sample data - for more detail, see the [create Source schema tutorial](../create-source-schema.md).
+In practice, the way we do that is through uploading (or directly copying and pasting) sample data. For more details, see the tutorial to [create a source schema tutorial](create-source-schema.md).

@@ -1,15 +1,15 @@
 ---
-title: Creating source schemas for your data | Microsoft Docs
+title: Creating source schemas for your data
 description: Describes how to create a source schema in Enterprise Graph
 author: microsteve
 
 ms.service: enterprise-graph
 ms.topic: tutorial
-ms.date: 03/27/2019
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Source schemas
+# Create a source schema
 
 In this tutorial, we'll look at the same flow we covered in the quickstart but in a bit more detail.
 

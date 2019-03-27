@@ -1,15 +1,15 @@
 ---
-title: Using conflation models in Enterprise Graph by Microsoft | Microsoft Docs
+title: Using conflation models in Enterprise Graph by Microsoft
 description: How to create a conflation model in Enterprise Graph by Microsoft
 author: microsteve
 
 ms.service: enterprise-graph
 ms.topic: tutorial
-ms.date: 03/27/2019
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Conflation
+# Create a conflation model
 
 In this example, we will create a conflation model to apply to the Customer entity type.
 
