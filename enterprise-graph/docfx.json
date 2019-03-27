@@ -36,6 +36,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/enterprise-graph/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
       "feedback_system": "None"
     },
     "fileMetadata": {},
