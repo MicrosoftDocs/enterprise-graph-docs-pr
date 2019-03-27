@@ -39,7 +39,7 @@
   - name: Conflation overview
     href: conflation-concepts.md
   - name: Conflation rules
-    href: conflation-concepts.md  
+    href: conflation-rules.md  
   - name: Quick reference
     items:
     - name: Entities
