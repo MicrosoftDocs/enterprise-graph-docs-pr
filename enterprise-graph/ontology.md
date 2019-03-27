@@ -34,6 +34,6 @@ Sales point of contact
 
 In that case, the ```Marketing Project``` entity would inherit from the ```Project``` entity, i.e. have all of its properties plus more.
 
-For a practical guide to creating your ontology see [creating your ontology](../ontology-tutorial.md).
+For a practical guide to creating your ontology see [creating your ontology](create-ontology.md).
 
 
