@@ -30,8 +30,10 @@
   items:
   - name: Input data
     href: input-data-concepts.md  
-  - name: Entities and ontologies
+  - name: Ontology in Enterprise Graph
     href: ontology-concepts.md
+  - name: Ontology conceptual overview
+    href: ontology-overview.md  
   - name: Source schemas
     href: source-schema-concepts.md
   - name: Schema maps

@@ -9,7 +9,7 @@ ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
-# Entities and ontologies
+# Ontology in Enterprise Graph
 
 The ontology is the key part of your knowledge graph. It defines the entities, properties, and relationships that you need, to enable the use-cases and analyses that you want.
 
