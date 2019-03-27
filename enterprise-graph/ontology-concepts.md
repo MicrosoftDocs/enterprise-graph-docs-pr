@@ -94,15 +94,5 @@ Within **types** we see that the first definition is for the 'Cities' entity typ
 
 In this case, the **type** for the property definition is the entity Application.StateProvinces. This fits with how we naturally think about things - cities are part of a region, and the region itself as a concept has many other values.
 
-There are eight possible options for the type value for a property:
-
-![Type values](media/ontology-concepts/type_values.png)
-
-The interface will allow you to see the property names you have defined and their types, giving you a visual view of the entity. To see the relations you have defined (that is, links to other entities), click on the Relations tab:
-
-![Type values](ontology-concepts/relations_tab.png)
-
-In this screenshot, we can see that the SupplierID relation links to the entity type Purchasing.Suppliers. Additional relations can be added here also if you want to modify or refine your ontology.
-
 > [!tip]
 > You cannot make changes to an ontology that is currently live.
