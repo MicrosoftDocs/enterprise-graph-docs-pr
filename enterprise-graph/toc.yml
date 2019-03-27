@@ -20,7 +20,7 @@
     href: schema-map-tutorial.md
   - name: (4) Ingesting data
     href: ingestion-tutorial.md
-  - name: (5) Conflation
+  - name: (5) Conflation model
     href: conflation-model-tutorial.md
   - name: Querying your graph
     href: graph-queries-tutorial.md
@@ -30,14 +30,18 @@
   items:
   - name: Input data
     href: input-data-concepts.md  
-  - name: Entities and ontologies
+  - name: Ontology in Enterprise Graph
     href: ontology-concepts.md
+  - name: Ontology conceptual overview
+    href: ontology-overview.md  
   - name: Source schemas
     href: source-schema-concepts.md
   - name: Schema maps
     href: schema-map-concepts.md
-  - name: Conflation
+  - name: Conflation overview
     href: conflation-concepts.md
+  - name: Conflation rules
+    href: conflation-concepts.md  
   - name: Quick reference
     items:
     - name: Entities

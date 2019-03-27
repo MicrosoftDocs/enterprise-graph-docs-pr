@@ -62,6 +62,6 @@ If you need to add a new field from a data source to pre-existing entities, you 
 
 For example, imagine you have a source schema that defines source inputs for entities of type ```Person```, specifically ```Name```,  , and ```ContactNumber```.
 
-If you need to update those values, e.g. if some contact numbers have changed, you can re-ingest the new source data using the same source schema and subject key. The fact that you used the subject key means new entities will not be created, but rather the existing entities will be updated.
+If you need to update those values, for example, if some contact numbers have changed, you can reingest the new source data using the same source schema and subject key. The fact that you used the subject key means new entities will not be created, but rather the existing entities will be updated.
 
 We'll discuss subject keys further in the [schema mapping](schema-map-concepts.md) overview.
