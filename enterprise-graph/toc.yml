@@ -55,8 +55,6 @@
         href: quickref-schema-map.md
       - name: Conflation
         href: quickref-conflation.md  
-      - name: SPARQL
-        href: quickref-sparql.md
   - name: APIs
     items:
     - name: Enterprise Graph APIs
