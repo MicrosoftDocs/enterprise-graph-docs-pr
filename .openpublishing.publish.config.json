@@ -35,7 +35,7 @@
   "branch_target_mapping": 
     {
     "live": ["Publish", "Pdf"],
-    "master": ["Publish", "Pdf"]
+    "master": ["Pdf"]
     },
   "need_generate_pdf_url_template": true,
   "branches_to_filter": ["live", "master"]
