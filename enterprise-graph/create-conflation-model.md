@@ -1,6 +1,6 @@
 ---
-title: Using conflation models in Enterprise Graph by Microsoft
-description: How to create a conflation model in Enterprise Graph by Microsoft
+title: Create a conflation model in Enterprise Graph by Microsoft
+description: Learn how to create a conflation model in Enterprise Graph by Microsoft
 author: microsteve
 
 ms.service: enterprise-graph
@@ -9,13 +9,13 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Create a conflation model
+# Tutoiral: Create a conflation model
 
 In this example, we will create a conflation model to apply to the Customer entity type.
 
 As discussed, conflation is the process of merging entities that refer to the same thing. To illustrate, we're going to input some new data about ```Customer``` entities, and create a model to merge the new information with the existing graph information.
 
-## (1) Ingest the new data
+## Ingest the new data
 
 Our first step is to ingest the new data so that it exists in the Enterprise Graph platform.
 
@@ -39,7 +39,7 @@ Now we can see we have two customer data sources:
 
 We're now ready to create the conflation model.
 
-## (2) Create conflation model
+## Create a conflation model
 
 Navigate to the **Conflate Data** section of the interface:
 
@@ -76,7 +76,7 @@ Note also that all rules you set in a single rule block will be evaluated on an 
 
 Once you save your new model, it may take some time to be created and the status will change to 'Ready for validation'.
 
-## (3) Validate conflation model
+## Validate the conflation model
 
 Now that we have created our model, it's time to validate it before we go live and put it into action. This step is necessary because we want to make sure that we are combining entities correctly before we make those changes.
 

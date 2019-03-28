@@ -1,6 +1,6 @@
 ---
-title: Ingest data in Enterprise Graph
-description: This tutorial explains how to ingest data into your Enterprise Graph once your ontology, source schema, and schema maps are in place
+title: Ingest data with Enterprise Graph by Microsoft
+description: This tutorial explains how to ingest data into your graph once your ontology, source schema, and schema maps are in place in Enterprise Graph by Microsoft
 author: microsteve
 
 ms.service: enterprise-graph
@@ -9,7 +9,7 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Ingest data to your graph
+# Tutorial: Ingest data to your graph
 
 Once you've got your ontology and source schemas are in place, it's time for ingestion.
 
@@ -19,6 +19,7 @@ In this tutorial, you'll learn to:
 > * Ingest data to your graph
 
 ## Prerequisites
+
 - Have completed the steps for ontology, source schemas, schema maps and ingestion.
 
 ## Ingesting data

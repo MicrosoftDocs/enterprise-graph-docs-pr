@@ -1,6 +1,6 @@
 ---
-title: Getting started with Enterprise Graph | Microsoft Docs
-description: Create and query your first graph in 10 minutes
+title: Getting started with Enterprise Graph by Microsoft
+description: Use Enterprise Graph by Microsoft to create and query your first graph
 author: microsteve
 
 ms.service: enterprise-graph
@@ -9,13 +9,13 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Building your first graph
+# Quickstart: Build your first graph
 
-To get started with the Enterprise graph, we've provided everything you need to complete the graph-build process end to end.
+This quickstart shows you how to use Enterprise Graph by Microsoft to complete the graph-build process end to end.
 
 You can download the sample files we use for this quickstart <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/EGDemo_WWI_Files.zip">here</a>.
 
-## (1) Creating an ontology
+## Create an ontology
 
 Your ontology contains the definitions of the entities you want to use and what properties and relationships they have. The ontology defines the entity types, and then later we'll import data to create actual entities. For example, in this step we'll define a 'City' entity that has a 'CityName' property, and later on we'll create actual city entities, for example, Kniman, Cubero, and so on.
 
@@ -48,7 +48,7 @@ To complete this step, choose **Publish** to make your ontology live.
 > [!TIP]
 > If you don't publish your ontology here, you won't be able to complete the later steps.
 
-## (2) Creating and mapping source schema
+## Create and map source schema
 
 Now that we have our ontology in place, we can move to the next step: relating the ontology to your source data. Your 'source data' is the data you intend to upload to your graph.
 
@@ -115,7 +115,7 @@ When you've complete the mapping step, you can see the schema mapping status for
 
 Now that source schemas and schema maps are in place, we can ingest data to the graph.
 
-## (3) Data ingestion
+## Ingest data
 
 The input data for your graph comes from the input data you want to use in a TSV format. The easiest way to handle the import is to use Azure Blob Storage, and that is where we have put the sample data for you import. The URLs for each kind of sample data are:
 
@@ -139,7 +139,7 @@ Repeat the process for each source data TSV and matching source schema, and you'
 
 ![All ingestions complete](media/quickstart/26-all-ingestions-complete.png)
 
-## (3) Querying your graph
+##  Query your graph
 
 Your first graph on the Enterprise Graph platform is complete, congratulations! To run a simple text query, navigate to the **Use your graph** section of the interface from the left-hand navigation pane, and choose 'Entity Search'. Enter the query 'kniman', and you should see:
 
@@ -149,9 +149,13 @@ You can click on the entity name to see the details the graph contains about it:
 
 ![Search results](media/quickstart/26-all-ingestions-complete.png)
 
-## (4) Conflation
+## Next steps
 
-When you are building your own graphs, the next step is conflation. We won't cover that in this quickstart guide - check out the details [here](conflation-concepts.md).
+In this quickstart, you built your first graph. The next step is conflation, which you can learn about later in this guide.
+
+> [!div class="nextstepaction"]
+> [Conflation overview](./conflation-concepts.md)
+
 
 
 

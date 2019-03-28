@@ -1,6 +1,6 @@
 ---
-title: Enterprise Graph ontology overview | Microsoft Docs
-description: Key concepts in your ontology
+title: Enterprise Graph by Microsoft ontology overview
+description: Key concepts in your ontology for Enterprise Graph by Microsoft
 author: microsteve
 
 ms.topic: conceptual
@@ -9,7 +9,7 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Ontology Overview
+# Ontology overview
 Creating an effective and long-lasting ontology is a very deep and broad field of study, and becoming an expert in it is well outside the scope of this documentation. However it may be useful to have an overview of the basic concepts involved in an ontology.
 
 ## Easy to understand

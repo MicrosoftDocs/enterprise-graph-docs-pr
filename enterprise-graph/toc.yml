@@ -1,15 +1,15 @@
-- name: Enterprise Graph documentation
+- name: Enterprise Graph Documentation
   href: index.yml
   items:
   - name: Overview
     items:
-    - name: What is the Enterprise Graph?
+    - name: What is Enterprise Graph?
       href: enterprise-graph-overview.md
-    - name: Enterprise graph use-cases
+    - name: Enterprise graph use cases
       href: enterprise-graph-use-cases.md
   - name: Quickstart
     items:
-      - name: Building your first graph
+      - name: Build your first graph
         href: build-graph.md
   - name: Tutorials
     items:
@@ -25,15 +25,13 @@
       href: create-conflation-model.md
     - name: 6 - Query your graph
       href: query-graph.md
-    - name: Deleting your ontology
+    - name: 7 -Delete your ontology
       href: delete-ontology.md  
   - name: Concepts
     items:
     - name: Input data
       href: input-data-concepts.md  
-    - name: Ontology in Enterprise Graph
-      href: ontology-concepts.md
-    - name: Ontology conceptual overview
+    - name: Ontology overview
       href: ontology-overview.md  
     - name: Source schemas
       href: source-schema-concepts.md
@@ -58,7 +56,7 @@
       - name: Conflation
         href: quickref-conflation.md  
       - name: SPARQL
-        href: squickref-parql.md
+        href: quickref-sparql.md
   - name: APIs
     items:
     - name: Enterprise Graph APIs

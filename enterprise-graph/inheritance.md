@@ -1,6 +1,6 @@
 ---
-title: Enterprise Graph concepts - Inheritance | Microsoft Docs
-description: Inheritance between entities in your ontology
+title: Enterprise Graph by Microsoft concepts - Inheritance 
+description: learn about inheritance between entities in your ontology in Enterprise Graph by Microsoft
 author: microsteve
 
 ms.topic: conceptual

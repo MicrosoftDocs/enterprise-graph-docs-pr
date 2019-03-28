@@ -1,6 +1,6 @@
 ---
-title: Enterprise Graph concepts - Entities | Microsoft Docs
-description: Entities - the building blocks of your graph
+title: Enterprise Graph by Microsoft concepts - Entities
+description: Entities are the building blocks of your graph in Enterprise Graph by Microsoft
 author: microsteve
 
 ms.topic: conceptual

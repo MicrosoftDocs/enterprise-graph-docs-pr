@@ -1,6 +1,6 @@
 ---
-title: Enterprise Graph by Microsoft | Microsoft Docs
-description: Building knowledge applications with the Enterprise Graph by Microsoft
+title: Enterprise Graph by Microsoft
+description: Building knowledge applications with Enterprise Graph by Microsoft
 author: microsteve
 
 ms.service: enterprise-graph
@@ -9,7 +9,7 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# What is the Enterprise Graph?
+# What is Enterprise Graph by Microsoft?
 
 Enterprise Graph by Microsoft enables you to build knowledge graphs that provide deeper insight into your business data. Bring many sources of data together to create one aggregate picture of your business knowledge, organized in entities and an ontology that you can customize for your business needs. Query the graph through free text search or the SPARQL graph query language.
 

@@ -1,6 +1,6 @@
 ---
-title: Ontologies in Enterprise Graph by Microsoft | Microsoft Docs
-description: Getting up and running with an ontology to power your Enterprise Graph use cases
+title: Ontology tutprial in Enterprise Graph by Microsoft 
+description: Getting up and running with an ontology to power your Enterprise Graph by Microsoft use cases
 author: microsteve
 
 ms.service: enterprise-graph

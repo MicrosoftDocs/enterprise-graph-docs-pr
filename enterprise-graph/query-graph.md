@@ -9,7 +9,7 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Query your graph
+# Tutorial: Query your graph
 
 Once your graph is set up, you can query it in one of two ways: through a SPARQL graph query or free text search .
 

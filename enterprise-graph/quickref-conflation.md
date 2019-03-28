@@ -1,5 +1,5 @@
 ---
-title: Enterprise Graph concepts - Conflation | Microsoft Docs
+title: Enterprise Graph by Microsoft concepts - Conflation
 description: What conflation is and why you need it
 author: microsteve
 

@@ -1,17 +1,17 @@
 ---
-title: Creating and using schema maps in Enterprise Graph by Microsoft | Microsoft Docs
-description: Creating or uploading a schema map in Enterprise Graph by Microsoft
+title: Creating and using schema maps in Enterprise Graph by Microsoft
+description: Learn how to create or upload a schema map in Enterprise Graph by Microsoft
 author: microsteve
 
 ms.service: enterprise-graph
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Schema maps
+# Tutorial: Create a schema map
 
-There are two main tasks in the schema mapping state - mapping your data to your ontology, and defining a subject key.
+There are two main tasks in the schema mapping state: mapping your data to your ontology, and defining a subject key.
 
 In this tutorial, you'll learn to:
 

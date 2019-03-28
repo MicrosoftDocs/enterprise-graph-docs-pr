@@ -1,6 +1,6 @@
 ---
-title: Schema maps in Enterprise Graph by Microsoft | Microsoft Docs
-description: Understanding how schema maps are used to map your source data to your ontology
+title: Schema maps in Enterprise Graph by Microsoft 
+description: Understanding how to use schema maps to map your source data to your ontology with Enterprise Graph by Microsoft
 author: microsteve
 
 ms.service: enterprise-graph

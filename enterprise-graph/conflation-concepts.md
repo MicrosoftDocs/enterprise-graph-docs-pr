@@ -1,6 +1,6 @@
 ---
-title: Understanding conflation in Enterprise Graph by Microsoft | Microsoft Docs
-description: Understand what conflation is and why you need to use it
+title: Understanding conflation in Enterprise Graph by Microsoft
+description: Understand what conflation is and why you need to use it in Enterprise Graph by Microsoft.
 author: microsteve
 
 ms.service: enterprise-graph

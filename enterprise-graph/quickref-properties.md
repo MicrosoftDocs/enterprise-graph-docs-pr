@@ -1,6 +1,6 @@
 ---
-title: Enterprise Graph concepts - Properties | Microsoft Docs
-description: Entities and properties in your graph
+title: Enterprise Graph by Microsoft concepts - Properties
+description: Entities and properties in Enterprise Graph by Microsoft 
 author: microsteve
 
 ms.topic: conceptual
