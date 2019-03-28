@@ -5,8 +5,8 @@
     items:
     - name: What is Enterprise Graph?
       href: enterprise-graph-overview.md
-    - name: Enterprise graph use cases
-      href: enterprise-graph-use-cases.md
+    - name: Enterprise key features
+      href: enterprise-graph-key-features.md
   - name: Quickstart
     items:
       - name: Build your first graph
