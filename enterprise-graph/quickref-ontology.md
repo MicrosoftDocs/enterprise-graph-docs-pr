@@ -10,8 +10,6 @@ ms.author: stflanag
 ---
 # Ontology
 
-For
-
 The ontology is where you define and manage your entities. For example, if you wanted to have an entity to represent the concept of a business project, you might want it to have properties like:
 
 ```
@@ -34,6 +32,6 @@ Sales point of contact
 
 In that case, the ```Marketing Project``` entity would inherit from the ```Project``` entity, i.e. have all of its properties plus more.
 
-For a practical guide to creating your ontology see [creating your ontology](create-ontology.md).
+For a practical guide to creating your ontology see [creating your ontology](ontology-tutorial.md).
 
 

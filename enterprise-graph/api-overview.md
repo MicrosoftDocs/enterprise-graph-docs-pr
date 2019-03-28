@@ -25,8 +25,6 @@ And then choose the 'Essentials' tab:
 
 At the top right of this screen, your API URL will be listed under WEB API URL. When you open this URL in a web browser, you will see the Swagger API page.
 
-![Swagger overview](media/api-overview/nav-essentials.png)
-
 ## Enterprise Graph APIs
 
 The Enterprise Graph APIs allow you to complete the same steps as in the interface to create and use your graph.
