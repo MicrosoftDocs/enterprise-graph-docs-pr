@@ -19,7 +19,7 @@ To get entity-based answers from your graph based on its properties and relation
 
 You can run graph queries from the 'Graph query' interface under 'Use your graph' in the left-side navigation pane. For example, a query that runs on the sample data we have looked at is:
 
-```
+```SPARQL
 PREFIX wwi: <http://knowledge.microsoft.com/wwi/>
 PREFIX ekg: <http://knowledge.microsoft.com/ekg/>
 SELECT ?s ?n
