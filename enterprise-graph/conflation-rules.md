@@ -1,10 +1,10 @@
 ---
-title: Using conflation rules in Enterprise Graph by Microsoft | Microsoft Docs
-description: Using conflation rules in Enterprise Graph
+title: Conflation rules in Enterprise Graph by Microsoft
+description: Learn about conflation rules in Enterprise Graph by Microsoft
 author: microsteve
 
 ms.service: enterprise-graph
-ms.topic: tutorial
+ms.topic: conceptual
 ms.date: 03/29/2019
 ms.author: stflanag
 ---

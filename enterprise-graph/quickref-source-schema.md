@@ -1,16 +1,13 @@
 ---
-title: Enterprise Graph concepts | Microsoft Docs
-description: Understanding source schemas
+title: Enterprise Graph by Microsoft concepts - source schemas
+description: Understanding source schemas in Enterprise Graph by Microsoft
 services: enterprise-graph
 documentationcenter: enterprise-graph-docs
 author: microsteve
-manager: microsteve
-editor: ''
 
 ms.service: enterprise-graph
-ms.devlang: NA
 ms.topic: overview
-ms.date: 03/14/2019
+ms.date: 03/29/2019
 ms.author: stflanag
 ---
 

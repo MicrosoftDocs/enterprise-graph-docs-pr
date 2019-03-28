@@ -1,6 +1,6 @@
 ---
-title: Enterprise Graph concepts - Ontology | Microsoft Docs
-description: Your graph is underpinned by an ontology
+title: Enterprise Graph by Microsoft concepts - Ontology
+description: Your graph is underpinned by an ontology in Enterprise Graph by Microsoft 
 author: microsteve
 
 ms.topic: conceptual

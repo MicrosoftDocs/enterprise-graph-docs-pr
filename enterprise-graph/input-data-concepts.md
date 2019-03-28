@@ -1,6 +1,6 @@
 ---
-title: Enterprise Graph input data format | Microsoft Docs
-description: Understanding the correct format for your Enterprise Graph input data
+title: Enterprise Graph by Microsoft input data format 
+description: Understanding the correct format for your input data in Enterprise Graph by Microsoft
 author: microsteve
 
 ms.service: enterprise-graph

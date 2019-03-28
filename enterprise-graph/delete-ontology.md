@@ -9,7 +9,7 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Delete your ontology
+# Tutorial: Delete your ontology
 
 To delete your ontology, you first need to delete your schema maps. 
 

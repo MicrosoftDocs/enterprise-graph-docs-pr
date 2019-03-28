@@ -1,6 +1,6 @@
 ---
-title: Enterprise Graph APIs overview | Microsoft Docs
-description: Overview of what Enterprise Graph APIs are available and how to use them
+title: Enterprise Graph by Microsoft APIs overview
+description: Overview of what APIs are available for Enterprise Graph by Microsoft and how to use them
 author: microsteve
 
 ms.service: enterprise-graph

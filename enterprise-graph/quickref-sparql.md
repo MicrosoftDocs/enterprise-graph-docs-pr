@@ -1,6 +1,6 @@
 ---
-title: Enterprise Graph concepts - SPARQL | Microsoft Docs
-description: Graph queries in Enterprise Graph
+title: Enterprise Graph by Microsoft concepts - SPARQL
+description: Graph queries in Enterprise Graph by Microsoft
 author: microsteve
 
 ms.topic: conceptual
