@@ -43,7 +43,7 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: <a href="ontology-concepts">Entities and ontologies</a> 
+    - html: <a href="ontology-overview">Entities and ontologies</a> 
     - html: <a href="source-schema-concepts">Mapping input data - source schemas and schema maps</a>
     - html: <a href="conflation-concepts">Conflation and graph updates</a>
     - html: <a href="enterprise-graph-use-cases">Knowledge applications</a>
