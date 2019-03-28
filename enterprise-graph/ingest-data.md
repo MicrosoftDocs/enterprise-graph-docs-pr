@@ -22,7 +22,7 @@ In this tutorial, you'll learn to:
 
 - Have completed the steps for ontology, source schemas, schema maps and ingestion.
 
-## Ingesting data
+## Ingest data
 
 If you have previously carried out ingestion events, you will be able to see those in the interface. (Note that you may need to update the 'Start' time at the top left if your ingestion was in the past to make sure that the reporting time-window covers your ingestion event.)
 
