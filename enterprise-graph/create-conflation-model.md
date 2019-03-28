@@ -87,7 +87,8 @@ Select the model you want to validate and then choose **Validate** at the top of
 There are a few things happening on this page:
 
 * ***Matched entities:** Towards the bottom of the page, you see a display for a 'Source entity' (that is, an entity from your new source data) and a 'Graph entity' (an entity that was already in the graph). Under the rules of the model you have created, these entities should be merged.
+* ***Two tabs:** There are two review tabs, one for precision (the matching of new entities to existing entities) and one for recall (the creation fo new entities)
 * ***Human approval:** Underneath that are the options for human review: 'Yes', 'No', and 'Not sure'
-* ***Success metrics:** The upper part of the screen shows the results for the human evaluations in terms of matching rate, precision, and recall. 'Matching rate' means, 'Of all the samples in the new source, what percentage have been matched to an existing entity?' Precision and recall have their standard machine learning definitions.
+* ***Success metrics:** The upper part of the screen shows the results for the human evaluations in terms of matching rate, precision, and recall. 'Matching rate' means, 'Of all the samples in the new source, what percentage have been matched to an existing entity?' Precision and recall have their standard machine learning definitions. As the evaluator makes judgements, the metrics will update.
 
 Once you have reached the precision and recall numbers you need for the use-case you are working to enable, you can publish the model. It will then apply to all incoming data from the selected source schema until you choose to 'Unpublish' it on the conflation home screen.

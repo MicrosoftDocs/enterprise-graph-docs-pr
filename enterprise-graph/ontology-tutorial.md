@@ -4,14 +4,27 @@ description: Getting up and running with an ontology to power your Enterprise Gr
 author: microsteve
 
 ms.service: enterprise-graph
-ms.topic: conceptual
+ms.topic: tutorial
 ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Ontology in Enterprise Graph
+# Tutorial: Get started with your Enterprise Graph ontology
 
 The ontology is the key part of your knowledge graph. It defines the entities, properties, and relationships that you need, to enable the use-cases and analyses that you want.
+
+In this tutorial, you'll learn to:
+
+> [!div class="checklist"]
+> * Upload a sample ontology
+> * Create a new ontology or extend an existing one
+> * Explore your ontology in the interface
+
+## Prerequisites
+
+- Have an approved Enterprise Graph account (more detail on the [overview page](enterprise-graph-overview.md))
+- Familiarity the basic [concepts of an ontology](ontology-overview.md)
+- Understand the use-cases you are working to enable
 
 ## Ontology creation in Enterprise Graph
 
@@ -96,3 +109,8 @@ In this case, the **type** for the property definition is the entity Application
 
 > [!tip]
 > You cannot make changes to an ontology that is currently live.
+
+Next, we'll look at creating your source schemas.
+
+> [!div class="nextstepaction"]
+> [Creating source schemas](create-source-schema.md)

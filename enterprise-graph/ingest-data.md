@@ -13,6 +13,16 @@ ms.author: stflanag
 
 Once you've got your ontology and source schemas are in place, it's time for ingestion.
 
+In this tutorial, you'll learn to:
+
+> [!div class="checklist"]
+> * Ingest data to your graph
+
+## Prerequisites
+- Have completed the steps for ontology, source schemas, schema maps and ingestion.
+
+## Ingesting data
+
 If you have previously carried out ingestion events, you will be able to see those in the interface. (Note that you may need to update the 'Start' time at the top left if your ingestion was in the past to make sure that the reporting time-window covers your ingestion event.)
 
 ![Ingestion events](./media/ingestion-tutorial/existing-ingestions.png)
@@ -29,3 +39,7 @@ Create a new ingestion by clicking on the '+Add' button at the top left, and you
 
 **Enable force update:** The system will not generally re-ingest data that it has already ingested. However, in some cases you may want to force the re-ingestion of all data from a given source, and can use this checkbox to do so.
 
+Now that your graph is created, you can run some queries on it.
+
+> [!div class="nextstepaction"]
+> [Querying your graph](query-graph.md)

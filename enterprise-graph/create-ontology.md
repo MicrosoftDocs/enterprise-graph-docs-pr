@@ -45,7 +45,7 @@ You can also use the checkbox selector to 'Show inherited properties', which wil
 
 ![Inherited properties](media/ontology-tutorial/inherited-properties.png)
 
-Note that the cities entity inherits from ```ekg:type.object``` which is the root object for all entities in the ontology, and contains properties that are common to all entities like name, description, subject key and so on.
+Note that the cities entity inherits from ```ekg:type.object``` which is the root object for all entities in the ontology, and contains properties that are common to all entities like name, description, subject key, and so on.
 
 You can make changes to the properties for a given entity right from the property panel by choosing the three dots and then 'Edit' for whatever property you wish. You can also add new property types.
 
