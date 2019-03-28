@@ -24,7 +24,7 @@ Application.Cities_13428	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "G
 Application.Cities_16149	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Hudson Lake", "CityID": "16149", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
 ```
 
-In the [Source Schema](/source-schema-tutorial.md) stage, you define the 'columns' of this data, i.e. LastEditedBy, CityName, CityID and so on. Then in the [Schema mapping](/schema-map-tutorial.md) stage, you map those columns to your [Ontology](/ontology-tutorial.md). Then finally in the [Ingestion](/ingestion-tutorial.md) phase, you create the individual entities of your data, based on your input data and your mapping.
+In the [Source Schema](source-schema.md) stage, you define the 'columns' of this data, i.e. LastEditedBy, CityName, CityID and so on. Then in the [Schema mapping](/schema-map-tutorial.md) stage, you map those columns to your [Ontology](ontology-tutorial.md). Then finally in the [Ingestion](/ingestion-tutorial.md) phase, you create the individual entities of your data, based on your input data and your mapping.
 
 To host the data in a place accessible to the Enterprise Graph system you may want to use <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Azure Blob storage</a>, but you can use any storage system.
 
