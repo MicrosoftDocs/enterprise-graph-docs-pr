@@ -17,7 +17,7 @@
   - name: 2 - Create source schemas
     href: create-source-schema.md
   - name: 3 - Create schema maps
-    href: create-source-schema.md   
+    href: schema-map-tutorial.md
   - name: 4 - Ingest data to your graph
     href: ingest-data.md
   - name: 5 - Create a conflation model
