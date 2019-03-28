@@ -14,15 +14,17 @@
   items:
   - name: 1 - Create an ontology
     href: create-ontology.md
-  - name: 2 - Create a source schema
-    href: create-source-schema.md 
-  - name: 3 - Ingest data to your graph
+  - name: 2 - Create source schemas
+    href: create-source-schema.md
+  - name: 3 - Create schema maps
+    href: create-source-schema.md   
+  - name: 4 - Ingest data to your graph
     href: ingest-data.md
-  - name: 4 - Create a conflation model
+  - name: 5 - Create a conflation model
     href: create-conflation-model.md
-  - name: 5 - Query your graph
+  - name: 6 - Query your graph
     href: query-graph.md
-  - name: 6 - Delete your ontology
+  - name: Deleting your ontology
     href: delete-ontology.md  
 - name: Concepts
   items:
