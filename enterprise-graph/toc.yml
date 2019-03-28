@@ -45,19 +45,19 @@
   - name: Quick reference
     items:
     - name: Entities
-      href: entities.md
+      href: quickref-entities.md
     - name: Properties
-      href: properties.md
+      href: quickref-properties.md
     - name: Ontology
-      href: ontology.md
+      href: quickref-ontology.md
     - name: Source schema
-      href: source-schema.md
+      href: quickref-source-schema.md
     - name: Schema maps
-      href: schema-map.md
+      href: quickref-schema-map.md
     - name: Conflation
-      href: conflation.md  
+      href: quickref-conflation.md  
     - name: SPARQL
-      href: sparql.md
+      href: squickref-parql.md
 - name: APIs
   items:
   - name: Enterprise Graph APIs
