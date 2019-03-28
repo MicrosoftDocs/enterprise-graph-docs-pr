@@ -14,7 +14,7 @@ ms.author: stflanag
 To delete your ontology, you first need to delete your schema maps. 
 
 > [!TIP]
-> If it was possible to delete your ontology while you had source schemas which still mapped to it, the system could get into an inconsistent state. Hence the requirement to complete the steps in the first order.
+> If it was possible to delete your ontology while you had source schemas which still mapped to it, the system could get into an inconsistent state. Hence the requirement to complete the steps in the correct order.
 
 ## Delete your source data maps
 
@@ -22,12 +22,12 @@ In the 'Map source schema' view, you can select the individual schemas you need 
 
 ![Source schema view](media/deleting-ontology/source-schema-view.png)
 
-You will need to type 'Yes' into to the text box to confirm your deletion intention.
+You will need to type 'Yes' into the text box to confirm your deletion intention.
 
 ![Source schema view](media/deleting-ontology/delete-data-source.png)
 
 > [!CAUTION]
-> You need to re-create your source schema and schema map if you need to un-do this step
+> You need to re-create your source schema and schema map if you want to un-do this step
 
 Make sure that all schema maps which map to the ontology you want to delete are deleted.
 

@@ -5,7 +5,7 @@ author: microsteve
 
 ms.service: enterprise-graph
 ms.topic: conceptual
-ms.date: 03/29/2019
+ms.date: 03/27/2019
 ms.author: stflanag
 ---
 
@@ -32,7 +32,7 @@ What we are saying here conceptually is:
 
 We can complete the mapping in the interface, or we can use a mapping file. The file is defined in XML, and looks like this:
 
-'''
+```
 <?xml version="1.0"?>
 <XmlFeedMap xmlns="http://schemas.microsoft.com/bing/mapping">
   <MappingHeader minorVersion="0" majorVersion="2" mappingName="wwi_Application_Cities_Mapping">
@@ -71,30 +71,31 @@ We can complete the mapping in the interface, or we can use a mapping file. The 
       </Rules>
    </Map>
 </XmlFeedMap>
-'''
+```
 
 You can find this file in the sample files we've provided for Enterprise Graph. To understand the file:
 
 * knowledge.microsoft.com/wwi is how we defined the namespace URI when we defined our ontology. You may recall that the first lines of the ontology definition file we used are:
-'''
+```
    {  
       "shorthand":"wwi",
       "namespaceuri":"http://knowledge.microsoft.com/wwi",
       "types":[  
-'''
+```
 You can use any URL you like here when you are defining your own ontology. 
 
 Let's look at a specific entry:
 
-'''
+```
 <Map property="type.object.name" value="./CityName" namespace="http://knowledge.microsoft.com/ekg/" />
-'''
+```
 
 What we see here is format to map the CityName data from your source schema to type.object.name within the Cities entity.
 
-'''
+```
 <Map property="Application.Cities.LatestRecordedPopulation" value="./LatestRecordedPopulation" namespace="http://knowledge.microsoft.com/wwi/" /> 
-'''
+```
+
 Similarly here, we see that we want to use the value for LatestRecordedPopulation from our source map to populate the data the for property Application.Cities.LatestRecordedPopulation.
 
 ## Creating a subject key

@@ -13,9 +13,7 @@ ms.author: stflanag
 
 To get started with the Enterprise graph, we've provided everything you need to complete the graph-build process end to end.
 
-FILE AVAILABILITY NEEDS TO BE UPDATED
-
-You can download the sample files we use for this quickstart here <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/EGDemo_WWI_Files.zip">here</a>.
+You can download the sample files we use for this quickstart <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/EGDemo_WWI_Files.zip">here</a>.
 
 ## (1) Creating an ontology
 
@@ -43,7 +41,7 @@ Once the ontology is created, you can examine the different entity types and the
 
 ![Upload ontology](media/quickstart/7-ontology-uploaded.png)
 
-To complete this step, choose **Publish** to put your ontology live.
+To complete this step, choose **Publish** to make your ontology live.
 
 ![Publish ontology](media/quickstart/11.5-publish-ontology.png)
 

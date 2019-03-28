@@ -11,7 +11,19 @@ ms.author: stflanag
 
 # Schema maps
 
-There are two main tasks in the schema mapping state - mapping your data to your ontology, and defining a subject key. 
+There are two main tasks in the schema mapping state - mapping your data to your ontology, and defining a subject key.
+
+In this tutorial, you'll learn to:
+
+> [!div class="checklist"]
+> * Define a subject key
+> * Create a schema map for each source schema
+> * Confirm your schema map is correct
+
+## Prerequisites
+
+- Have completed the steps to create an [ontology](ontology-tutorial.md) and [source schema](create-source-schema.md)
+- Familiarity the basic [concepts of schema mapping](schema-map-concepts.md)
 
 ## Mapping your data
 
@@ -75,4 +87,9 @@ We can see in the screenshot for example that the property ```type.object.name``
 
 > [!div class="nextstepaction"]
 > [Ingest your data](ingest-data.md)
+
+Now that your data is mapped, you're ready to ingest data to your graph.
+
+> [!div class="nextstepaction"]
+> [Ingest data](ingest-data.md)
 

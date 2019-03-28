@@ -9,7 +9,7 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Enterprise graph use-cases
+# Enterprise graph use cases
 
 Enterprise Graph provides a powerful platform for knowledge applications in your business.
 
