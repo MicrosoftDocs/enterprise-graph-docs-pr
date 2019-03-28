@@ -9,7 +9,7 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Tutoiral: Create a conflation model
+# Tutorial: Create a conflation model
 
 In this example, we will create a conflation model to apply to the Customer entity type.
 
