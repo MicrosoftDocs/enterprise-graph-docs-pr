@@ -74,5 +74,5 @@ This view shows the name of the property in the graph, the name of the source pr
 We can see in the screenshot for example that the property ```type.object.name``` for the entity type ```wwwi:Application.Cities``` will be populated from the source property CityName, and a sample value of that will by the string 'Kniman'. (Kniman is the name of a city in the sample source data we are using.)
 
 > [!div class="nextstepaction"]
-> [Ingest your data](ingestion-tutorial.md)
+> [Ingest your data](./ingestion-tutorial.md)
 
