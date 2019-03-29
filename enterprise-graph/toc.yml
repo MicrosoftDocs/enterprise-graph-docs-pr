@@ -2,11 +2,12 @@
   href: index.yml
   items:
   - name: Overview
+    expanded: true
     items:
     - name: What is Enterprise Graph?
       href: enterprise-graph-overview.md
-    - name: Enterprise key features
-      href: enterprise-graph-key-features.md
+    - name: Enterprise use cases
+      href: enterprise-graph-use-cases.md
   - name: Quickstart
     expanded: true
     items:

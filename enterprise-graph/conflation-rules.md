@@ -27,13 +27,13 @@ Value Functions are used for comparison of individual elements.
 
 ![Value functions](media/conflation-rules/value-function-select.png)
 
-###ExactMatching
+### ExactMatching
 This is an exact matching function. It returns either 0 or 1, where 1 means a match. 
  
 Positive example: “Barack Obama”, “Barack Obama”, will return 1 
 Negative example: “Barack Obama”, “Barack Obma”, will return 0 
 
-###Jaccard Matching
+### Jaccard Matching
 This is a token-based function where the tokens are n-grams. We default to n=3. N-grams are generally computing by sliding a window of size n on the string and returning what is in the window as the tokens. For example, for 'Microsoft', the 3-grams tokens are {mic, icr, cro, ros, oso, sof, oft}. 
 
 After computing the n-gram set for the original strings, the matching score is the Jaccard Coefficient of the two n-gram sets. 
@@ -47,7 +47,7 @@ This function is recommended if there are variations in the token arrangement of
 However, it will not do a good job when the string values match with some character variations. 
 **Negative example:** “apple”, “apaple”, will return 0.166 
 
-###Jaccard Containment
+### Jaccard Containment
 This function is useful when we want a score to measure the containment of a string value into another string while considering token and character variation. This is a token-based matching function similar to Jaccard Matching. However, it does not compute the n-grams set similarity, but rather computes the n-gram set containment.
 
 ```JaccardContainment(s1, s2)=(|s1 ∩ s2 |)/(min(|s1 |, |s2 |))``` where |s1| and |s2| are the lengths of s1, s2.
@@ -58,7 +58,7 @@ JaccardContainment returns a high matching score for the following cases:
 **Positive example:** 'Barack Hussein Obama', 'Obama', will return 1
 **Positive example:** 'Washington Univ.', 'University of Washington', will return 1
 
-###Edit distance
+### Edit distance
 This function computes the minimum number of character edits (insertion, deletion, and substitution) required to change one string into another.
 
 For two strings s1 and s2:
@@ -74,13 +74,13 @@ However, it is not recommended if there are variations in the tokens arrangement
 
 **Negative example:** 'Micrsoft Corprration', 'Corporation Microsoft', will return 0.15
 
-###Number similarity
+### Number similarity
 The distance between two numbers scaled using the larger number:
 
 **Negative example:** '5','10' will return 0.5
 **Positive example:** '5','5' will return 1
 
-###Date Day and Date Year similarity
+### Date Day and Date Year similarity
 
 Calculate difference between two DateTime values, normalized by the provided maximum distance value.
 
@@ -96,7 +96,7 @@ Value Set Functions are used for comparison of sets.
 
 ![Value functions](media/conflation-rules/value-set-function-select.png)
 
-###Best match
+### Best match
 
 The default set matching function. It should be used when matching a single value is enough to consider that the property match.
 
@@ -107,7 +107,7 @@ The following sets will result in a high matching score:
 
 A single value matching is enough to return a high matching score.
 
-###Fuzzy Jaccard
+### Fuzzy Jaccard
 This function computes the similarity of two sets of string values, and it takes into account fuzzy string matching. The values within the sets are matched using any of the string matching functions as in the previou section. Then a final aggregated set matching score is computed as follows:
 
 Given two sets of values A and B, first we computer the fuzzy overlap FO as follows:
@@ -131,7 +131,7 @@ It will not return high matching scores for the following cases:
 **Negative example:** {“Microsoft”, “Applle”, “Google”, “Intel”}, {“Microsft”}
 
 
-###Fuzzy Containment
+### Fuzzy Containment
 This function computes fuzzy containment of the values. It is useful for cases when matching sets where one of the sets has significantly fewer elements than the other. In that case, fuzzy set similarity will not be high, but fuzzy set containment will be high. To compute the final score, first we compute the fuzzy overlap FO as we did in Fuzzy Jaccard above.
 
 Then the final score will be computed as follows:
@@ -146,5 +146,3 @@ Fuzzy Containment will return high matching scores for the following cases:
 **Positive example:** {“Microsoft”, “Applle”, “Google”, “Intel”}, {“Microsft”}
 **Positive example:** {“Microsoft”, “Apple”, “Google”, “Amazon”}, {“Microsoft”, “Apple”, “Google”, “Intel”}
 **Positive example:** {“Microsoft”, “Applle”, “Google”, “Intel”}, {“Microsft”, “Apple”, “Googl”, “Intel”}
-
-
