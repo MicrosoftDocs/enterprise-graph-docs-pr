@@ -8,10 +8,12 @@
     - name: Enterprise key features
       href: enterprise-graph-key-features.md
   - name: Quickstart
+    expanded: true
     items:
       - name: Build your first graph
         href: build-graph.md
   - name: Tutorials
+    expanded: true
     items:
     - name: 1 - Create an ontology
       href: create-ontology.md
