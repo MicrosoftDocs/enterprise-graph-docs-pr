@@ -17,7 +17,7 @@ There are two places where this commonly happens.
 
 ## Ingesting new information through an existing source
 
-When you carry out a new ingestion event, the newly-created entities are matched to existing entities through the [subject key in the schema map](/schema-map-tutorial.md).
+When you carry out a new ingestion event, the newly-created entities are matched to existing entities through the [subject key in the schema map](schema-map-tutorial.md).
 
 If it's a new entity that does not match an existing subject key, then it becomes a new entity in the graph.
 

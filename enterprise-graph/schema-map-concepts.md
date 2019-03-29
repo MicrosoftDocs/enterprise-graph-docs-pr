@@ -32,7 +32,7 @@ What we are saying here conceptually is:
 
 We can complete the mapping in the interface, or we can use a mapping file. The file is defined in XML, and looks like this:
 
-```
+```XML
 <?xml version="1.0"?>
 <XmlFeedMap xmlns="http://schemas.microsoft.com/bing/mapping">
   <MappingHeader minorVersion="0" majorVersion="2" mappingName="wwi_Application_Cities_Mapping">

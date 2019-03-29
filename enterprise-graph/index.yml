@@ -46,5 +46,5 @@ sections:
     - html: <a href="ontology-overview">Entities and ontologies</a> 
     - html: <a href="source-schema-concepts">Mapping input data - source schemas and schema maps</a>
     - html: <a href="conflation-concepts">Conflation and graph updates</a>
-    - html: <a href="enterprise-graph-use-cases">Knowledge applications</a>
+    - html: <a href="enterprise-graph-key-features">Knowledge applications</a>
     
