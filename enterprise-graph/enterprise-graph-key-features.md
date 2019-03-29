@@ -12,7 +12,7 @@ ms.author: stflanag
 # Enterprise Graph key capabilities
 
 Enterprise Graph provides a powerful platform for knowledge applications in your business.
-​
+
 **Combine data silos**
 Combine many data sources together into one knowledge graph by using powerful conflation models, customizable for the most exacting data needs.
 
