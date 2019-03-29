@@ -13,16 +13,16 @@ ms.author: stflanag
 
 Enterprise Graph provides a powerful platform for knowledge applications in your business.
 ​
-## Knowledge Enrichment​
+**Combine data silos**
 Combine many data sources together into one knowledge graph by using powerful conflation models, customizable for the most exacting data needs.
 
-## Customizable ontology
+**Customizable ontology**
 Edit and extend the pre-supplied ontologies to create the entities you need for your business and use cases
 
-## SPARQL Graph Language Support​
+**SPARQL Graph Language Support​**
 Use SPARQL as a rich structured query to explore the knowledge in your graph.
 
-## APIs access
+**APIs access**
 Create your graph and build new services and capabilities on top of it using the platform APIs
 ​
 
