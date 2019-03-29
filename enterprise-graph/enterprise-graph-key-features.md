@@ -13,7 +13,7 @@ ms.author: stflanag
 
 Enterprise Graph provides a powerful platform for knowledge applications in your business.
 ​
-**Knowledge Enrichment​**
+**Combine data silos**
 Combine many data sources together into one knowledge graph by using powerful conflation models, customizable for the most exacting data needs.
 
 **Customizable ontology**
