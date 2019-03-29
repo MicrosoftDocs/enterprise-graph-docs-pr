@@ -32,7 +32,12 @@
       "branch_mapping": {}
     }
   ],
-  "branch_target_mapping": 
+    "Targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+    "branch_target_mapping": 
     {
     "live": ["Publish", "Pdf"],
     "master": ["Pdf"]
