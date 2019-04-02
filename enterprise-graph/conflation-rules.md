@@ -103,7 +103,7 @@ The default set matching function. It should be used when matching a single valu
 The following sets will result in a high matching score:
 
 **Positive example:** {“Microsoft”, “MS”, “MS corp”}, {“MS”}
-**Positive example:** { “Robyn Rihanna Fenty”, “Rihanna”, “Barbadian Pop Queen”, “Barbados Queen of Pop”, “RiRi”}, {“Caribbean Queen”, “New Queen of Pop”, “R&B Princess”, “Princess of Pop”, “RiRi”}
+**Positive example:** {"Honest Abe", "Uncle Abe", "Abraham Lincoln"}, {"Abe Lincoln", "the Great Emancipator", "the Liberator", "The Rail-Splitter"}
 
 A single value matching is enough to return a high matching score.
 
