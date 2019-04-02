@@ -14,7 +14,7 @@ ms.author: stflanag
 ## One view of your data across silos
 Enterprise Graph enables you to bring all of your data together in one place, based on one central set of entities. For example the graph entry for a single person may combine data from HR, project management, sales, support, CRM or any other silo you want to connect. With the powerful ingestion and conflation tools of Enterprise Graph, all of your data can finally be unified in an understandable way.
 
-## Find the conncetions in your data
+## Find the connections in your data
 Enterprise Graph is build on entities and relationships from the ground up. Discover connections between your entities and data silos that you may otherwise never have found.
 
 ## Customizable for the real-world complexities of your business
@@ -25,7 +25,3 @@ The Enterprise Graph platform provides a comprehensive set of APIs to enable gra
 
 ## Create more powerful search and data experiences
 It has been a long time since search was just about links. Surface entity data and relationships in your search solutions, bringing the power of your graph directly to your users where they need it the most.
-
-## Built Microsoft strong
-Enterprise Graph is built using the same technologies that power the knowledge and question-answering capabilities of the Bing search engine.
-
