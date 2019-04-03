@@ -1,0 +1,50 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Enterprise Graph by Microsoft Documentation
+metadata:
+  title: Enterprise Graph by Microsoft documentation – Tutorials, concepts and examples
+  description: Enterprise Graph by Microsoft provides everything you need to create a powerful knowledge-driven platform for your application. We provide tools to define your ontology, map and ingest data, conflate your data, and query your graph. Get started now with our quickstarts and tutorials.
+  services: machine-learning
+  ms.service: enterprise-graph
+  ms.topic: landing-page
+  author: microsteve
+  ms.author: stflanag
+  ms.date: 03/29/2019
+
+sections: 
+
+- title: 
+  items:
+  - type: paragraph
+    text: Enterprise Graph by Microsoft is currently available on a limited basis. <a href="mailto:eg-support@microsoft.com?Subject=EG%20interest">Contact us</a> to discuss your needs and project aims.
+  
+- title: 5-Minute Quickstart
+  items:
+  - type: paragraph
+    text: Learn how to <a href="build-graph">build your first graph</a> and query on that data.
+
+- title: Step-by-Step Tutorials
+  items:
+  - type: paragraph
+    text: 'Learn how to set up an ontology, map your source data, create your graph, and conflate new data.'
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="create-ontology">Create an ontology</a> 
+    - html: <a href="create-source-schema">Create a source schemas</a> to map your source data
+    - html: <a href="ingest-data">Ingest your data</a>
+    - html: <a href="create-conflation-model">Create a conflation model</a>
+    - html: <a href="query-graph">Query your graph</a>
+
+- title: Graph topics and concepts
+  items:
+  - type: paragraph
+    text: 'Understand the key underlying concepts that power Enterprise Graph by Microsoft.'
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="ontology-overview">Entities and ontologies</a> 
+    - html: <a href="source-schema-concepts">Mapping input data - source schemas and schema maps</a>
+    - html: <a href="conflation-concepts">Conflation and graph updates</a>
+    - html: <a href="enterprise-graph-key-features">Knowledge applications</a>
+    

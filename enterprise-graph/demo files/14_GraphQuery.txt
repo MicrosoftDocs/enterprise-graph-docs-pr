@@ -1,0 +1,12 @@
+Graph Query:
+=============
+
+PREFIX wwi: <http://knowledge.microsoft.com/wwi/>
+PREFIX ekg: <http://knowledge.microsoft.com/ekg/>
+SELECT ?s ?n
+WHERE {
+?s ekg:type.object.type wwi:Sales.Customers .
+?s wwi:Sales.Customers.CustomerName ?n .
+?s wwi:Sales.Customers.CustomerCategoryID 4
+}
+LIMIT 5
