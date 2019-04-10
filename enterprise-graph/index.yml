@@ -16,7 +16,7 @@ sections:
 - title: 
   items:
   - type: paragraph
-    text: Enterprise Graph by Microsoft is currently available on a limited basis. <a href="mailto:eg-support@microsoft.com?Subject=EG%20interest">Contact us</a> to discuss your needs and project aims.
+    text: Enterprise Graph by Microsoft is currently available on a limited basis. <a href="https://aka.ms/contacteg">Contact us</a> to discuss your needs and project aims.
   
 - title: 5-Minute Quickstart
   items:
