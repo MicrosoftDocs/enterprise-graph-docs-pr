@@ -22,6 +22,7 @@
   "branches_to_filter": [],
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
+  "need_generate_pdf": true,
   "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
