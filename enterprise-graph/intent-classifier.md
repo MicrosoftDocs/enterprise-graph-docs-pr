@@ -9,7 +9,27 @@ ms.date: 05/01/2019
 ms.author: stflanag
 ---
 
-# Tutorial: Create an intent
+# Tutorial: Create an intent classifier model
+
+
+
+## Prerequisites
+
+
+## Add an intent
+
+
+## Add an utterance
+
+
+## Train, validate and publish the model
+
+
+## Check the history of models
+
+
+## Manage customerized tags
+
 
 
 XXX TO DO XXX
