@@ -11,10 +11,18 @@ ms.author: stflanag
 
 # Tutorial: Create an intent classifier model
 
+In this tutorial, you'll learn to:
 
+> [!div class="checklist"]
+> * Add an intent
+> * Add an utterance
+> * Train, validate and publish the model
+> * Check the history of models
+> * Manage customerized tags
 
 ## Prerequisites
-
+- Have completed the all the essicential steps to build the graph.
+- Familiarity the basic [concepts of intent classifier](intent-classifier-overview.md)
 
 ## Add an intent
 
