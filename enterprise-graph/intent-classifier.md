@@ -88,6 +88,10 @@ After annotating, you will see the view below. If you want to change the annotat
 
 ## Check the history of models
 
+Under the "History" tab, you can check the trainning and publishing history for intent classifier models. An example for the history grid is showing as below:
+
+![Intent Classifier History grid](./media/intent-classifier-tutorial/icModel-history-grid.png)
+
 
 ## Manage customized tags
 
