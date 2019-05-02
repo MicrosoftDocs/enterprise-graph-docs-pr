@@ -21,11 +21,31 @@ In this tutorial, you'll learn to:
 > * Manage customerized tags
 
 ## Prerequisites
-- Have completed the all the essicential steps to build the graph.
+
+- Have completed all the essicential steps to build the graph.
 - Familiarity the basic [concepts of intent classifier](intent-classifier-overview.md)
 
 ## Add an intent
 
+If you have not previously created any intents, you will see an icon along with a short instuction message inviting you to add your first intent, as shown in the window:
+
+![No intents](./media/intent-classifier-tutorial/no-intents-message.png)
+
+Click on the 'Add intent' button, and you will see the a panel window launched from right side:
+
+![New intent](./media/intent-classifier-tutorial/add-intent.png)
+
+**Intent:** The meaningful name for the intent.
+
+**This is an Enterprise Graph intent:** The checkbox is selected by default which means the intent is querying an existing type in the graph.
+
+**Output type (query level):** The output type of this intent, i.e. the entity type in the graph which is refered by the intent.
+
+After you finished all the required fields and click on the "OK" button at bottom, the new intent will be displayed in a grid as below:
+
+![Intents grid](./media/intent-classifier-tutorial/intent-grid.png)
+
+Now, you can select the intent and click the "Go to Utterances" button to create utterances in the intent.
 
 ## Add an utterance
 
