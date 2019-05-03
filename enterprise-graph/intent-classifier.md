@@ -31,7 +31,7 @@ If you have not previously created any intents, you will see an icon along with 
 
 ![No intents](./media/intent-classifier-tutorial/no-intents-message.png)
 
-Click on the 'Add intent' button, and you will see the a panel window launched from right side:
+Click on the 'Add intent' button, and you will see a panel window launched from right side:
 
 ![New intent](./media/intent-classifier-tutorial/add-intent.png)
 
@@ -85,13 +85,27 @@ After annotating, you will see the view below. If you want to change the annotat
 
 ## Train, validate and publish the model
 
+Once you have created intents and utterances, you can go to the "Train & validate" tab to start training the model.
+
+The top panel displays the metrics that sumarized the current status for intents and utterances. 
+
+![Intent classifier summary metrics](./media/intent-classifier-tutorial/ic-summary-metrics.png)
+
+You can click on the "Train model" button under the metrics to start traning. It may take several minutes to finish the training. You can click the "Refresh model status" button to refresh the current model status.
+
+After the training is completed, a search box will emerge. You can enter utterance that you created before or some similar sentenses to validate the trained model. For example, you can entered "find customers in los angeles" in the search box and click the "Search" button, the validate result will be displayed under the search box. 
+
+![Intent classifier model validation](./media/intent-classifier-tutorial/validate-model.png)
+
+You can keep adding more utterances and do another training to improve the model and validate it again.
+
+Once you are satisfied with the results, you can click on the "Publish" button at bottom to make the model live.
 
 ## Check the history of models
 
 Under the "History" tab, you can check the trainning and publishing history for intent classifier models. An example for the history grid is showing as below:
 
 ![Intent Classifier History grid](./media/intent-classifier-tutorial/icModel-history-grid.png)
-
 
 ## Manage customized tags
 
