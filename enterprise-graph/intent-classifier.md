@@ -22,12 +22,12 @@ In this tutorial, you'll learn to:
 
 ## Prerequisites
 
-- Have completed all the essicential steps to build the graph.
+- Have completed all the essential steps to build the graph.
 - Familiarity the basic [concepts of intent classifier](intent-classifier-overview.md)
 
 ## Add an intent
 
-If you have not previously created any intents, you will see an icon along with a short instuction message inviting you to add your first intent, as shown in the window:
+If you have not previously created any intents, you will see an icon along with a short instruction message inviting you to add your first intent, as shown in the window:
 
 ![No intents](./media/intent-classifier-tutorial/no-intents-message.png)
 
@@ -37,11 +37,11 @@ Click on the 'Add intent' button, and you will see a panel window launched from 
 
 **Intent:** The meaningful name for the intent.
 
-**This is an Enterprise Graph intent:** The checkbox is selected by default which means the intent is querying an existing type in the graph.
+**This is an Enterprise Graph intent:** The checkbox is selected by default, which means the intent is querying an existing type in the graph.
 
-**Output type (query level):** The output type of this intent, i.e. the entity type in the graph which is refered by the intent.
+**Output type (query level):** The output type of this intent, that is, the entity type in the graph, which is referred by the intent.
 
-After you finished all the required fields and click on the "OK" button at bottom, the new intent will be displayed in a grid as below:
+After you finished all the required fields and click on the "OK" button at bottom, the new intent will show up in a grid as below:
 
 ![Intents grid](./media/intent-classifier-tutorial/intent-grid.png)
 
@@ -65,7 +65,7 @@ You can type in an utterance that you come up with, after this, a query will be 
 
 There are three types of annotations: ```Nominal entity```, ```Named entity``` and ```Other```. For example, you can annotate 'Sciences' or 'Employees' as ```Nominal entity``` and annotate 'London' or 'Bill Gates' as ```Named entity```. For ```Other```, it is for primitive type or custom tag.
 
-To add an annotation, you can select the words by clicking them, you may select multiple at once to annotate. Then you will see the raio buttons.
+To add an annotation, you can select the words by clicking them, you may select multiple at once to annotate. Then you will see the radio buttons.
 
 ![Add-utterance-radio-buttons view](media/intent-classifier/add-utterance-radio-buttons.png)
 
@@ -87,13 +87,13 @@ After annotating, you will see the view below. If you want to change the annotat
 
 Once you have created intents and utterances, you can go to the "Train & validate" tab to start training the model.
 
-The top panel displays the metrics that sumarized the current status for intents and utterances. 
+The top panel displays the metrics that summarized the current status for intents and utterances. 
 
 ![Intent classifier summary metrics](./media/intent-classifier-tutorial/ic-summary-metrics.png)
 
-You can click on the "Train model" button under the metrics to start traning. It may take several minutes to finish the training. You can click the "Refresh model status" button to refresh the current model status.
+You can click on the "Train model" button under the metrics to start training. It may take several minutes to finish the training. You can click the "Refresh model status" button to refresh the current model status.
 
-After the training is completed, a search box will emerge. You can enter utterance that you created before or some similar sentenses to validate the trained model. For example, you can entered "find customers in los angeles" in the search box and click the "Search" button, the validate result will be displayed under the search box. 
+After the training is completed, a search box will emerge. You can enter utterance that you created before or some similar sentences to validate the trained model. For example, you can enter "find customers in Los Angeles" in the search box and click the "Search" button, the validate result will show up under the search box. 
 
 ![Intent classifier model validation](./media/intent-classifier-tutorial/validate-model.png)
 
@@ -103,7 +103,7 @@ Once you are satisfied with the results, you can click on the "Publish" button a
 
 ## Check the history of models
 
-Under the "History" tab, you can check the trainning and publishing history for intent classifier models. An example for the history grid is showing as below:
+Under the "History" tab, you can check the training and publishing history for intent classifier models. An example for the history grid is showing as below:
 
 ![Intent Classifier History grid](./media/intent-classifier-tutorial/icModel-history-grid.png)
 
