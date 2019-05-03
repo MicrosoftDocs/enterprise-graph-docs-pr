@@ -23,7 +23,7 @@ In this tutorial, you'll learn to:
 ## Prerequisites
 
 - Have completed all the essential steps to build the graph.
-- Familiarity the basic [concepts of intent classifier](intent-classifier-overview.md)
+- Get familar with the basic [concepts of intent classifier](intent-classifier-overview.md)
 
 ## Add an intent
 
@@ -45,21 +45,16 @@ After you finished all the required fields and click on the "OK" button at botto
 
 ![Intents grid](./media/intent-classifier-tutorial/intent-grid.png)
 
-Now, you can select the intent and click the "Go to Utterances" button to create utterances in the intent.
-
 ## Add an utterance
 
-You can add new utterance to your intent. On the intent page, you can choose an intent from the list and click the 'Go to utterances' button on the bottom:
-
-![Go-to-utterances view](media/intent-classifier/go-to-utterances.png)
-
+Now, you can select the intent and click the "Go to Utterances" button on the bottom to create utterances in the intent.
 You will see this page:
 
-![Utterances-tab view](media/intent-classifier/utterances-tab.png)
+![Utterances-tab view](media/intent-classifier-tutorial/utterances-tab.png)
 
 To add a new utterance, you can click the 'Add' button on the toolbar, then you will see this view:
 
-![Add-utterance view](media/intent-classifier/add-utterance.png)
+![Add-utterance view](media/intent-classifier-tutorial/add-utterance.png)
 
 You can type in an utterance that you come up with, after this, a query will be shown on the bottom where you can add the annotations. 
 
@@ -67,21 +62,21 @@ There are three types of annotations: ```Nominal entity```, ```Named entity``` a
 
 To add an annotation, you can select the words by clicking them, you may select multiple at once to annotate. Then you will see the radio buttons.
 
-![Add-utterance-radio-buttons view](media/intent-classifier/add-utterance-radio-buttons.png)
+![Add-utterance-radio-buttons view](media/intent-classifier-tutorial/add-utterance-radio-buttons.png)
 
-For example, we are annotating 'machine learning'. We can select ```Named entity``` and then choose the corresponding 'Entity type' from your published ontology. 
+For example, we are annotating 'San Francisco'. We can select ```Named entity``` and then choose the corresponding 'Entity type' from your published ontology. 
 
-![Add-utterance-named-entity view](media/intent-classifier/add-utterance-named-entity.png)
+![Add-utterance-named-entity view](media/intent-classifier-tutorial/add-utterance-named-entity.png)
 
 Similarly, we can add a ```Nominal entity``` annotation.
 
 For custom tag, you can either choose from the history list or add a new one by clicking 'Add custom tag':
 
-![Add-utterance-custom-tag view](media/intent-classifier/add-utterance-custom-tag.png)
+![Add-utterance-custom-tag view](media/intent-classifier-tutorial/add-utterance-custom-tag.png)
 
 After annotating, you will see the view below. If you want to change the annotating, you can delete the annotation in the 'Summary' section and annotate again by following the steps above. If your annotating is completed, you can click the 'Save' button on the bottom.
 
-![Add-utterance-completed view](media/intent-classifier/add-utterance-completed.png)
+![Add-utterance-completed view](media/intent-classifier-tutorial/add-utterance-completed.png)
 
 ## Train, validate and publish the model
 
