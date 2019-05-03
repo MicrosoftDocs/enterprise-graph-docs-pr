@@ -16,14 +16,14 @@ In this tutorial, you'll learn to:
 > [!div class="checklist"]
 > * Add an intent
 > * Add an utterance
-> * Train, validate and publish the model
+> * Train, validate, and publish the model
 > * Check the history of models
 > * Manage customerized tags
 
 ## Prerequisites
 
 - Have completed all the essential steps to build the graph.
-- Get familar with the basic [concepts of intent classifier](intent-classifier-overview.md)
+- Get familiar with the basic [concepts of intent classifier](intent-classifier-overview.md)
 
 ## Add an intent
 
@@ -78,7 +78,7 @@ After annotating, you will see the view below. If you want to change the annotat
 
 ![Add-utterance-completed view](media/intent-classifier-tutorial/add-utterance-completed.png)
 
-## Train, validate and publish the model
+## Train, validate, and publish the model
 
 Once you have created intents and utterances, you can go to the "Train & validate" tab to start training the model.
 
