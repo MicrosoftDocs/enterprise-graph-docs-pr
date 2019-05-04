@@ -23,7 +23,7 @@ In this tutorial, you'll learn to:
 ## Prerequisites
 
 - Have completed all the essential steps to build the graph.
-- Get familiar with the basic [concepts of intent classifier](intent-classifier-overview.md)
+- Get familiar with the basic [concepts of intent classifier](intent-classifier-overview.md).
 
 ## Add an intent
 
