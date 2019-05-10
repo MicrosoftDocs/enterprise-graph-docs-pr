@@ -28,8 +28,10 @@
       href: create-conflation-model.md
     - name: 6 - Query your graph
       href: query-graph.md
-    - name: 7 -Delete your ontology
+    - name: 7 - Delete your ontology
       href: delete-ontology.md  
+    - name: 8 - Create an intent classifier model
+      href: intent-classifier.md
   - name: Concepts
     items:
     - name: Input data
@@ -44,6 +46,8 @@
       href: conflation-concepts.md
     - name: Conflation rules
       href: conflation-rules.md  
+    - name: Intent classifier overview
+      href: intent-classifier-overview.md
     - name: Quick reference
       items:
       - name: Entities
