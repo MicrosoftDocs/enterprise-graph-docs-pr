@@ -13,6 +13,8 @@ ms.author: stflanag
 
 Enterprise Graph by Microsoft enables you to build knowledge graphs that provide deeper insight into your business data. Bring many sources of data together to create one aggregate picture of your business knowledge, organized in entities and an ontology that you can customize for your business needs. Query the graph through free text search or the SPARQL graph query language.
 
+test edit ignore
+
 ## Availability
 
 **Enterprise Graph is currently available on a restricted basis.** If you think it's a good fit for your business and use cases, please <a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">contact us</a> and we'd love to talk.
