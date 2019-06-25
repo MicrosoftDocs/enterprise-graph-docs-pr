@@ -15,7 +15,7 @@ Enterprise Graph by Microsoft enables you to build knowledge graphs that provide
 
 ## Availability
 
-**Enterprise Graph is currently available on a restricted basis.** If you think it's a good fit for your business and use cases, please <a href="mailto:eg-suport@microsoft.com?Subject=EG%20interest">contact us</a> and we'd love to talk.
+**Enterprise Graph is currently available on a restricted basis.** If you think it's a good fit for your business and use cases, please [contact us](https://aka.ms/contacteg) and we'd love to talk.
 
 ## Key capabilities
 
