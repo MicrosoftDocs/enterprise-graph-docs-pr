@@ -95,4 +95,8 @@ Finally, Sasho tracks the precision of the different queries run in the instance
 
 ## Different Entity Types 
 
-
+| Tables        | Are           
+| ------------- |:-------------:
+| Condition     | A condition which can be applied to an entity. For example, ‘young’ can be set to mean employees less than the age of 30. 
+| Entity      | An entity describes a concept. For example, employees, cities, and interests are all different entities.       
+| Entity Attribute | A property of an entity. For example, the ‘first name’ of an ‘employee’ is an entity attribute of the entity ‘employee’.  
