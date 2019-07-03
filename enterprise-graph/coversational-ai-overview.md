@@ -24,7 +24,7 @@ In this tutorial, you'll learn to:
 
 ## Introduction
 
-The Conversational AI tool, part of Microsoft Enterprise Graph lets users write natural language queries to generate SPARQL, create and annotate the language models. Annotating means that users can interpret and improve the result of a given query through continual feedback, and more on this will be covered later. This document will describe the Sasho tool’s main functions. 
+The Conversational AI tool, part of Microsoft Enterprise Graph lets users write natural language queries to create and annotate the language models. Annotating means that users can interpret and improve the result of a given query through continual feedback, and more on this topic will be covered later. This document will describe the Sasho tool’s main functions. 
 
 
 The Sasho tooling is found in the Conversational AI section, pictured below: 
@@ -33,15 +33,15 @@ The Sasho tooling is found in the Conversational AI section, pictured below:
 
 ## Language Models
 
-Sasho assumes that you already have an ontology and data in place. Behind the scenes, Sasho builds language models on top of the ontology. Language models are a set of generated rules which Sasho uses to interpret natural language queries. Users can generate the baseline language model by clicking the Bootstrap button.
+Sasho assumes that you already have an ontology and data in place. Behind the scenes, Sasho builds language models on top of the ontology. Language models are a set of generated rules that Sasho uses to interpret natural language queries. Users can generate the baseline language model by clicking the Bootstrap button.
 
 ![Bootstrap](media/conversationalai-tooling/bootstrapping.png)
 
-Of course, the language models will not be perfect out of the box and must be improved. The process of improvements is the Annotations aspect of the Sasho tooling, detailed below. 
+The language models will not be perfect out of the box and must be improved. The process of improvements is the Annotations aspect of the Sasho tooling, detailed below. 
 
 ## Annotations
 
-Within Annotations, there are 2 sections: Query Plan Review and Query Plan Tagging. 
+Within Annotations, there are two sections: Query Plan Review and Query Plan Tagging. 
 
 ### Query Plan Review 
 
@@ -57,7 +57,7 @@ By labelling the #1 interpretation as bad, #2 as good, and the #3 interpretation
 
 ###  Query Plan Tagging
 
-There will be queries which Sasho does not completely understand, due to the language models missing some type of information. In these instances, users can annotate on a query. The process to do this is described below: 
+There will be queries that Sasho does not completely understand, due to the language models missing some type of information. In these instances, users can annotate on a query. The process to do this is described below: 
 
 In this same example, the word ‘workers’ and ‘know’ is not recognized. We’ll focus on ‘workers.’ ‘Workers’ needs to be classified as a synonym of ‘employee’, which is where the tool can help. Sasho has already tried to infer that ‘workers’ is ‘employees’ in the interpretations, but this will help further improve the language model. 
 
@@ -79,7 +79,7 @@ After selecting the operation, the user can update the model, and the query will
 
 ![NewInterpret](media/conversationalai-tooling/newinterpret.png)
 
-One key difference in the interpretation now versus before is that the business employee node is now colored in blue. This means that because we’ve linked ‘worker’ and ‘employee’ through the query tagging, Sasho knows that the central point of the question is around the business employee. Previously, it had to infer this. Compare the original interpreted query with the new interpretation after the annotations that were made:
+One key difference in the interpretation now versus before is that the business employee node is now colored in blue. This means that because we’ve linked ‘worker’ and ‘employee’ through the query tagging, Sasho knows that the central point of the question is around the business employee. Previously, it had to infer this point. Compare the original interpreted query with the new interpretation after the annotations that were made:
 
 **Old Interpretation**
 
@@ -101,7 +101,7 @@ This section will define and provide examples for the different types of tagging
 
 | Annotation Type        | Description           
 | ------------- |-------------
-| Condition     | A condition which can be applied to an entity. For example, ‘young’ can be set to mean employees less than the age of 30. 
+| Condition     | A condition that can be applied to an entity. For example, ‘young’ can be set to mean employees less than the age of 30. 
 | Entity      | An entity describes a concept. For example, employees, cities, and interests are all different entities.       
 | Entity Attribute | A property of an entity. For example, the ‘first name’ of an ‘employee’ is an entity attribute of the entity ‘employee’.  
 | Instance | An example from the data of an entity. For example, ‘London’ is an Instance of the Entity ‘City’  
@@ -141,4 +141,4 @@ The **‘s** shows the relationship between John and his patents.
 
 ## Conclusion
 
-The Sasho tooling provides a visual, interpretable mechanism to interpret and improve natural language queries. Please reach out to the Marcel Migration team for any questions.  
+The Sasho tooling provides a visual, interpretable mechanism to interpret and improve natural language queries.
