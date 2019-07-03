@@ -29,10 +29,10 @@ The Conversational AI tool, part of Microsoft Enterprise Graph lets users write 
 
 The Sasho tooling is found in the Conversational AI section, pictured below: 
 
-![Location](./media/conversationalai-tooling/conversationalai-location.png)
+![Location](media/conversationalai-tooling/conversationalai-location.png)
 
 ## Language Models
 
 Sasho assumes that you already have an ontology and data in place. Behind the scenes, Sasho builds language models on top of the ontology. Language models are a set of generated rules which Sasho uses to interpret natural language queries. Users can generate the baseline language model by clicking the Bootstrap button.
 
-![Bootstrap](./media/conversationalai-tooling/bootstrapping.png)
+![Bootstrap](media/conversationalai-tooling/bootstrapping.png)
