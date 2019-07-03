@@ -95,8 +95,50 @@ Finally, Sasho tracks the precision of the different queries run in the instance
 
 ## Different Entity Types 
 
-| Tables        | Are           
-| ------------- |:-------------:
+This section will define and provide examples for the different types of tagging operations a user can do. 
+
+![Operations](media/conversationalai-tooling/operations.png)
+
+| Annotation Type        | Description           
+| ------------- |-------------
 | Condition     | A condition which can be applied to an entity. For example, ‘young’ can be set to mean employees less than the age of 30. 
 | Entity      | An entity describes a concept. For example, employees, cities, and interests are all different entities.       
 | Entity Attribute | A property of an entity. For example, the ‘first name’ of an ‘employee’ is an entity attribute of the entity ‘employee’.  
+| Instance | An example from the data of an entity. For example, ‘London’ is an Instance of the Entity ‘City’  
+| Relationship | The relationship between two entities. For example, in the query ‘employees in California’, ‘in’ is the relationship between ‘employees’ and California.’
+
+### Condition
+
+**Entry level** can be a conditional attribute of employee in this case, with a start date specification. 
+
+![Operations](media/conversationalai-tooling/operations.png)
+
+### Entity
+
+**Employees** is an Entity. 
+
+![Entities](media/conversationalai-tooling/entity.png)
+
+### Entity Attribute
+
+Titles is an attribute of patent. 
+
+![Attribute](media/conversationalai-tooling/attribute.png)
+
+### Instance
+
+John is an instance of an employee. 
+
+![Instance](media/conversationalai-tooling/instance.png)
+
+Unlike the other types of annotations, users cannot create a new instance with the tool; only existing previous instances. To add a new name of an employee for example, this must be done upstream at the data ingestion stage, not at the Sasho tooling level. 
+
+### Relationship
+
+The **‘s** shows the relationship between John and his patents. 
+
+![Relationship](media/conversationalai-tooling/relationship.png)
+
+## Conclusion
+
+The Sasho tooling provides a visual, interpretable mechanism to interpret and improve natural language queries. Please reach out to the Marcel Migration team for any questions.  
