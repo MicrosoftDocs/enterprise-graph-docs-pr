@@ -4,12 +4,12 @@ description: Learn how to use conversational AI with Enterprise Graph by Microso
 author: sramesh
 
 ms.service: enterprise-graph
-ms.topic: overview
+ms.topic: tutorial
 ms.date: 07/02/2019
 ms.author: sramesh
 ---
 
-# Overview: Conversational AI Overview
+# Tutorial: Build Language Models 
 
 In this tutorial, you'll learn to:
 
