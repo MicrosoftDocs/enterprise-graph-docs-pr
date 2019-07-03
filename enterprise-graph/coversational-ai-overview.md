@@ -4,12 +4,12 @@ description: Learn how to use conversational AI with Enterprise Graph by Microso
 author: sramesh
 
 ms.service: enterprise-graph
-ms.topic: tutorial
+ms.topic: overview
 ms.date: 07/02/2019
 ms.author: sramesh
 ---
 
-# Tutorial: Create an intent classifier model
+# Overview: Conversational AI Overview
 
 In this tutorial, you'll learn to:
 
