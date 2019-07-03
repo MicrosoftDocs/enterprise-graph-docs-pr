@@ -49,7 +49,7 @@ The goal of this section is to help Sasho understand the best interpretation of 
 
 ![OriginalInterprets](media/conversationalai-tooling/interpretations.png)
 
-The interpretations are ordered from most confident to least confident. If there are multiple interpretations, users can judge the interpretations as Perfect, Good, Fair, Bad, or Not Judged. Once the user judges the interpretation, Sasho will incorporate the feedback, rerun the query, and provided an updated order of visual interpretations. In this example, the #3 interpretation looks better than the #1 interpretation. Sasho has tried to infer that workers actually means employees, but it is not very confident about it. 
+The interpretations are ordered from most confident to least confident. If there are multiple interpretations, users can judge the interpretations as Perfect, Good, Fair, Bad, or Not Judged. Once the user judges the interpretation, Sasho will incorporate the feedback, rerun the query, and provided an updated order of visual interpretations. In this example, the #3 interpretation looks better than the #1 interpretation. Sasho has tried to infer that workers actually means employees, but it is not confident about this inference. 
 
 By labelling the #1 interpretation as bad, #2 as good, and the #3 interpretation as Perfect, the language models will update and reorder the results. The ‘bad’ interpretation is now gone. 
 
@@ -59,7 +59,7 @@ By labelling the #1 interpretation as bad, #2 as good, and the #3 interpretation
 
 There will be queries that Sasho does not completely understand, due to the language models missing some type of information. In these instances, users can annotate on a query. The process to do this is described below: 
 
-In this same example, the word ‘workers’ and ‘know’ is not recognized. We’ll focus on ‘workers.’ ‘Workers’ needs to be classified as a synonym of ‘employee’, which is where the tool can help. Sasho has already tried to infer that ‘workers’ is ‘employees’ in the interpretations, but this will help further improve the language model. 
+In this same example, the word ‘workers’ and ‘know’ is not recognized. We’ll focus on ‘workers.’ ‘Workers’ needs to be classified as a synonym of ‘employee’, which is where the tool can help. Sasho has already tried to infer that ‘workers’ is ‘employees’ in the interpretations, but this annotatation will help further improve the language model. 
 
 ![GoodInterprets2](media/conversationalai-tooling/goodinterpret.png)
 
@@ -91,7 +91,7 @@ One key difference in the interpretation now versus before is that the business 
 
 In summary, we taught Sasho to recognize ‘workers’ as a synonym for ‘employees’. 
 
-Finally, Sasho tracks the precision of the different queries run in the instance. Users can use this to track how Sasho is improving. 
+Finally, Sasho tracks the precision of the different queries run in the instance. Users can use this feature to track how Sasho is improving. 
 
 ## Different Entity Types 
 
@@ -131,7 +131,7 @@ John is an instance of an employee.
 
 ![Instance](media/conversationalai-tooling/instance.png)
 
-Unlike the other types of annotations, users cannot create a new instance with the tool; only existing previous instances. To add a new name of an employee for example, this must be done upstream at the data ingestion stage, not at the Sasho tooling level. 
+Unlike the other types of annotations, users cannot create a new instance with the tool; only existing previous instances. For example, adding a new name of an employee entity must be done upstream at the data ingestion stage, not at the Sasho tooling level. 
 
 ### Relationship
 
