@@ -24,7 +24,7 @@ In this tutorial, you'll learn to:
 
 ## Introduction
 
-The Conversational AI tool, part of Microsoft Enterprise Graph lets users write natural language queries to create and annotate the language models. Annotating means that users can interpret and improve the result of a given query through continual feedback, and more on this topic will be covered later. This document will describe the Sasho tool’s main functions. 
+The Conversational AI tool, part of Microsoft Enterprise Graph lets users write natural language queries to create and annotate the language models. Annotating means that users can interpret and improve the result of a given query through continual feedback. This document will describe the Sasho tool’s main functions. 
 
 
 The Sasho tooling is found in the Conversational AI section, pictured below: 
@@ -37,7 +37,7 @@ Sasho assumes that you already have an ontology and data in place. Behind the sc
 
 ![Bootstrap](media/conversationalai-tooling/bootstrapping.png)
 
-The language models will not be perfect out of the box and must be improved. The process of improvements is the Annotations aspect of the Sasho tooling, detailed below. 
+The language models won't be perfect out of the box and must be improved. The process of improvements is the Annotations aspect of the Sasho tooling, detailed below. 
 
 ## Annotations
 
@@ -45,13 +45,13 @@ Within Annotations, there are two sections: Query Plan Review and Query Plan Tag
 
 ### Query Plan Review 
 
-The goal of this section is to help Sasho understand the best interpretation of a natural language query. The basic steps are as follows: When a user enters in a query, the result will be several visual interpretations, in the order of confidence. The user has the option to rate the interpretations so that Sasho can improve. Behind the interpretations themselves are a graphical and thus more interpretable view of a SPARQL query. 
+The goal of this section is to help Sasho understand the best interpretation of a natural language query. The basic steps are as follows: When a user enters in a query, the result will be several visual interpretations in the order of confidence. The user has the option to rate the interpretations so that Sasho can improve. 
 
 ![OriginalInterprets](media/conversationalai-tooling/interpretations.png)
 
 The interpretations are ordered from most confident to least confident. If there are multiple interpretations, users can judge the interpretations as Perfect, Good, Fair, Bad, or Not Judged. Once the user judges the interpretation, Sasho will incorporate the feedback, rerun the query, and provided an updated order of visual interpretations. In this example, the #3 interpretation looks better than the #1 interpretation. Sasho has tried to infer that workers actually means employees, but it is not confident about this inference. 
 
-By labelling the #1 interpretation as bad, #2 as good, and the #3 interpretation as Perfect, the language models will update and reorder the results. The ‘bad’ interpretation is now gone. 
+By labeling the #1 interpretation as bad, #2 as good, and the #3 interpretation as Perfect, the language models will update and reorder the results. The ‘bad’ interpretation is now gone. 
 
 ![GoodInterprets](media/conversationalai-tooling/goodinterpret.png)
 
@@ -79,7 +79,7 @@ After selecting the operation, the user can update the model, and the query will
 
 ![NewInterpret](media/conversationalai-tooling/newinterpret.png)
 
-One key difference in the interpretation now versus before is that the business employee node is now colored in blue. This means that because we’ve linked ‘worker’ and ‘employee’ through the query tagging, Sasho knows that the central point of the question is around the business employee. Previously, it had to infer this point. Compare the original interpreted query with the new interpretation after the annotations that were made:
+One key difference in the interpretation now versus before is that the business employee node is now colored in blue. This color change means that because we’ve linked ‘worker’ and ‘employee’ through the query tagging, Sasho knows that the central point of the question is around the business employee. Previously, it had to infer this point. Compare the original interpreted query with the new interpretation after the annotations that were made:
 
 **Old Interpretation**
 
@@ -131,7 +131,7 @@ John is an instance of an employee.
 
 ![Instance](media/conversationalai-tooling/instance.png)
 
-Unlike the other types of annotations, users cannot create a new instance with the tool; only existing previous instances. For example, adding a new name of an employee entity must be done upstream at the data ingestion stage, not at the Sasho tooling level. 
+Unlike the other types of annotations, users cannot create a new instance with the tool; only existing previous instances. For example, adding a new name of an employee entity must happen upstream at the data ingestion stage, not at the Sasho tooling level. 
 
 ### Relationship
 
