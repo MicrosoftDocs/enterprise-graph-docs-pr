@@ -10,8 +10,11 @@ ms.author: stflanag
 ---
 
 # Input data
+To be ingested into the graph, your input data must be correctly formatted as a TSV file in the following format
 
-To be ingested into the graph, your input data must be correctly formatted as a TSV file. 
+<DocumentId1><tab><Content of DocumentId1 in Json Format>
+<DocumentId2><tab><Content of DocumentId2 in Json Format>
+<DocumentId3><tab><Content of DocumentId3 in Json Format>
 
 DocumentId is unique for a datasource. But there can be documents with same document id across datasources.
 If new paylod is ingested with existing documentId, then the content of documentId in the graph would be overwrittten with the new payload.
