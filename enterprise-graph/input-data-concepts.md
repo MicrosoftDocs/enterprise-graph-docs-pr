@@ -13,6 +13,9 @@ ms.author: stflanag
 
 To be ingested into the graph, your input data must be correctly formatted as a TSV file. 
 
+DocumentId is unique for a datasource. But there can be documents with same document id across datasources.
+If new paylod is ingested with existing documentId, then the content of documentId in the graph would be overwrittten with the new payload.
+
 > [!TIP]
 > Do not ingest more data into the Enterprise Graph platform than you need to power the use-cases you are trying to enable. 
 
