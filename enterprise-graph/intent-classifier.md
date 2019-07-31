@@ -58,7 +58,7 @@ To add a new utterance, you can click the 'Add' button on the toolbar, then you 
 
 You can type in an utterance that you come up with, after this, a query will be shown on the bottom where you can add the annotations. 
 
-There are three types of annotations: ```Nominal entity```, ```Named entity``` and ```Other```. For example, you can annotate 'Sciences' or 'Employees' as ```Nominal entity``` and annotate 'London' or 'Bill Gates' as ```Named entity```. For ```Other```, it is for primitive type or custom tag.
+There are two types of annotations: ```Named entity``` and ```Other```. For example, you can annotate 'London' or 'Bill Gates' as ```Named entity```. For ```Other```, it is for primitive type or custom tag.
 
 To add an annotation, you can select the words by clicking them, you may select multiple at once to annotate. Then you will see the radio buttons.
 
@@ -67,8 +67,6 @@ To add an annotation, you can select the words by clicking them, you may select 
 For example, we are annotating 'San Francisco'. We can select ```Named entity``` and then choose the corresponding 'Entity type' from your published ontology. 
 
 ![Add-utterance-named-entity view](media/intent-classifier-tutorial/add-utterance-named-entity.png)
-
-Similarly, we can add a ```Nominal entity``` annotation.
 
 For custom tag, you can either choose from the history list or add a new one by clicking 'Add custom tag':
 
@@ -86,7 +84,11 @@ The top panel displays the metrics that summarized the current status for intent
 
 ![Intent classifier summary metrics](./media/intent-classifier-tutorial/ic-summary-metrics.png)
 
-You can click on the "Train model" button under the metrics to start training. It may take several minutes to finish the training. You can click the "Refresh model status" button to refresh the current model status.
+You can click on either "Fast train model" or "Full train model" button under the metrics to start training. It may take several minutes to finish the training. You can click the "Refresh model status" button to refresh the current model status.
+
+> The difference between "Fast train model" and "Full train model":<br />
+> Fast train model: mainly for quick fixing of DSAT, resulting model is less flexible and requires strict match to utterance to correctly interpret; 
+> Full train model: resulting model is able to handle unseen mentions and variations in utterance, model is more versatile and flexible
 
 After the training is completed, a search box will emerge. You can enter utterance that you created before or some similar sentences to validate the trained model. For example, you can enter "find customers in Los Angeles" in the search box and click the "Search" button, the validate result will show up under the search box. 
 
