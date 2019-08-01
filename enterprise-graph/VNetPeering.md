@@ -14,7 +14,7 @@ ms.author: coch
 Azure virtual network peering could enable you seamlessly connect two Azure Vnet across Azure Tenents. Once peered, the virtual networks appear as one, for connectivity purposes. The traffic between virtual machines in the peered virtual networks is routed through the Microsoft backbone infrastructure, much like traffic is routed between virtual machines in the same virtual network, through private IP addresses only.
 
 To enable Vnet Peering in Enterprise Graph, please make sure the "Use VNet Peering" box is checked when you provision it. The VNet subnet range is the private ip addresses that can be used by the physical resources in MS subnet. Please make sure you leave at least 128 ip addresses.
-![Source schema view](media/vnetpeering/vnetpeering.png)
+![Source schema view](media/vnetpeering/vnetpeering.PNG)
 
 # Steps to enable VNet Peering in Enterprise graph
 
