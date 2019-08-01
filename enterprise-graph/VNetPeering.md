@@ -27,5 +27,8 @@ Enabling VNet Peering needs collaboration betweeen user of customer subscription
 * Execute the powershell 6.2 you just installed with administrator role.   
 * Set-ExecutionPolicy unrestricted 
 * on Powershell log in using command "Connect-AzAccount", follow the instruction to log in customer subscription 
-* Obtain nsg_Az.ps1 script from user of MS subscription, and run it to configure NSG rules, example: 
+* Obtain nsg_Az.ps1 script from user of MS subscription, and run the following to configure NSG rules.
+
+```
 nsg_Az.ps1 <ms-subscription> <ms-resource-group> <ms-vnet> <customer-subscription> <customer-resource-group> <customer-vnet>
+```
