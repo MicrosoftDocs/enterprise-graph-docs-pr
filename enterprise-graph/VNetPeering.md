@@ -21,15 +21,14 @@ To enable VNet Peering in Enterprise Graph, please make sure the "Use VNet Peeri
 Enabling VNet Peering needs collaboration betweeen customer and Microsoft admins.
 
 * Customer admin assigns network contributor role of the customer VNet to a MS admin user from MEG team.
-* MEG admin assigns network contributor role of the MS MEG VNet to a customer admin user.
+* Make a request to MEG admin to network contributor role of the MS MEG VNet to a customer admin user.
 * Customer admin informs MEG admin to enable VNet peering. When it is done, customer admin can do the following steps to configure NSG rules to block the traffic from MS VNet to Customer VNet to improve security.
 
-* Install powershell 6.2 on a Machine/VM in customer VNet.
-* Execute the powershell with administrator role.
-* Run "``Set-ExecutionPolicy unrestricted``" to set execution policy unrestricted.
-* Run command "``Connect-AzAccount``", and follow the instructions to log in customer subscription.
-* Obtain nsg_Az.ps1 script from MS Admin, and use the following command to configure NSG rules.
-
-```
-nsg_Az.ps1 <ms-subscription> <ms-resource-group> <ms-vnet> <customer-subscription> <customer-resource-group> <customer-vnet>
-```
+    * Install powershell 6.2 on a Machine/VM in customer VNet.
+    * Execute the powershell with administrator role.
+    * Run "``Set-ExecutionPolicy unrestricted``" to set execution policy unrestricted.
+    * Run command "``Connect-AzAccount``", and follow the instructions to log in customer subscription.
+    * Obtain nsg_Az.ps1 script from MS Admin, and use the following command to configure NSG rules.
+    ```
+    nsg_Az.ps1 <ms-subscription> <ms-resource-group> <ms-vnet> <customer-subscription> <customer-resource-group> <customer-vnet>
+    ```
