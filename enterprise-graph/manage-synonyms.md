@@ -21,7 +21,7 @@ In this example, we will create a synonym conflation model to apply to the Custo
 ## Create a conflation synonym model
 
 ### Create synonym file
-Same as a normal [conflation model](conflation-concepts.md), conflation synonym model is just another model that helps you conflate mutiple entities into same one. It's just that all these entities need to be conflated together are synonyms to each other. Before we start to create a synonym model in the azure portal, we need to create a tsv file we called synonym file. In this file, we need to define what are the synonyms for each entity name. For example, we all know that *New York City* is also known as *The Big Apple*. Similar to *Los Angeles*, which has another name as *City of Angels*. So, with the example above, we can create the following synonym file:
+Creating a synonym file is the same as a [conflation model](conflation-concepts.md), conflation synonym model is just another model that helps you conflate multiple entities into one. All these entities need to be conflated together are synonyms to each other. Before we start to create a synonym model in the azure portal, we need to create a tsv file called synonym file. In this file, we need to define what are the synonyms for each entity name. For example, we all know that *New York City* is also known as *The Big Apple*. Similar to *Los Angeles*, which has another name as *City of Angels*. So, with the example above, we can create the following synonym file:
 
 
  ![Synonym Example](media/conflation-synonym/synonym_example.png)
