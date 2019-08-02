@@ -22,7 +22,7 @@ Enabling VNet Peering needs collaboration betweeen customer and Microsoft admins
 
 * Customer admin assigns network contributor role of the customer VNet to a MS admin user from MEG team.
 * MEG admin assigns network contributor role of the MS MEG VNet to a customer admin user.
-* Customer admin informs MEG admin to enable VNet peering. When it is done, user of customer subscription can do the following steps to configure NSG rules to block the traffic from MS VNet to Customer VNet to improve security.
+* Customer admin informs MEG admin to enable VNet peering. When it is done, customer admin can do the following steps to configure NSG rules to block the traffic from MS VNet to Customer VNet to improve security.
 
 * Install powershell 6.2 on a Machine/VM in customer VNet.
 * Execute the powershell with administrator role.
