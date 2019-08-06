@@ -9,26 +9,26 @@ ms.date: 07/29/2019
 ms.author: coch
 ---
 
-# VNet peering
+# VNet Peering
 
-Azure virtual network peering will enable you seamless connections to two Azure virtual networks across Azure Tenants. Once peered, the virtual networks appear as one, for connectivity purposes. The traffic between virtual machines in the peered virtual networks is routed through the Microsoft backbone infrastructure, much like traffic is routed between virtual machines in the same virtual network, through private IP addresses only.
+Azure virtual network peering enables users to seamlessly connect to two Azure virtual networks across Azure Tenants. Once the connection is successful, the virtual networks appear as one network which can be easily connected to. The traffic between virtual machines in the peered virtual networks is routed through the Microsoft backbone infrastructure. This is similar to the way network traffic, through private IP addresses, is routed between virtual machines in the same virtual network.
 
-To enable VNet Peering in Enterprise Graph, please make sure the "Use VNet Peering" box is checked when you provision it. The VNet subnet range is the private ip addresses that can be used by the physical resources in MS subnet. Please make sure you leave at least 128 ip addresses.
+To enable VNet Peering in Enterprise Graph, ensure that the "Use VNet Peering" box is checked when you provision it. The VNet subnet range is the range of the private IP addresses that can be used by the physical resources in MS subnet. At minimum, the range should have 128 IP addresses.
 ![Source schema view](media/vnetpeering/vnetpeering.PNG)
 
 # Steps to enable VNet Peering in Enterprise graph
 
-Enabling VNet Peering needs collaboration betweeen customer and Microsoft admins.
+Both customer and Microsoft admins are required to enable VNet Peering.
 
-* Customer admin assigns network contributor role of the customer VNet to a MS admin user from MEG team.
-* Make a request to MEG admin to network contributor role of the MS MEG VNet to a customer admin user.
-* Customer admin informs MEG admin to enable VNet peering. When it is done, customer admin can do the following steps to configure NSG rules to block the traffic from MS VNet to Customer VNet to improve security.
+* On the customer VNet, the customer admin assigns the **network contributor** role to a Microsoft admin user from MEG team.
+* On the MS MEG VNet, the MEG admin assigns the network contributor role to a customer admin user. 
+* The MEG admin enables VNet peering. Once enabled, the customer admin can run the following steps to configure NSG rules to block the traffic from MS VNet to Customer VNet to improve security.
 
-    * Install powershell 6.2 on a Machine/VM in customer VNet.
-    * Execute the powershell with administrator role.
-    * Run "``Set-ExecutionPolicy unrestricted``" to set execution policy unrestricted.
-    * Run command "``Connect-AzAccount``", and follow the instructions to log in customer subscription.
-    * Obtain nsg_Az.ps1 script from MS Admin, and use the following command to configure NSG rules.
+    * Install Powershell 6.2 on a VM in the customer VNet.
+    * Open Powershell in administrator mode.
+    * Run "``Set-ExecutionPolicy unrestricted``"
+    * Run "``Connect-AzAccount``", and follow the instructions to log in to the customer subscription.
+    * Obtain the nsg_Az.ps1 script from the MS Admin, and use the following command to configure the NSG rules.
     ```
     nsg_Az.ps1 <ms-subscription> <ms-resource-group> <ms-vnet> <customer-subscription> <customer-resource-group> <customer-vnet>
     ```
