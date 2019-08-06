@@ -20,7 +20,7 @@ To enable VNet Peering in Enterprise Graph, ensure that the "Use VNet Peering" b
 
 Both customer and Microsoft admins are required to enable VNet Peering.
 
-* On the customer VNet, the customer admin assigns the **network contributor** role to a Microsoft admin user from MEG team.
+* On the customer VNet, the customer admin assigns the network contributor role to a Microsoft admin user from MEG team.
 * On the MS MEG VNet, the MEG admin assigns the network contributor role to a customer admin user. 
 * The MEG admin enables VNet peering. Once enabled, the customer admin can run the following steps to configure NSG rules to block the traffic from MS VNet to Customer VNet to improve security.
 
