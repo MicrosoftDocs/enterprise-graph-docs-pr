@@ -21,18 +21,18 @@ In this example, we will create a synonym conflation model to apply to the Custo
 ## Create a conflation synonym model
 
 ### Create synonym file
-Creating a synonym file is the same as a [conflation model](conflation-concepts.md), conflation synonym model is just another model that helps you conflate multiple entities into one. All these entities need to be conflated together are synonyms to each other. Before we start to create a synonym model in the azure portal, we need to create a tsv file called synonym file. In this file, we need to define what are the synonyms for each entity name. For example, we all know that *New York City* is also known as *The Big Apple*. Similar to *Los Angeles*, which has another name as *City of Angels*. So, with the example above, we can create the following synonym file:
+Creating a synonym file is the same as a [conflation model](conflation-concepts.md), conflation synonym model is just another model that helps you conflate multiple entities into one. All these entities need to be conflated together are synonyms to each other. Before we start to create a synonym model in the Azure portal, we need to create a tsv file called synonym file. In this file, we need to define what are the synonyms for each entity name. For example, we all know that *New York City* is also known as *The Big Apple*. Similar to *Los Angeles*, which has another name as *City of Angels*. So, with the example above, we can create the following synonym file:
 
 
  ![Synonym Example](media/conflation-synonym/synonym_example.png)
 
-The synonym file needs to be a tsv file which has two parts, the 1st part is the entity name, and the 2nd part is a json object which has name, alias, State, and Country. Among these 4 properties, only name and alias are required for non city entity types. And the State and Country properties are only required for city type entities.
+The synonym file needs to be a tsv file, which has two parts, the 1st part is the entity name, and the 2nd part is a json object, which has name, alias, State, and Country. Among these four properties, only name and alias are required for non-city entity types. And the State and Country properties are only required for city type entities.
 
-After creating the synonym file, we're now ready to create synonym model in the azure portal.
+After creating the synonym file, we're now ready to create synonym model in the Azure portal.
 
 ### Generate synonym model
 
-Navigate to the **Manage synonyms** tab of the tab list in the azure portal
+Navigate to the **Manage synonyms** tab of the tab list in the Azure portal
 
  ![Synonym Example](media/conflation-synonym/tab-list.png)
 
@@ -48,13 +48,13 @@ When you choose 'Create New' from the 'Create model from' option (as opposed to 
 
  ![Synonym Example](media/conflation-synonym/add-synonym2.png)
 
- When you click the Entity type, you can choose one type of the entites from the drop down list you want to conflate with. If you don't see any thing from the drop down list, there could be something wrong with your source schema. Make sure that you have your schema map created correctly. And check the box of **Merge synonym sets that overlap** if you want to. Also, if you want to do create the synonym conflation model for city type entity, please check the **Is city conflation model**. Once you checked it, you'll four more blocks are provided.
+ When you click the Entity type, you can choose one type of the entities from the drop-down list you want to conflate with. If you don't see any thing from the drop-down list, there could be something wrong with your source schema. Make sure that you have your schema map created correctly. And check the box of **Merge synonym sets that overlap** if you want to. Also, if you want to create the synonym conflation model for city type entity, please check the **Is city conflation model**. Once you checked it, you'll four more blocks are provided.
 
   ![Synonym Example](media/conflation-synonym/add-synonym3.png)
 
-In the newly prompted blocks, you need to provide the entity type and ontology property for both state and country entities. Why are these required? An example will be,  if there're two city entities with name vancouver in your graph, one is Vancouver, WA, USA and another one actually represents Vancouver, BC, Canada. The system may conflate these two together as one entity if you don't provide the state and country values correctly. With the state and country values provided accurately, the conflation system will understand that these two vancouver entities are actually different entities, and will not incorrectly conflate them together.
+In the newly prompted blocks, you need to provide the entity type and ontology property for both state and country entities. Why are these properties required? An example will be,  if there are two city entities with name Vancouver in your graph, one is Vancouver, WA, USA and another one actually represents Vancouver, BC, Canada. The system may conflate the two entities together as one entity if you don't provide the state and country values correctly. With the state and country values provided accurately, the conflation system will understand that the two Vancouver entities are different entities, and will not incorrectly conflate them together.
 
-Finally, click the **Import synonym file** to upload the synonym file we created at the beginning of this section. And click the **Add Model** button, you're successfully created a synonym model for your conflaiton system.
+Finally, click the **Import synonym file** to upload the synonym file we created at the beginning of this section. And click the **Add Model** button, you're successfully created a synonym model for your conflation system.
 
 Once you saved your synonym model, it will show up in your **Manage synonyms** portal.
 
