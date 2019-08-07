@@ -21,12 +21,12 @@ In this example, we will create a synonym conflation model to apply to the Custo
 ## Create a conflation synonym model
 
 ### Create synonym file
-Creating a synonym file is the same as a [conflation model](conflation-concepts.md), conflation synonym model is just another model that helps you conflate multiple entities into one. All these entities need to be conflated together are synonyms to each other. Before we start to create a synonym model in the Azure portal, we need to create a tsv file called synonym file. In this file, we need to define what are the synonyms for each entity name. For example, we all know that *New York City* is also known as *The Big Apple*. Similar to *Los Angeles*, which has another name as *City of Angels*. So, with the example above, we can create the following synonym file:
+Creating a synonym file is the same as a [conflation model](conflation-concepts.md), conflation synonym model is just another model that helps you conflate multiple entities into one. Before we start to create a synonym model in the Azure portal, we need to create a tsv file called synonym file. In this file, we need to define what are the synonyms for each entity name. For example, we all know that *New York City* is also known as *The Big Apple*. Similar to *Los Angeles*, which has another name as *City of Angels*. So, with the example above, we can create the following synonym file:
 
 
  ![Synonym Example](media/conflation-synonym/synonym_example.png)
 
-The synonym file needs to be a tsv file, which has two parts, the 1st part is the entity name, and the 2nd part is a json object, which has name, alias, State, and Country. Among these four properties, only name and alias are required for non-city entity types. And the State and Country properties are only required for city type entities.
+The synonym file needs to be a tsv file. The has two parts, the 1st part is the entity name, and the 2nd part is a json object. And the json object need to have name, alias, State, and Country. Among these four properties, only name and alias are required for non-city entity types. And the State and Country properties are only required for city type entities.
 
 After creating the synonym file, we're now ready to create synonym model in the Azure portal.
 
@@ -52,7 +52,7 @@ When you choose 'Create New' from the 'Create model from' option (as opposed to 
 
   ![Synonym Example](media/conflation-synonym/add-synonym3.png)
 
-In the newly prompted blocks, you need to provide the entity type and ontology property for both state and country entities. Why are these properties required? An example will be,  if there are two city entities with name Vancouver in your graph, one is Vancouver, WA, USA and another one actually represents Vancouver, BC, Canada. The system may conflate the two entities together as one entity if you don't provide the state and country values correctly. With the state and country values provided accurately, the conflation system will understand that the two Vancouver entities are different entities, and will not incorrectly conflate them together.
+In the newly prompted blocks, you need to provide the entity type and ontology property for both state and country entities. Why are these properties required? An example will be, if you have both Vancouver, WA, USA and Vancouver, BC, Canada in your graph. The system may conflate the two entities together as one entity if you don't provide the state and country values correctly. With the state and country values provided, the conflation system will understand that the two Vancouver entities are different entities, and will not conflate them.
 
 Finally, click the **Import synonym file** to upload the synonym file we created at the beginning of this section. And click the **Add Model** button, you're successfully created a synonym model for your conflation system.
 
@@ -60,4 +60,4 @@ Once you saved your synonym model, it will show up in your **Manage synonyms** p
 
   ![Synonym Example](media/conflation-synonym/manage-synonym.png)
 
-As the picture shows, as long as your synonym model status is **Published**, your synonym model is successfully registered with conflation system. And with next time data ingestion, the synonym conflation will work as you defined.
+As the picture shows, as long as your synonym model status is **Published**, your synonym model is successfully registered. And with next time data ingestion, the synonym conflation will work as you defined.
