@@ -10,7 +10,7 @@ ms.author: MSFTChao
 ---
 
 # Tutorial: Manage synonyms
-In this example, we will create a synonym conflation model to apply to the Customer entity type.
+In this example, let's create a synonym conflation model to apply to the Customer entity type.
 
 ## Prerequisite
 * [create an ontology](/create-ontology.md)
@@ -26,7 +26,7 @@ Creating a synonym file is the same as a [conflation model](conflation-concepts.
 
  ![Synonym Example](media/conflation-synonym/synonym_example.png)
 
-The synonym file needs to be a tsv file. The has two parts, the 1st part is the entity name, and the 2nd part is a json object. And the json object need to have name, alias, State, and Country. Among these four properties, only name and alias are required for non-city entity types. And the State and Country properties are only required for city type entities.
+The synonym file needs to be a tsv file. And it has two parts, the first part is the entity name, and the second part is a json object. And the json object needs to have name, alias, State, and Country. Among these four properties, only name and alias are required for non-city entity types. And the State and Country properties are only required for city type entities.
 
 After creating the synonym file, we're now ready to create synonym model in the Azure portal.
 
@@ -43,16 +43,16 @@ Choose **+Add** at the top left, and you'll see the new creation model window:
 
 Choose a name and optionally add a description.
 
-When you choose 'Create New' from the 'Create model from' option (as opposed to upload an existing conflation model), you will see additional options:
+When you choose 'Create New' from the 'Create model from' option (as opposed to upload an existing conflation model), you'll see additional options:
 
 
  ![Synonym Example](media/conflation-synonym/add-synonym2.png)
 
- When you click the Entity type, you can choose one type of the entities from the drop-down list you want to conflate with. If you don't see any thing from the drop-down list, there could be something wrong with your source schema. Make sure that you have your schema map created correctly. And check the box of **Merge synonym sets that overlap** if you want to. Also, if you want to create the synonym conflation model for city type entity, please check the **Is city conflation model**. Once you checked it, you'll four more blocks are provided.
+ When you click the Entity type, you can choose one type of the entities from the drop-down list you want to conflate with. If you don't see any thing from the drop-down list, there could be something wrong with your source schema. Make sure that you have your schema map created correctly. And check the box of **Merge synonym sets that overlap** if you want to. Also, if you want to create the synonym conflation model for city type entity, check the **Is city conflation model**. Once you checked it, you'll four more blocks are provided.
 
   ![Synonym Example](media/conflation-synonym/add-synonym3.png)
 
-In the newly prompted blocks, you need to provide the entity type and ontology property for both state and country entities. Why are these properties required? An example will be, if you have both Vancouver, WA, USA and Vancouver, BC, Canada in your graph. The system may conflate the two entities together as one entity if you don't provide the state and country values correctly. With the state and country values provided, the conflation system will understand that the two Vancouver entities are different entities, and will not conflate them.
+In the newly prompted blocks, you need to provide the entity type and ontology property for both state and country entities. Why are these properties required? An example will be, if you have both Vancouver, WA, USA and Vancouver, BC, Canada in your graph. The system may conflate the two entities together as one entity if you don't provide the state and country values correctly. With the state and country values provided, the conflation system will understand that the two Vancouver entities are different entities, and won't conflate them.
 
 Finally, click the **Import synonym file** to upload the synonym file we created at the beginning of this section. And click the **Add Model** button, you're successfully created a synonym model for your conflation system.
 
