@@ -58,7 +58,7 @@ To add a new utterance, you can click the 'Add' button on the toolbar, then you 
 
 You can type in an utterance that you come up with, after this, a query will be shown on the bottom where you can add the annotations. 
 
-There are three types of annotations: ```Nominal entity```, ```Named entity``` and ```Other```. For example, you can annotate 'Sciences' or 'Employees' as ```Nominal entity``` and annotate 'London' or 'Bill Gates' as ```Named entity```. For ```Other```, it is for primitive type or custom tag.
+There are two types of annotations: ```Named entity``` and ```Other```. For example, you can annotate 'London' or 'Bill Gates' as ```Named entity```. For ```Other```, it is for primitive type or custom tag.
 
 To add an annotation, you can select the words by clicking them, you may select multiple at once to annotate. Then you will see the radio buttons.
 
@@ -67,12 +67,6 @@ To add an annotation, you can select the words by clicking them, you may select 
 For example, we are annotating 'San Francisco'. We can select ```Named entity``` and then choose the corresponding 'Entity type' from your published ontology. 
 
 ![Add-utterance-named-entity view](media/intent-classifier-tutorial/add-utterance-named-entity.png)
-
-Similarly, we can add a ```Nominal entity``` annotation.
-
-For custom tag, you can either choose from the history list or add a new one by clicking 'Add custom tag':
-
-![Add-utterance-custom-tag view](media/intent-classifier-tutorial/add-utterance-custom-tag.png)
 
 After annotating, you will see the view below. If you want to change the annotating, you can delete the annotation in the 'Summary' section and annotate again by following the steps above. If your annotating is completed, you can click the 'Save' button on the bottom.
 
