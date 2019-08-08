@@ -67,7 +67,7 @@ After clicking on Query Tagging, users can click one or multiple terms in the qu
 
 ![Options](media/conversationalai-tooling/taggingoptions.png)
 
-Because ‘workers’ is an entity, the Annotation Type is Entity. In the ontology, there is an entity type for customers, which is what the user finds and selects. The image below shows this operation. 
+Because ‘leads’ is an entity, the Annotation Type is Entity. In the ontology, there is an entity type for customers, which is what the user finds and selects. The image below shows this operation. 
 
 ![Options2](media/conversationalai-tooling/leadstocustomers.PNG)
 
