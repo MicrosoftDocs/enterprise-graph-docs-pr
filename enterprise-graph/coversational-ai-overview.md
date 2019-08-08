@@ -79,7 +79,7 @@ In summary, we taught the tool to recognize ‘leads’ as a synonym for ‘customers’
 
 The original interpretation was: 
 
-![GoodInterprets2](media/conversationalai-tooling/unknowntermleads.PNG)
+![GoodInterprets2](media/conversationalai-tooling/unknowntermleads.png)
 
 The new interpretation is: 
 
