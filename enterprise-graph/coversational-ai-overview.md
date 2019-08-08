@@ -49,7 +49,7 @@ The goal of this section is to help the Conversational AI tool understand the be
 
 ![OriginalInterprets](media/conversationalai-tooling/interpretations.png)
 
-The interpretations are ordered from most confident to least confident. If there are multiple interpretations, users can judge the interpretations as Perfect, Good, Fair, Bad, or Not Judged. Once the user judges the interpretation, the tool will incorporate the feedback, rerun the query, and provide an updated order of visual interpretations. In this example, the #3 interpretation looks better than the #1 interpretation. The tool has tried to infer that the word 'workers' actually means 'employees', but it is not confident about this inference. 
+The interpretations are ordered from most confident to least confident. If there are multiple interpretations, users can judge the interpretations as Perfect, Good, Fair, Bad, or Not Judged. Once the user judges the interpretation, the tool will incorporate the feedback, rerun the query, and provide an updated order of visual interpretations. In this example, the #2 interpretation looks better than the #1 interpretation. California is being seen as a city in the #1 interpretation, and as a state in the #2 interpretation. In this case, the second interpretation is more reasonable. 
 
 By labeling the #1 interpretation as bad and #2 as good, the language models will update and reorder the results.
 
