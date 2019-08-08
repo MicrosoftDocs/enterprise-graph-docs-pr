@@ -57,7 +57,7 @@ By labeling the #1 interpretation as bad and #2 as good, the language models wil
 
 ###  Query Plan Tagging
 
-There will be queries that the tool does not completely understand, due to the language models missing some type of information. In these instances, users can annotate on a query. The process to do this is described below: 
+There will be queries that the tool does not completely understand, due to the language models missing some type of information. In these instances, users can annotate on a query. The following sections will walk through the process of annotating on queries. To further understand the different annotation types, please review the **Annotations in Conversational AI document**.
 
 In this example, the word ‘leads’ needs to be classified as a synonym of ‘customers’, which is where the tool can help. 
 
@@ -87,52 +87,6 @@ The new interpretation is:
 
 Finally, the tool tracks the precision of the different queries run in the instance. Users can use this feature to track how the Conversational AI is improving. 
 
-## Different Entity Types 
-
-This section will define and provide examples for the different types of tagging operations a user can do. 
-
-![Operations](media/conversationalai-tooling/operations.png)
-
-| Annotation Type        | Description           
-| ------------- |-------------
-| Condition     | A condition that can be applied to an entity. For example, ‘young’ can be set to mean employees less than the age of 30. 
-| Entity      | An entity describes a concept. For example, employees, cities, and interests are all different entities.       
-| Entity Attribute | A property of an entity. For example, the ‘first name’ of an ‘employee’ is an entity attribute of the entity ‘employee’.  
-| Instance | An example from the data of an entity. For example, ‘London’ is an Instance of the Entity ‘City’  
-| Relationship | The relationship between two entities. For example, in the query ‘employees in California’, ‘in’ is the relationship between ‘employees’ and California.’
-
-### Condition
-
-**Entry level** can be a conditional attribute of employee in this case, with a start date specification. 
-
-![Operations](media/conversationalai-tooling/operations.png)
-
-### Entity
-
-**Employees** is an Entity. 
-
-![Entities](media/conversationalai-tooling/entity.png)
-
-### Entity Attribute
-
-Titles is an attribute of patent. 
-
-![Attribute](media/conversationalai-tooling/attribute.png)
-
-### Instance
-
-John is an instance of an employee. 
-
-![Instance](media/conversationalai-tooling/instance.png)
-
-Unlike the other types of annotations, users cannot create a new instance with the tool; only existing previous instances. For example, adding a new name of an employee entity must happen upstream at the data ingestion stage, not at the Conversational AI tooling level. 
-
-### Relationship
-
-The **‘s** shows the relationship between John and his patents. 
-
-![Relationship](media/conversationalai-tooling/relationship.png)
-
 ## Conclusion
 
-The Conversational AI tooling provides a visual, interpretable mechanism to interpret and improve natural language queries.
+The Conversational AI tooling provides a visual, interpretable mechanism to interpret and improve natural language queries. 
