@@ -61,7 +61,7 @@ There will be queries that the tool does not completely understand, due to the l
 
 In this example, the word ‘leads’ needs to be classified as a synonym of ‘customers’, which is where the tool can help. 
 
-![GoodInterprets2](media/conversationalai-tooling/unknownterm-leads.png)
+![GoodInterprets2](media/conversationalai-tooling/unknowntermleads.png)
 
 After clicking on Query Tagging, users can click one or multiple terms in the query and assign them to a part of the ontology. ‘Leads’ needs to be annotated. When the user clicks on ‘leads’, the Entity Tag Operation automatically opens. 
 
