@@ -69,7 +69,7 @@ After clicking on Query Tagging, users can click one or multiple terms in the qu
 
 Because ‘workers’ is an entity, the Annotation Type is Entity. In the ontology, there is an entity type for customers, which is what the user finds and selects. The image below shows this operation. 
 
-![Options2](media/conversationalai-tooling/leadstocustomers.png)
+![Options2](media/conversationalai-tooling/leadstocustomers.PNG)
 
 After selecting the operation, the user can update the model, and the query will rerun. 
 
@@ -79,7 +79,7 @@ In summary, we taught the tool to recognize ‘leads’ as a synonym for ‘customers’
 
 The original interpretation was: 
 
-![GoodInterprets2](media/conversationalai-tooling/unknowntermleads.png)
+![GoodInterprets2](media/conversationalai-tooling/unknowntermleads.PNG)
 
 The new interpretation is: 
 
