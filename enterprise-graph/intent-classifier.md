@@ -80,7 +80,7 @@ The top panel displays the metrics that summarized the current status for intent
 
 ![Intent classifier summary metrics](./media/intent-classifier-tutorial/ic-summary-metrics.png)
 
-You can click on the "Train model" button under the metrics to start training. It may take several minutes to finish the training. You can click the "Refresh model status" button to refresh the current model status.
+You can click on the "Train model" button under the metrics to start training. It may take several minutes to finish the training, depending on the amount of training data used. You can click the "Refresh model status" button to refresh the current model status.
 
 After the training is completed, a search box will emerge. You can enter utterance that you created before or some similar sentences to validate the trained model. For example, you can enter "find customers in Los Angeles" in the search box and click the "Search" button, the validate result will show up under the search box. 
 
