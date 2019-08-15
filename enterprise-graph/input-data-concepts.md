@@ -9,30 +9,6 @@ ms.date: 03/29/2019
 ms.author: stflanag
 ---
 
-# Input data
-The payload to be ingested to the graph should be in Json format and it should also be assocaited with identifier called DocumentId.
----
-title: Enterprise Graph by Microsoft input data format 
-description: Understanding the correct format for your input data in Enterprise Graph by Microsoft
-author: microsteve
-
-ms.service: enterprise-graph
-ms.topic: conceptual
-ms.date: 03/29/2019
-ms.author: stflanag
----
-
-# Input data
----
-title: Enterprise Graph by Microsoft input data format 
-description: Understanding the correct format for your input data in Enterprise Graph by Microsoft
-author: microsteve
-
-ms.service: enterprise-graph
-ms.topic: conceptual
-ms.date: 03/29/2019
-ms.author: stflanag
----
 
 # Input data
 The payload to be ingested to the graph should be in Json format and it should also be assocaited with identifier called DocumentId.
@@ -62,59 +38,3 @@ Application.Cities_16149	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "H
 In the [Source Schema](create-source-schema.md) stage, you define the 'columns' of this data, i.e. LastEditedBy, CityName, CityID and so on. Then in the [Schema mapping](schema-map-tutorial.md) stage, you map those columns to your [Ontology](ontology-tutorial.md). Then finally in the [Ingestion](ingest-data.md) phase, you create the individual entities of your data, based on your input data and your mapping.
 
 To host the data in a place accessible to the Enterprise Graph system you may want to use <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Azure Blob storage</a>, but you can use any storage system.
-
-The payload to be ingested to the graph should be in Json format and it should also be assocaited with identifier called DocumentId.
-To be ingested into the graph with blob option, your input data in the blob must be correctly formatted as a TSV file in the following format
-
-<DocumentId1><tab><Payload of DocumentId1 in Json Format>
-<DocumentId2><tab><Payload of DocumentId2 in Json Format>
-<DocumentId3><tab><Payload of DocumentId3 in Json Format>
-...............
-................
- <DocumentIdn><tab><Payload of DocumentId in Json Format>
-     
-DocumentId is unique for a datasource. But there can be same document id across datasources.
-If new paylod is ingested with existing documentId, then the content of documentId in the graph would be overwrittten with the new payload.
-
-> [!TIP]
-> Do not ingest more data into the Enterprise Graph platform than you need to power the use-cases you are trying to enable. 
-
-A sample input file can be found <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv">here</a>. These are the first three lines of that file:
-
-```
-Application.Cities_17940	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Kniman", "CityID": "17940", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
-Application.Cities_13428	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Goose Prairie", "CityID": "13428", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "50"}
-Application.Cities_16149	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Hudson Lake", "CityID": "16149", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
-```
-
-In the [Source Schema](create-source-schema.md) stage, you define the 'columns' of this data, i.e. LastEditedBy, CityName, CityID and so on. Then in the [Schema mapping](schema-map-tutorial.md) stage, you map those columns to your [Ontology](ontology-tutorial.md). Then finally in the [Ingestion](ingest-data.md) phase, you create the individual entities of your data, based on your input data and your mapping.
-
-To host the data in a place accessible to the Enterprise Graph system you may want to use <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Azure Blob storage</a>, but you can use any storage system.
-
-To be ingested into the graph with blob option, your input data in the blob must be correctly formatted as a TSV file in the following format
-
-<DocumentId1><tab><Payload of DocumentId1 in Json Format>
-<DocumentId2><tab><Payload of DocumentId2 in Json Format>
-<DocumentId3><tab><Payload of DocumentId3 in Json Format>
-...............
-................
- <DocumentIdn><tab><Payload of DocumentId in Json Format>
-     
-DocumentId is unique for a datasource. But there can be same document id across datasources.
-If new paylod is ingested with existing documentId, then the content of documentId in the graph would be overwrittten with the new payload.
-
-> [!TIP]
-> Do not ingest more data into the Enterprise Graph platform than you need to power the use-cases you are trying to enable. 
-
-A sample input file can be found <a href="https://ekgdemosamples.blob.core.windows.net/ekgdemosamples01/12.1_Ingestion_Application.Cities.tsv">here</a>. These are the first three lines of that file:
-
-```
-Application.Cities_17940	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Kniman", "CityID": "17940", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
-Application.Cities_13428	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Goose Prairie", "CityID": "13428", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "50"}
-Application.Cities_16149	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Hudson Lake", "CityID": "16149", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
-```
-
-In the [Source Schema](create-source-schema.md) stage, you define the 'columns' of this data, i.e. LastEditedBy, CityName, CityID and so on. Then in the [Schema mapping](schema-map-tutorial.md) stage, you map those columns to your [Ontology](ontology-tutorial.md). Then finally in the [Ingestion](ingest-data.md) phase, you create the individual entities of your data, based on your input data and your mapping.
-
-To host the data in a place accessible to the Enterprise Graph system you may want to use <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Azure Blob storage</a>, but you can use any storage system.
-
