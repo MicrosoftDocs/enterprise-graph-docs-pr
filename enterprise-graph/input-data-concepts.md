@@ -11,8 +11,9 @@ ms.author: stflanag
 
 
 # Input data
-The payload to be ingested to the graph should be in Json format and it should also be assocaited with identifier called DocumentId.
-To be ingested into the graph with blob option, your input data in the blob must be correctly formatted as a TSV file in the following format
+The payload to be ingested to the graph should be in JSON format and associated with an identifier called 'DocumentId'.
+
+To successfully ingest the payload with the blob option turned on, the input data in the blob must be correctly formatted as a TSV file which looks like:
 
 <DocumentId1><tab><Payload of DocumentId1 in Json Format>
 <DocumentId2><tab><Payload of DocumentId2 in Json Format>
@@ -21,8 +22,8 @@ To be ingested into the graph with blob option, your input data in the blob must
 ................
  <DocumentIdn><tab><Payload of DocumentIdn in Json Format>
      
-DocumentId is unique for a datasource. But there can be same document id across datasources.
-If new paylod is ingested with existing documentId, then the content of documentId in the graph would be overwrittten with the new payload.
+While the documentId is unique for a given data source, the same documentid can exist across data sources.
+If new payload is ingested with an existing documentId, then the content of that same documentId in the graph gets overwritten with the new payload.
 
 > [!TIP]
 > Do not ingest more data into the Enterprise Graph platform than you need to power the use-cases you are trying to enable. 
@@ -35,6 +36,6 @@ Application.Cities_13428	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "G
 Application.Cities_16149	{"LastEditedBy": "1", "ValidTo": "null", "CityName": "Hudson Lake", "CityID": "16149", "Location": "null", "ValidFrom": "null", "LatestRecordedPopulation": "null", "StateProvinceID": "15"}
 ```
 
-In the [Source Schema](create-source-schema.md) stage, you define the 'columns' of this data, i.e. LastEditedBy, CityName, CityID and so on. Then in the [Schema mapping](schema-map-tutorial.md) stage, you map those columns to your [Ontology](ontology-tutorial.md). Then finally in the [Ingestion](ingest-data.md) phase, you create the individual entities of your data, based on your input data and your mapping.
+In the [Source Schema](create-source-schema.md) stage, you define the 'columns' of this data from the keys of the JSON body like 'LastEditedBy', 'CityName', and 'CityID'.. Next, in the [Schema mapping](schema-map-tutorial.md) stage, you map the columns to your [Ontology](ontology-tutorial.md). Finally in the [Ingestion](ingest-data.md) phase, you create individual entities of your data based on the input data and the mapping.
 
 To host the data in a place accessible to the Enterprise Graph system you may want to use <a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Azure Blob storage</a>, but you can use any storage system.
