@@ -11,18 +11,17 @@ ms.author: stflanag
 
 
 # Input data
-The payload to be ingested to the graph should be in JSON format and associated with an document identifier called 'DocumentId'.
+The payload to be ingested to the graph should be in JSON format and associated with a document identifier called 'DocumentId'.
 
 To ingest the payload via the blob option, the input data in the blob must be correctly formatted as a TSV file:
 
 <DocumentId1><tab><Payload of DocumentId1 in Json Format>
 <DocumentId2><tab><Payload of DocumentId2 in Json Format>
 <DocumentId3><tab><Payload of DocumentId3 in Json Format>
-...............
-................
+
  <DocumentIdn><tab><Payload of DocumentIdn in Json Format>
      
-While the document ID is unique for a given data source, the same ID can exist across different data sources.
+While the document ID is unique within a data source, the same ID can exist across different data sources.
 If a new payload is ingested with an existing documentId, then the content from the previous payload of that same documentId in the graph is overwritten.
 
 > [!TIP]
