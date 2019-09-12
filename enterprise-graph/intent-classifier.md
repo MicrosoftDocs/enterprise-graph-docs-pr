@@ -82,6 +82,12 @@ The top panel displays the metrics that summarized the current status for intent
 
 You can click on the "Train model" button under the metrics to start training. It may take several minutes to finish the training, depending on the amount of training data used. You can click the "Refresh model status" button to refresh the current model status.
 
+>  "Fast train model" versus "Full train model":<br />
+> Fast train model: The model is less flexible and requires a strict match to the utterance to correctly interpret.
+> Full train model: The model is more robust and versatile and can handle unseen mentions and variations in utterance, at the cost of a longer training time.
+
+
+
 After the training is completed, a search box will emerge. You can enter utterance that you created before or some similar sentences to validate the trained model. For example, you can enter "find customers in Los Angeles" in the search box and click the "Search" button, the validate result will show up under the search box. 
 
 ![Intent classifier model validation](./media/intent-classifier-tutorial/validate-model.png)
