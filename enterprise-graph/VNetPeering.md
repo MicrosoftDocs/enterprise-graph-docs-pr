@@ -16,7 +16,7 @@ Azure virtual network peering enables users to seamlessly connect to two Azure v
 To enable VNet Peering in Enterprise Graph, ensure that the "Use VNet Peering" box is checked when you provision it. The VNet subnet range is the range of the private IP addresses that can be used by the physical resources in MS subnet. At minimum, the range should have 128 IP addresses.
 ![Source schema view](media/vnetpeering/vnetpeering.PNG)
 
-# Steps to enable VNet Peering in Enterprise graph
+## Steps to enable VNet Peering in Enterprise graph
 
 Both customer and Microsoft admins are required to enable VNet Peering.
 
