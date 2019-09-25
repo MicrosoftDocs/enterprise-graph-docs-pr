@@ -1,5 +1,5 @@
 ---
-title: Ontology tutprial in Enterprise Graph by Microsoft 
+title: Ontology tutorial in Enterprise Graph by Microsoft 
 description: Getting up and running with an ontology to power your Enterprise Graph by Microsoft use cases
 author: microsteve
 
