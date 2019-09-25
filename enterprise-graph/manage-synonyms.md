@@ -1,12 +1,12 @@
 ---
 title: Manage synonyms in Enterprise Graph by Microsoft
 description: Learn how to manage synonyms in Enterprise Graph by Microsoft
-author: microsteve
+author: MSFTChao
 
 ms.service: enterprise-graph
 ms.topic: tutorial
 ms.date: 07/08/2019
-ms.author: MSFTChao
+ms.author: chaoxu
 ---
 
 # Tutorial: Manage synonyms
