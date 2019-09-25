@@ -1,0 +1,9 @@
+{
+  "redirections": [
+    {
+      "source_path": "enterprise-graph",
+      "redirect_url": "https://aka.ms/enterprise-graph",
+      "redirect_document_id": false
+    }
+  ]
+}
