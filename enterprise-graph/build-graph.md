@@ -31,7 +31,7 @@ Click on the **+Add** button, and you'll see the **Create ontology** pane.
 
 ![Create ontology](media/quickstart/4-create-ontology-options.png)
 
-In this pane, you can see there are options to create an ontology from scratch, modify one of the Microsoft-supplied ontologies, or import an existing ontology. For now, we're going to import an existing ontology, based on the <a href="http:///www.microsoft.com">World Wide Importers sample data</a>.
+In this pane, you can see there are options to create an ontology from scratch, modify one of the Microsoft-supplied ontologies, or import an existing ontology. For now, we're going to import an existing ontology, based on the <a href="https://docs.microsoft.com/en-us/sql/samples/wide-world-importers-what-is?view=sql-server-2017">World Wide Importers sample data</a>.
 
 In the ontology pane, choose a suitable name (like 'WWI'), add a description if you want, choose the 'Import' option from the 'Add ontology from' dropdown, and then choose the '01_WWIOntology.json' file from the sample files.
 
