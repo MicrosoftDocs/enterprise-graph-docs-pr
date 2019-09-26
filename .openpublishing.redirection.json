@@ -159,11 +159,6 @@
 			"source_path": "enterprise-graph/source-schema-concepts.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
 			"redirect_document_id": false
-		},
-		{
-			"source_path": "enterprise-graph/toc.yml",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": false
 		}
 
 	]
