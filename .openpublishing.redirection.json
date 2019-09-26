@@ -1,244 +1,164 @@
 {
 	"redirections": [
 		{
-			"source_path": "VNetPeering.md",
+			"source_path": "enterprise-graph/VNetPeering.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "api-overview.md",
+			"source_path": "enterprise-graph/api-overview.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "build-graph.md",
+			"source_path": "enterprise-graph/build-graph.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "conflation-concepts.md",
+			"source_path": "enterprise-graph/conflation-concepts.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "conflation-rules.md",
+			"source_path": "enterprise-graph/conflation-rules.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "coversational-ai-annotation-types.md",
+			"source_path": "enterprise-graph/coversational-ai-annotation-types.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "coversational-ai-tutorial.md",
+			"source_path": "enterprise-graph/coversational-ai-tutorial.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "create-conflation-model.md",
+			"source_path": "enterprise-graph/create-conflation-model.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "create-ontology.md",
+			"source_path": "enterprise-graph/create-ontology.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "create-source-schema.md",
+			"source_path": "enterprise-graph/create-source-schema.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "delete-ontology.md",
+			"source_path": "enterprise-graph/delete-ontology.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "enterprise-graph-overview.md",
+			"source_path": "enterprise-graph/enterprise-graph-overview.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "enterprise-graph-use-cases.md",
+			"source_path": "enterprise-graph/enterprise-graph-use-cases.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "index.yml",
+			"source_path": "enterprise-graph/index.yml",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "ingest-data.md",
+			"source_path": "enterprise-graph/ingest-data.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "inheritance.md",
+			"source_path": "enterprise-graph/inheritance.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "input-data-concepts.md",
+			"source_path": "enterprise-graph/input-data-concepts.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intent-classifier-overview.md",
+			"source_path": "enterprise-graph/intent-classifier-overview.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "intent-classifier.md",
+			"source_path": "enterprise-graph/intent-classifier.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "manage-synonyms.md",
+			"source_path": "enterprise-graph/manage-synonyms.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "ontology-overview.md",
+			"source_path": "enterprise-graph/ontology-overview.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "ontology-tutorial.md",
+			"source_path": "enterprise-graph/ontology-tutorial.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "query-graph.md",
+			"source_path": "enterprise-graph/query-graph.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "quickref-conflation.md",
+			"source_path": "enterprise-graph/quickref-conflation.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "quickref-entities.md",
+			"source_path": "enterprise-graph/quickref-entities.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "quickref-ontology.md",
+			"source_path": "enterprise-graph/quickref-ontology.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "quickref-properties.md",
+			"source_path": "enterprise-graph/quickref-properties.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "quickref-schema-map.md",
+			"source_path": "enterprise-graph/quickref-schema-map.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "quickref-source-schema.md",
+			"source_path": "enterprise-graph/quickref-source-schema.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "schema-map-concepts.md",
+			"source_path": "enterprise-graph/schema-map-concepts.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "schema-map-tutorial.md",
+			"source_path": "enterprise-graph/schema-map-tutorial.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		},
 		{
-			"source_path": "source-schema-concepts.md",
+			"source_path": "enterprise-graph/source-schema-concepts.md",
 			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "toc.yml",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/01_WWIOntology.json",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/02_Schema_Application.Cities.json",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/03_Schema_Application.Countries.json",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/04_Schema_Application.StateProvinces.json",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/05_Schema_Application.People.json",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/06_Schema_Sales.Customers.json",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/07_Mapping_Application.Cities.xml",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/08_Mapping_Application.Countries.xml",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/09_Mapping_Application.StateProvinces.xml",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/10_Mapping_Application.People.xml ",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/11_Mapping_Sales.Customer.xml ",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/12_Ingestion_Azure_Blob_URLs.txt ",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/13_SearchQuery.txt ",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/14_GraphQuery.txt ",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
-		},
-		{
-			"source_path": "demo%20files/Conflation Ingestion_Sales.Customers2.tsv",
-			"redirect_url": "https://aka.ms/enterprise-graph",
-			"redirect_document_id": true
+			"redirect_document_id": false
 		}
 
 	]
